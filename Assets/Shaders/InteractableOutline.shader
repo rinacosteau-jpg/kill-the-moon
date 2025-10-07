@@ -1,7 +1,7 @@
 Shader "Custom/InteractableOutline" {
     Properties {
         _OutlineColor ("Outline Color", Color) = (1, 1, 1, 1)
-        _OutlineThickness ("Outline Thickness", Range(0.0, 0.1)) = 0.02
+        _OutlineThickness ("Outline Thickness", Range(0.0, 0.2)) = 0.02
         _OutlineEnabled ("Outline Enabled", Range(0, 1)) = 0
     }
     SubShader {
@@ -32,10 +32,27 @@ Shader "Custom/InteractableOutline" {
 
             v2f vert(appdata v) {
                 v2f o;
-                float3 normal = normalize(mul((float3x3)UNITY_MATRIX_IT_MV, v.normal));
-                float4 clipPos = UnityObjectToClipPos(v.vertex);
+
+                float3 viewNormal = mul((float3x3)UNITY_MATRIX_IT_MV, v.normal);
+                float3 viewPos = mul(UNITY_MATRIX_MV, v.vertex).xyz;
+
+                float2 extrudeDir = viewNormal.xy;
+                float dirMagnitude = dot(extrudeDir, extrudeDir);
+
+                if (dirMagnitude < 1e-5f) {
+                    extrudeDir = viewPos.xy;
+                    dirMagnitude = dot(extrudeDir, extrudeDir);
+                }
+
+                if (dirMagnitude < 1e-5f)
+                    extrudeDir = float2(1.0f, 0.0f);
+
+                extrudeDir = normalize(extrudeDir);
+
                 float extrude = _OutlineThickness * _OutlineEnabled;
-                clipPos.xy += normal.xy * extrude * clipPos.w;
+                viewPos.xy += extrudeDir * extrude;
+
+                float4 clipPos = mul(UNITY_MATRIX_P, float4(viewPos, 1.0f));
                 o.position = clipPos;
                 return o;
             }

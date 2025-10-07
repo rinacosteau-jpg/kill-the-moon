@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,19 +8,42 @@ public class InteractableOutline : MonoBehaviour {
     private static readonly int OutlineThickness = Shader.PropertyToID("_OutlineThickness");
     private static readonly int OutlineEnabled = Shader.PropertyToID("_OutlineEnabled");
 
-    [SerializeField] private Renderer[] targetRenderers;
-    [SerializeField] private Color outlineColor = Color.white;
-    [SerializeField, Range(0.001f, 0.1f)] private float outlineThickness = 0.02f;
+    [Serializable]
+    private struct OutlineTarget {
+        public Renderer renderer;
+        public Material material;
+    }
 
-    private readonly Dictionary<Renderer, Material> outlineMaterials = new Dictionary<Renderer, Material>();
+    [SerializeField] private Renderer[] targetRenderers = Array.Empty<Renderer>();
+    [SerializeField] private Color outlineColor = Color.white;
+    [SerializeField, Range(0.001f, 0.2f)] private float outlineThickness = 0.02f;
+
+    private readonly List<OutlineTarget> outlineTargets = new List<OutlineTarget>();
     private bool initialized;
+    private bool isHighlighted;
 
     private void Awake() {
         Initialize();
-        SetHighlighted(false);
+        ApplySettings();
+        UpdateHighlightState();
     }
 
     private void Reset() {
+        AutoCollectRenderers();
+    }
+
+    private void OnValidate() {
+        if (targetRenderers == null || targetRenderers.Length == 0)
+            AutoCollectRenderers();
+
+        if (!initialized)
+            return;
+
+        ApplySettings();
+        UpdateHighlightState();
+    }
+
+    private void AutoCollectRenderers() {
         targetRenderers = GetComponentsInChildren<Renderer>();
     }
 
@@ -28,13 +52,15 @@ public class InteractableOutline : MonoBehaviour {
             return;
 
         if (targetRenderers == null || targetRenderers.Length == 0)
-            targetRenderers = GetComponentsInChildren<Renderer>();
+            AutoCollectRenderers();
 
         Shader outlineShader = Shader.Find("Custom/InteractableOutline");
         if (outlineShader == null) {
             Debug.LogError("[InteractableOutline] Shader 'Custom/InteractableOutline' not found.");
             return;
         }
+
+        outlineTargets.Clear();
 
         foreach (Renderer renderer in targetRenderers) {
             if (renderer == null)
@@ -44,36 +70,63 @@ public class InteractableOutline : MonoBehaviour {
                 hideFlags = HideFlags.HideAndDontSave
             };
 
-            outlineMaterial.SetColor(OutlineColor, outlineColor);
-            outlineMaterial.SetFloat(OutlineThickness, outlineThickness);
-            outlineMaterial.SetFloat(OutlineEnabled, 0f);
+            var materials = new List<Material>(renderer.sharedMaterials);
+            materials.Add(outlineMaterial);
+            renderer.sharedMaterials = materials.ToArray();
 
-            var materials = new List<Material>(renderer.sharedMaterials) { outlineMaterial };
-            renderer.materials = materials.ToArray();
-            outlineMaterials[renderer] = outlineMaterial;
+            outlineTargets.Add(new OutlineTarget {
+                renderer = renderer,
+                material = outlineMaterial
+            });
         }
 
         initialized = true;
+
+        ApplySettings();
+        UpdateHighlightState();
+    }
+
+    private void ApplySettings() {
+        foreach (OutlineTarget target in outlineTargets) {
+            if (target.material == null)
+                continue;
+
+            target.material.SetColor(OutlineColor, outlineColor);
+            target.material.SetFloat(OutlineThickness, outlineThickness);
+        }
     }
 
     public void SetHighlighted(bool highlighted) {
         Initialize();
 
-        float enabledValue = highlighted ? 1f : 0f;
-        foreach (Material material in outlineMaterials.Values) {
-            if (material == null)
+        isHighlighted = highlighted;
+        UpdateHighlightState();
+    }
+
+    private void UpdateHighlightState() {
+        float enabledValue = isHighlighted ? 1f : 0f;
+
+        foreach (OutlineTarget target in outlineTargets) {
+            if (target.material == null)
                 continue;
 
-            material.SetFloat(OutlineEnabled, enabledValue);
+            target.material.SetFloat(OutlineEnabled, enabledValue);
         }
     }
 
     private void OnDestroy() {
-        foreach (Material material in outlineMaterials.Values) {
-            if (material != null)
-                Destroy(material);
+        foreach (OutlineTarget target in outlineTargets) {
+            if (target.renderer != null && target.material != null) {
+                var materials = new List<Material>(target.renderer.sharedMaterials);
+                if (materials.Remove(target.material))
+                    target.renderer.sharedMaterials = materials.ToArray();
+            }
+
+            if (target.material != null)
+                Destroy(target.material);
         }
 
-        outlineMaterials.Clear();
+        outlineTargets.Clear();
+        initialized = false;
     }
 }
