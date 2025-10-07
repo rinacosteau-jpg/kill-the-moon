@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class DoorInteractable : MonoBehaviour, IInteractable, ILoopResettable
@@ -6,12 +7,14 @@ public class DoorInteractable : MonoBehaviour, IInteractable, ILoopResettable
     [SerializeField] private bool isOpen;
     [SerializeField] private GameObject doorObject;
     [SerializeField] private float openZRotation = 90f;
+    [SerializeField] private float rotationDuration = 0.5f;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip openSound;
 
     private bool startIsOpen;
     private Transform doorTransform;
     private Quaternion originalRotation;
+    private Coroutine rotationCoroutine;
 
     private void Awake()
     {
@@ -23,7 +26,7 @@ public class DoorInteractable : MonoBehaviour, IInteractable, ILoopResettable
             originalRotation = doorTransform.localRotation;
 
         startIsOpen = isOpen;
-        ApplyState(isOpen);
+        ApplyState(isOpen, true);
     }
 
     public void Interact()
@@ -36,7 +39,7 @@ public class DoorInteractable : MonoBehaviour, IInteractable, ILoopResettable
 
     public void OnLoopReset()
     {
-        ApplyState(startIsOpen);
+        ApplyState(startIsOpen, true);
     }
 
     public void ForceOpen()
@@ -44,7 +47,7 @@ public class DoorInteractable : MonoBehaviour, IInteractable, ILoopResettable
         ApplyState(true);
     }
 
-    private void ApplyState(bool open)
+    private void ApplyState(bool open, bool instant = false)
     {
         bool wasOpen = isOpen;
         isOpen = open;
@@ -55,10 +58,40 @@ public class DoorInteractable : MonoBehaviour, IInteractable, ILoopResettable
             if (open)
                 targetRotation = originalRotation * Quaternion.Euler(0f, 0f, openZRotation);
 
-            doorTransform.localRotation = targetRotation;
+            if (rotationCoroutine != null)
+            {
+                StopCoroutine(rotationCoroutine);
+                rotationCoroutine = null;
+            }
+
+            if (instant || rotationDuration <= 0f)
+            {
+                doorTransform.localRotation = targetRotation;
+            }
+            else
+            {
+                rotationCoroutine = StartCoroutine(RotateDoor(targetRotation));
+            }
         }
 
         if (open && !wasOpen && audioSource != null && openSound != null)
             audioSource.PlayOneShot(openSound);
+    }
+
+    private IEnumerator RotateDoor(Quaternion targetRotation)
+    {
+        Quaternion startRotation = doorTransform.localRotation;
+        float elapsed = 0f;
+
+        while (elapsed < rotationDuration)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / rotationDuration);
+            doorTransform.localRotation = Quaternion.Slerp(startRotation, targetRotation, t);
+            yield return null;
+        }
+
+        doorTransform.localRotation = targetRotation;
+        rotationCoroutine = null;
     }
 }
