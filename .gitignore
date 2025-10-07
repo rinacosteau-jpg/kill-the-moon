@@ -8,8 +8,8 @@
 [Mm]emoryCaptures/
 sysinfo.txt
 UserSettings/
-Assets/
-!Assets/Scripts/
+Assets/*
+!Assets/Scripts/**
 
 
 # IDE
