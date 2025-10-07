@@ -10,6 +10,7 @@ public class DoorInteractable : MonoBehaviour, IInteractable, ILoopResettable
     [SerializeField] private float rotationDuration = 0.5f;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip openSound;
+    [SerializeField] private AudioClip closeSound;
 
     private bool startIsOpen;
     private Transform doorTransform;
@@ -74,8 +75,17 @@ public class DoorInteractable : MonoBehaviour, IInteractable, ILoopResettable
             }
         }
 
-        if (open && !wasOpen && audioSource != null && openSound != null)
-            audioSource.PlayOneShot(openSound);
+        if (audioSource != null)
+        {
+            if (open && !wasOpen && openSound != null)
+            {
+                audioSource.PlayOneShot(openSound);
+            }
+            else if (!open && wasOpen && closeSound != null)
+            {
+                audioSource.PlayOneShot(closeSound);
+            }
+        }
     }
 
     private IEnumerator RotateDoor(Quaternion targetRotation)
