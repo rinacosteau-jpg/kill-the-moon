@@ -21,6 +21,7 @@ Assets/**
 
 # 3) кода в Scripts (и его .meta тоже пройдут по правилу выше)
 !Assets/[Ss]cripts/**
+!Assets/[Ss]haders/**
 
 
 # IDE
