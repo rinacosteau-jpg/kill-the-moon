@@ -1,4 +1,4 @@
-# Unity
+# Unity тяжёлый мусор
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -9,14 +9,19 @@
 sysinfo.txt
 UserSettings/
 
-# Ты игноришь вообще всё в Assets...
-Assets/*
-# ...а теперь белый список для Scripts (сам каталог + всё внутри)
-!Assets/[Ss]cripts/
+# Игнорим ВСЁ в Assets...
+Assets/**
+
+# ...кроме:
+# 1) самих директорий (чтоб Git мог дойти до файлов внутри)
+!Assets/**/
+
+# 2) всех .meta в любом месте
+!Assets/**/*.meta
+
+# 3) кода в Scripts (и его .meta тоже пройдут по правилу выше)
 !Assets/[Ss]cripts/**
 
-# Unity метафайлы обычно нужны
-!Assets/**/.meta
 
 # IDE
 .vs/
