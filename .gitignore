@@ -8,9 +8,15 @@
 [Mm]emoryCaptures/
 sysinfo.txt
 UserSettings/
-Assets/*
-!Assets/Scripts/**
 
+# Ты игноришь вообще всё в Assets...
+Assets/*
+# ...а теперь белый список для Scripts (сам каталог + всё внутри)
+!Assets/[Ss]cripts/
+!Assets/[Ss]cripts/**
+
+# Unity метафайлы обычно нужны
+!Assets/**/.meta
 
 # IDE
 .vs/
