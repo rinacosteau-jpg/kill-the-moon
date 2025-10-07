@@ -9,6 +9,9 @@ public class PlayerMovementScript : MonoBehaviour {
     [SerializeField] private Animator animator;
     [SerializeField] private DialogueUI dialogueUI;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource footstepsAudio;
+
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float rotationSpeed = 12f;
@@ -99,9 +102,22 @@ public class PlayerMovementScript : MonoBehaviour {
     }
 
     private void UpdateAnimator(float targetSpeed, bool isMoving) {
-        if (animator == null) return;
-        animator.SetFloat("Speed", targetSpeed);
-        animator.SetBool("IsMoving", isMoving);
+        if (animator != null) {
+            animator.SetFloat("Speed", targetSpeed);
+            animator.SetBool("IsMoving", isMoving);
+        }
+
+        UpdateFootstepsAudio(isMoving);
+    }
+
+    private void UpdateFootstepsAudio(bool isMoving) {
+        if (footstepsAudio == null) return;
+
+        if (isMoving) {
+            if (!footstepsAudio.isPlaying) footstepsAudio.Play();
+        } else if (footstepsAudio.isPlaying) {
+            footstepsAudio.Stop();
+        }
     }
 
     private void GetCapsuleWorld(out Vector3 p1, out Vector3 p2, out float r) {
