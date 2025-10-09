@@ -29,7 +29,7 @@ namespace Articy.World_Of_Red_Moon.Features
         
         private BooleanConstraint mRiskCheckInit;
         
-        private NumberConstraint mRiskCheckBonus;
+        private NumberConstraint mIsSuccess;
         
         public BooleanConstraint RiskCheckInit
         {
@@ -40,12 +40,12 @@ namespace Articy.World_Of_Red_Moon.Features
             }
         }
         
-        public NumberConstraint RiskCheckBonus
+        public NumberConstraint IsSuccess
         {
             get
             {
                 EnsureConstraints();
-                return mRiskCheckBonus;
+                return mIsSuccess;
             }
         }
         
@@ -57,7 +57,7 @@ namespace Articy.World_Of_Red_Moon.Features
             }
             mLoadedConstraints = true;
             mRiskCheckInit = new Articy.Unity.Constraints.BooleanConstraint(false);
-            mRiskCheckBonus = new Articy.Unity.Constraints.NumberConstraint(-3.4028234663852886E+38D, 3.4028234663852886E+38D, 0, 0, 0, null);
+            mIsSuccess = new Articy.Unity.Constraints.NumberConstraint(0D, 2D, 0, 0, 0, null);
         }
     }
 }

@@ -2512,7 +2512,7 @@ MonoBehaviour:
     parent: 216172783251375095
     technicalName: Dlg_693D5183
     articyType: Dialogue
-    childCount: 165
+    childCount: 167
   - id: 72057594037935080
     parent: 72057594037932408
     technicalName: DFr_5D32F881
@@ -2603,16 +2603,6 @@ MonoBehaviour:
     technicalName: DFr_C55FF382
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037932443
-    parent: 72057594037932408
-    technicalName: Cnd_28528004
-    articyType: Condition
-    childCount: 0
-  - id: 72057594037934607
-    parent: 72057594037932408
-    technicalName: Jmp_2AB62464
-    articyType: Jump
-    childCount: 0
   - id: 72057594037933104
     parent: 72057594037932408
     technicalName: DFr_8A99296A
@@ -2627,11 +2617,6 @@ MonoBehaviour:
     parent: 72057594037932408
     technicalName: DFr_521CC8C3
     articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037935138
-    parent: 72057594037932408
-    technicalName: Jmp_6E3B5A94
-    articyType: Jump
     childCount: 0
   - id: 72057594037935116
     parent: 72057594037932408
@@ -2663,25 +2648,10 @@ MonoBehaviour:
     technicalName: DFr_BA7C6F88
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037934533
-    parent: 72057594037932408
-    technicalName: Jmp_C034E7D4
-    articyType: Jump
-    childCount: 0
   - id: 72057594037934500
     parent: 72057594037932408
     technicalName: DFr_25FB88B4
     articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037932473
-    parent: 72057594037932408
-    technicalName: Cnd_E0303ABA
-    articyType: Condition
-    childCount: 0
-  - id: 72057594037934632
-    parent: 72057594037932408
-    technicalName: Jmp_5B7EFE05
-    articyType: Jump
     childCount: 0
   - id: 72057594037934637
     parent: 72057594037932408
@@ -2743,11 +2713,6 @@ MonoBehaviour:
     technicalName: DFr_F0C35BF5
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037932507
-    parent: 72057594037932408
-    technicalName: Cnd_D775022A
-    articyType: Condition
-    childCount: 0
   - id: 72057594037934652
     parent: 72057594037932408
     technicalName: DFr_8D892525
@@ -2808,11 +2773,6 @@ MonoBehaviour:
     technicalName: DFr_A9F4E2F4
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037941897
-    parent: 72057594037932408
-    technicalName: Jmp_2024977A
-    articyType: Jump
-    childCount: 0
   - id: 72057594037933162
     parent: 72057594037932408
     technicalName: Hub_C59032A7
@@ -2837,11 +2797,6 @@ MonoBehaviour:
     parent: 72057594037932408
     technicalName: DFr_1E18946E
     articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037941915
-    parent: 72057594037932408
-    technicalName: Cnd_77C37AD2
-    articyType: Condition
     childCount: 0
   - id: 72057594037934353
     parent: 72057594037932408
@@ -2947,11 +2902,6 @@ MonoBehaviour:
     parent: 72057594037932408
     technicalName: DFr_2E3C0171
     articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037936765
-    parent: 72057594037932408
-    technicalName: Cnd_FD5DF8B9
-    articyType: Condition
     childCount: 0
   - id: 72057594037942332
     parent: 72057594037932408
@@ -3088,11 +3038,6 @@ MonoBehaviour:
     technicalName: DFr_BEFEDC92
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037934805
-    parent: 72057594037932408
-    technicalName: Cnd_9B449B53
-    articyType: Condition
-    childCount: 0
   - id: 72057594037936852
     parent: 72057594037932408
     technicalName: DFr_4DC6B317
@@ -3121,6 +3066,11 @@ MonoBehaviour:
   - id: 72057594037942417
     parent: 72057594037932408
     technicalName: DFr_619DA7C7
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942447
+    parent: 72057594037932408
+    technicalName: DFr_C1F1582C
     articyType: DialogueFragment
     childCount: 0
   - id: 72057594037934922
@@ -3178,21 +3128,6 @@ MonoBehaviour:
     technicalName: DFr_03C79829
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037934770
-    parent: 72057594037932408
-    technicalName: Cnd_5F6CA844
-    articyType: Condition
-    childCount: 0
-  - id: 72057594037934902
-    parent: 72057594037932408
-    technicalName: Cnd_9CFE2364
-    articyType: Condition
-    childCount: 0
-  - id: 72057594037935170
-    parent: 72057594037932408
-    technicalName: Cnd_CA9FA39B
-    articyType: Condition
-    childCount: 0
   - id: 72057594037934791
     parent: 72057594037932408
     technicalName: DFr_4B20CB79
@@ -3233,25 +3168,10 @@ MonoBehaviour:
     technicalName: DFr_18F5CD66
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037934932
-    parent: 72057594037932408
-    technicalName: Jmp_A344E4E6
-    articyType: Jump
-    childCount: 0
-  - id: 72057594037935209
-    parent: 72057594037932408
-    technicalName: Jmp_515EB065
-    articyType: Jump
-    childCount: 0
   - id: 72057594037934842
     parent: 72057594037932408
     technicalName: DFr_822884B6
     articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037942371
-    parent: 72057594037932408
-    technicalName: Jmp_B94780FB
-    articyType: Jump
     childCount: 0
   - id: 72057594037934944
     parent: 72057594037932408
@@ -3332,6 +3252,96 @@ MonoBehaviour:
     parent: 72057594037932408
     technicalName: 
     articyType: Comment
+    childCount: 0
+  - id: 72057594037932443
+    parent: 72057594037932408
+    technicalName: Cnd_28528004
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037934607
+    parent: 72057594037932408
+    technicalName: Jmp_2AB62464
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037935138
+    parent: 72057594037932408
+    technicalName: Jmp_6E3B5A94
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037934533
+    parent: 72057594037932408
+    technicalName: Jmp_C034E7D4
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037932473
+    parent: 72057594037932408
+    technicalName: Cnd_E0303ABA
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037934632
+    parent: 72057594037932408
+    technicalName: Jmp_5B7EFE05
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037932507
+    parent: 72057594037932408
+    technicalName: Cnd_D775022A
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037941897
+    parent: 72057594037932408
+    technicalName: Jmp_2024977A
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037941915
+    parent: 72057594037932408
+    technicalName: Cnd_77C37AD2
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037936765
+    parent: 72057594037932408
+    technicalName: Cnd_FD5DF8B9
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037934805
+    parent: 72057594037932408
+    technicalName: Cnd_9B449B53
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037942463
+    parent: 72057594037932408
+    technicalName: Cnd_6C14788D
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037934770
+    parent: 72057594037932408
+    technicalName: Cnd_5F6CA844
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037934902
+    parent: 72057594037932408
+    technicalName: Cnd_9CFE2364
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037935170
+    parent: 72057594037932408
+    technicalName: Cnd_CA9FA39B
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037934932
+    parent: 72057594037932408
+    technicalName: Jmp_A344E4E6
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037935209
+    parent: 72057594037932408
+    technicalName: Jmp_515EB065
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037942371
+    parent: 72057594037932408
+    technicalName: Jmp_B94780FB
+    articyType: Jump
     childCount: 0
   - id: 72057594037936813
     parent: 72057594037932408
@@ -5813,7 +5823,81 @@ MonoBehaviour:
     technicalName: DFr_DDBA0274_Text_ru
     articyType: Asset
     childCount: 0
---- !u!114 &-467671454026252920
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1676762633, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: ArticyDatabase
+  m_EditorClassIdentifier: ArticyRuntime.dll::Articy.Unity.ArticyDatabase
+  mHierarchy: {fileID: -795186008395033659}
+  mLocalization: {fileID: -6379347034137062569}
+  mRuleSetId: 269
+  mArticyAssetsUseResourcesFolder: 1
+  mInternalProject:
+    mName: world of red moon
+    mDetailName: 
+    mId: 6b45a52e-5605-4c95-a051-48da04bae055
+    mTechnicalName: World_Of_Red_Moon
+  mImportedAssets:
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/\u0410\u0410\u0420\u0410\u0414\u0425\u0418\u042F.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/photomode_20092024_155726.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/photomode_20092024_154652_\u2014_\u043A\u043E\u043F\u0438\u044F.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/photomode_26092024_151241_\u2014_\u043A\u043E\u043F\u0438\u044F_\u2014_\u043A\u043E\u043F\u0438\u044F.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/\u0410\u0410\u0420\u0410\u0414\u0425\u0418\u042F2.0..png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1015_Cyan_Background_Portrait_remix_01k38a0pg6fttr4tn9tc0r1bqe_(1).png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1125_Mysterious_Female_Character_Portrait_remix_01k38e1w23ftxamgccafj7f0nn.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1244_Mystical_Veiled_Portrait_remix_01k38jhbeaf30vhm4r09gj4jh5.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1313_Mysterious_Male_Character_remix_01k38m6espe0kb4p415rce5qc1.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1335_Mysterious_Asian_Sorceress_remix_01k38ne504fjrvvt1nyxy7edg3.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1437_Gothic_Attire_Portrait_remix_01k38s10qbeynaayc0vq0cbvbv.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1624_Intense_Character_Portrait_remix_01k38z4q34ey38xgcxv992mfhp.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1645_Detailed_Portrait_Study_remix_01k390ad3deg29zwses6y7bpsc.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1703_Curious_Expression_Portrait_remix_01k391av94fhn83zctbv23nwcc.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1705_Shady_Game_Character_remix_01k391g1nee32ra8q8yft1rnvm.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1756_Revenge-Driven_Game_Character_remix_01k394d5bwf22t9g3jbb3626zd.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1754_Game_Character_Portrait_remix_01k3948yxreacsvh79vk46m5xa.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/\u041A\u041B\u0415\u0420\u041A.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/\u0420\u0423\u041D\u0410\u041A\u041E.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/NIVIE.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250927_1816_\u0422\u0435\u043C\u043D\u044B\u0439_\u0444\u043E\u043D_remix_01k65vwpd1f0xr2748yrgrrppk.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250927_2030_Carefree_Servant_Portrait_remix_01k663hh87fkprs2vqdac8yz4x.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250927_2033_Carefree_Servant_Portrait_remix_01k663p5t9fzmvyd8jn18jhq7c.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_51E5E710_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_2DD444E4_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_FA0CB569_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_7250088A_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_965C5C50_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_6BB269CA_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_07E59B81_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_3E34F04C_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_96BF5BF8_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_2E14DAA6_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_2E793996_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_563266A7_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_DDBA0274_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_9587D380_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_D1489C33_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_95CF5186_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_07E59B81_Text_ru.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_3E34F04C_Text_ru.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_2E14DAA6_Text_ru.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_2E793996_Text_ru.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_563266A7_Text_ru.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_DDBA0274_Text_ru.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_95CF5186_Text_ru.mp3"
+  mDefaultGlobalVariables: {fileID: 8440971837833721605}
+  mPackages:
+  - PackageId: 72057594037928208
+    PackageName: "\u0412\u0441\u0435 \u043E\u0431\u044A\u0435\u043A\u0442\u044B"
+    PackagePath: package_0x100000000000110
+    mIsDefaultPackage: 1
+--- !u!114 &8440971837833721605
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6202,100 +6286,26 @@ MonoBehaviour:
   mLiveStringVariableCache: []
   mIsInitialized: 1
   mNKNW:
-    _VariableStorage: {fileID: -467671454026252920}
+    _VariableStorage: {fileID: 8440971837833721605}
   mRQUE:
-    _VariableStorage: {fileID: -467671454026252920}
+    _VariableStorage: {fileID: 8440971837833721605}
   mRFLG:
-    _VariableStorage: {fileID: -467671454026252920}
+    _VariableStorage: {fileID: 8440971837833721605}
   mITM:
-    _VariableStorage: {fileID: -467671454026252920}
+    _VariableStorage: {fileID: 8440971837833721605}
   mRCNT:
-    _VariableStorage: {fileID: -467671454026252920}
+    _VariableStorage: {fileID: 8440971837833721605}
   mEVT:
-    _VariableStorage: {fileID: -467671454026252920}
+    _VariableStorage: {fileID: 8440971837833721605}
   mPS:
-    _VariableStorage: {fileID: -467671454026252920}
+    _VariableStorage: {fileID: 8440971837833721605}
   mNQUE:
-    _VariableStorage: {fileID: -467671454026252920}
+    _VariableStorage: {fileID: 8440971837833721605}
   mSCH:
-    _VariableStorage: {fileID: -467671454026252920}
+    _VariableStorage: {fileID: 8440971837833721605}
   mTEST:
-    _VariableStorage: {fileID: -467671454026252920}
+    _VariableStorage: {fileID: 8440971837833721605}
   mCLUE:
-    _VariableStorage: {fileID: -467671454026252920}
+    _VariableStorage: {fileID: 8440971837833721605}
   mQUEST:
-    _VariableStorage: {fileID: -467671454026252920}
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1676762633, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
-  m_Name: ArticyDatabase
-  m_EditorClassIdentifier: ArticyRuntime.dll::Articy.Unity.ArticyDatabase
-  mHierarchy: {fileID: -795186008395033659}
-  mLocalization: {fileID: -6379347034137062569}
-  mRuleSetId: 269
-  mArticyAssetsUseResourcesFolder: 1
-  mInternalProject:
-    mName: world of red moon
-    mDetailName: 
-    mId: 6b45a52e-5605-4c95-a051-48da04bae055
-    mTechnicalName: World_Of_Red_Moon
-  mImportedAssets:
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/\u0410\u0410\u0420\u0410\u0414\u0425\u0418\u042F.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/photomode_20092024_155726.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/photomode_20092024_154652_\u2014_\u043A\u043E\u043F\u0438\u044F.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/photomode_26092024_151241_\u2014_\u043A\u043E\u043F\u0438\u044F_\u2014_\u043A\u043E\u043F\u0438\u044F.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/\u0410\u0410\u0420\u0410\u0414\u0425\u0418\u042F2.0..png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1015_Cyan_Background_Portrait_remix_01k38a0pg6fttr4tn9tc0r1bqe_(1).png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1125_Mysterious_Female_Character_Portrait_remix_01k38e1w23ftxamgccafj7f0nn.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1244_Mystical_Veiled_Portrait_remix_01k38jhbeaf30vhm4r09gj4jh5.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1313_Mysterious_Male_Character_remix_01k38m6espe0kb4p415rce5qc1.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1335_Mysterious_Asian_Sorceress_remix_01k38ne504fjrvvt1nyxy7edg3.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1437_Gothic_Attire_Portrait_remix_01k38s10qbeynaayc0vq0cbvbv.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1624_Intense_Character_Portrait_remix_01k38z4q34ey38xgcxv992mfhp.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1645_Detailed_Portrait_Study_remix_01k390ad3deg29zwses6y7bpsc.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1703_Curious_Expression_Portrait_remix_01k391av94fhn83zctbv23nwcc.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1705_Shady_Game_Character_remix_01k391g1nee32ra8q8yft1rnvm.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1756_Revenge-Driven_Game_Character_remix_01k394d5bwf22t9g3jbb3626zd.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1754_Game_Character_Portrait_remix_01k3948yxreacsvh79vk46m5xa.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/\u041A\u041B\u0415\u0420\u041A.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/\u0420\u0423\u041D\u0410\u041A\u041E.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/NIVIE.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250927_1816_\u0422\u0435\u043C\u043D\u044B\u0439_\u0444\u043E\u043D_remix_01k65vwpd1f0xr2748yrgrrppk.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250927_2030_Carefree_Servant_Portrait_remix_01k663hh87fkprs2vqdac8yz4x.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250927_2033_Carefree_Servant_Portrait_remix_01k663p5t9fzmvyd8jn18jhq7c.png"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_51E5E710_Text_en.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_2DD444E4_Text_en.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_FA0CB569_Text_en.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_7250088A_Text_en.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_965C5C50_Text_en.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_6BB269CA_Text_en.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_07E59B81_Text_en.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_3E34F04C_Text_en.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_96BF5BF8_Text_en.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_2E14DAA6_Text_en.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_2E793996_Text_en.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_563266A7_Text_en.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_DDBA0274_Text_en.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_9587D380_Text_en.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_D1489C33_Text_en.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_95CF5186_Text_en.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_07E59B81_Text_ru.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_3E34F04C_Text_ru.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_2E14DAA6_Text_ru.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_2E793996_Text_ru.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_563266A7_Text_ru.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_DDBA0274_Text_ru.mp3"
-  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_95CF5186_Text_ru.mp3"
-  mDefaultGlobalVariables: {fileID: -467671454026252920}
-  mPackages:
-  - PackageId: 72057594037928208
-    PackageName: "\u0412\u0441\u0435 \u043E\u0431\u044A\u0435\u043A\u0442\u044B"
-    PackagePath: package_0x100000000000110
-    mIsDefaultPackage: 1
+    _VariableStorage: {fileID: 8440971837833721605}

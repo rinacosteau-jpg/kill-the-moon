@@ -29,7 +29,7 @@ namespace Articy.World_Of_Red_Moon.Features
         private Boolean mRiskCheckInit = new Boolean();
         
         [SerializeField()]
-        private Single mRiskCheckBonus;
+        private Single mIsSuccess;
         
         [SerializeField()]
         private UInt64 mOwnerId;
@@ -51,17 +51,17 @@ namespace Articy.World_Of_Red_Moon.Features
             }
         }
         
-        public Single RiskCheckBonus
+        public Single IsSuccess
         {
             get
             {
-                return mRiskCheckBonus;
+                return mIsSuccess;
             }
             set
             {
-                var oldValue = mRiskCheckBonus;
-                mRiskCheckBonus = value;
-                Articy.Unity.ArticyDatabase.ObjectNotifications.ReportChanged(OwnerId, OwnerInstanceId, "RiskCheck.RiskCheckBonus", oldValue, mRiskCheckBonus);
+                var oldValue = mIsSuccess;
+                mIsSuccess = value;
+                Articy.Unity.ArticyDatabase.ObjectNotifications.ReportChanged(OwnerId, OwnerInstanceId, "RiskCheck.IsSuccess", oldValue, mIsSuccess);
             }
         }
         
@@ -93,7 +93,7 @@ namespace Articy.World_Of_Red_Moon.Features
         {
             Articy.World_Of_Red_Moon.Features.RiskCheckFeature newClone = ((Articy.World_Of_Red_Moon.Features.RiskCheckFeature)(aClone));
             newClone.RiskCheckInit = RiskCheckInit;
-            newClone.RiskCheckBonus = RiskCheckBonus;
+            newClone.IsSuccess = IsSuccess;
             newClone.OwnerId = OwnerId;
         }
         
@@ -112,9 +112,9 @@ namespace Articy.World_Of_Red_Moon.Features
                 RiskCheckInit = System.Convert.ToBoolean(aValue);
                 return;
             }
-            if ((aProperty == "RiskCheckBonus"))
+            if ((aProperty == "IsSuccess"))
             {
-                RiskCheckBonus = System.Convert.ToSingle(aValue);
+                IsSuccess = System.Convert.ToSingle(aValue);
                 return;
             }
         }
@@ -125,9 +125,9 @@ namespace Articy.World_Of_Red_Moon.Features
             {
                 return new Articy.Unity.Interfaces.ScriptDataProxy(RiskCheckInit);
             }
-            if ((aProperty == "RiskCheckBonus"))
+            if ((aProperty == "IsSuccess"))
             {
-                return new Articy.Unity.Interfaces.ScriptDataProxy(RiskCheckBonus);
+                return new Articy.Unity.Interfaces.ScriptDataProxy(IsSuccess);
             }
             return null;
         }

@@ -562,8 +562,8 @@ MonoBehaviour:
       - 
       - 
       - 
-    - mTechnicalName: RiskCheck.RiskCheckBonus
-      mDisplayName: RiskCheckBonus
+    - mTechnicalName: RiskCheck.IsSuccess
+      mDisplayName: IsSuccess
       mIsTemplateProperty: 1
       mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
@@ -578,9 +578,9 @@ MonoBehaviour:
       - 0
       - 0
       - 0
-      - 3,40282346638529E+38
+      - 2
       - 0
-      - -3,40282346638529E+38
+      - 0
       - 
       - 0
       - 
@@ -4469,8 +4469,8 @@ MonoBehaviour:
     - 
     - 
     - 
-  - mTechnicalName: RiskCheck.RiskCheckBonus
-    mDisplayName: RiskCheckBonus
+  - mTechnicalName: RiskCheck.IsSuccess
+    mDisplayName: IsSuccess
     mIsTemplateProperty: 1
     mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
@@ -4485,9 +4485,9 @@ MonoBehaviour:
     - 0
     - 0
     - 0
-    - 3,40282346638529E+38
+    - 2
     - 0
-    - -3,40282346638529E+38
+    - 0
     - 
     - 0
     - 
@@ -5302,7 +5302,7 @@ MonoBehaviour:
     PublicKeyToken=null
   mFeatureProps:
   - RiskCheck.RiskCheckInit
-  - RiskCheck.RiskCheckBonus
+  - RiskCheck.IsSuccess
   - PauseOn.PauseOn
   - Duration.Minutes
   - ElevenlabsVoiceLibrary.Voice
@@ -5348,8 +5348,8 @@ MonoBehaviour:
     - 
     - 
     - 
-  - mTechnicalName: RiskCheck.RiskCheckBonus
-    mDisplayName: RiskCheckBonus
+  - mTechnicalName: RiskCheck.IsSuccess
+    mDisplayName: IsSuccess
     mIsTemplateProperty: 1
     mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
@@ -5364,9 +5364,9 @@ MonoBehaviour:
     - 0
     - 0
     - 0
-    - 3,40282346638529E+38
+    - 2
     - 0
-    - -3,40282346638529E+38
+    - 0
     - 
     - 0
     - 
