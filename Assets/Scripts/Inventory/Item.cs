@@ -16,6 +16,8 @@ public class Item
     public bool IsClue { get; set; }
     public bool IsIdentified { get; set; }
 
+    public string DisplayName { get; set; }
+
     public string Description { get; set; }
 
     public string ImagePath { get; set; }

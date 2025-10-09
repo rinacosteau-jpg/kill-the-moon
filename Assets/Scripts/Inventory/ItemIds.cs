@@ -17,6 +17,25 @@ public static class ItemIds {
     public const string JapaneseSweets = "JapaneseSweets";
     public const string RatkoThings = "RatkoThings";
 
+    public static readonly Dictionary<string, string> DisplayNames = new Dictionary<string, string>
+    {
+        { InventoryArtefact, "Wandering Artifact" },
+        { Gun, "Gun" },
+        { HarmonicRow, "Harmonic Row" },
+        { SonoceramicShard, "Sonoceramic Shard" },
+        { SonusGuideTube, "Sonus Guide Tube" },
+        { ReceiptWhisperer, "Receipt Whisperer" },
+        { WaxStoppers, "Wax Stoppers" },
+        { MaintScrollHum, "Maintenance Scroll: Hum" },
+        { VentFiddle, "Vent Fiddle" },
+        { EarPressureReports, "Ear Pressure Reports" },
+        { TestCube, "Test Cube" },
+        { Mop, "Broom" },
+        { CubesNote, "Crumpled Note" },
+        { JapaneseSweets, "Japanese Sweets" },
+        { RatkoThings, "Ratko's Things" }
+    };
+
     public static readonly Dictionary<string, string> Descriptions = new Dictionary<string, string>
     {
         { InventoryArtefact, "wandering artifact scribbles" },
@@ -33,7 +52,7 @@ public static class ItemIds {
         { MaintScrollHum, "humming scroll of baffling fumes" },
         { VentFiddle, "perplexing fiddle for vents" },
         { EarPressureReports, "reports full of earwig gibberish" },
-        {RatkoThings, "I have no idea what this is." }
+        { RatkoThings, "I have no idea what this is." }
     };
 
     public static readonly Dictionary<string, string> ImagePaths = new Dictionary<string, string>
@@ -51,8 +70,6 @@ public static class ItemIds {
         { VentFiddle, "Images/VentFiddle" },
         { EarPressureReports, "Images/EarPressureReports" },
         { Mop, "Images/Broom" },
-        { Mop, "Images/CubesNote" }
-
-
+        { CubesNote, "Images/CubesNote" }
     };
 }
