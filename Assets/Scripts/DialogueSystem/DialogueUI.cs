@@ -27,6 +27,10 @@ public class DialogueUI : MonoBehaviour, IArticyFlowPlayerCallbacks, ILoopResett
     [SerializeField] private Image portraitImage;
     [SerializeField] private ResponseHandler responseHandler;
 
+    [Header("Prefix Colors")]
+    [SerializeField] private Color successPrefixColor = Color.green;
+    [SerializeField] private Color failPrefixColor = Color.red;
+
     private bool dialogueFinished = false;
     private string lastDisplayedText = null;
     private string lastSpeakerName = null;
@@ -268,20 +272,21 @@ public class DialogueUI : MonoBehaviour, IArticyFlowPlayerCallbacks, ILoopResett
         string currentText = GetTextFromFlowObject(aObject);
 
         if (!string.IsNullOrEmpty(currentText)) {
+            string displayText = ApplyOutcomePrefix(aObject, currentText);
             // У нас есть текст — добавляем его к уже отображённому
             if (textLabel != null) {
                 string speakerName = GetSpeakerDisplayName(aObject);
                 if (string.IsNullOrEmpty(textLabel.text)) {
                     textLabel.text = string.IsNullOrEmpty(speakerName)
-                        ? currentText
-                        : speakerName + " - " + currentText;
+                        ? displayText
+                        : speakerName + " - " + displayText;
                 } else if (speakerName == lastSpeakerName) {
-                    textLabel.text += "\n" + currentText;
+                    textLabel.text += "\n" + displayText;
                 } else {
                     string prefix = string.IsNullOrEmpty(speakerName)
                         ? string.Empty
                         : speakerName + " - ";
-                    textLabel.text += "\n\n" + prefix + currentText;
+                    textLabel.text += "\n\n" + prefix + displayText;
                 }
                 lastSpeakerName = speakerName;
                 lastDisplayedText = textLabel.text;
@@ -522,6 +527,38 @@ public class DialogueUI : MonoBehaviour, IArticyFlowPlayerCallbacks, ILoopResett
         catch { }
 
         return 0;
+    }
+
+    private string ApplyOutcomePrefix(IFlowObject obj, string originalText) {
+        string prefix = GetOutcomePrefix(obj);
+        if (string.IsNullOrEmpty(prefix)) return originalText;
+        return prefix + originalText;
+    }
+
+    private string GetOutcomePrefix(IFlowObject obj) {
+        if (obj is DialogueFragment && obj is IObjectWithFeatureRiskCheck riskHolder) {
+            var riskFeature = riskHolder.GetFeatureRiskCheck();
+            if (riskFeature != null) {
+                int status = 0;
+                try {
+                    status = System.Convert.ToInt32(riskFeature.IsSuccess);
+                } catch { }
+
+                switch (status) {
+                    case 1:
+                        return FormatColoredPrefix("success", successPrefixColor);
+                    case 2:
+                        return FormatColoredPrefix("fail", failPrefixColor);
+                }
+            }
+        }
+
+        return string.Empty;
+    }
+
+    private string FormatColoredPrefix(string label, Color color) {
+        string hex = ColorUtility.ToHtmlStringRGBA(color);
+        return $"<color=#{hex}>[{label}]</color> ";
     }
 
     private string GetSpeakerDisplayName(IFlowObject obj) {
