@@ -11,6 +11,10 @@ public class PlayerStatsDisplay : MonoBehaviour {
     [SerializeField] private Button showSkillsButton;
     [SerializeField] private TMP_Text showSkillsButtonLabel;
 
+    private RectTransform showSkillsButtonRect;
+    private float showSkillsButtonBaselineOffset;
+    private bool hasRecordedButtonOffset;
+
     private bool skillsVisible;
 
     private void Awake() {
@@ -50,6 +54,9 @@ public class PlayerStatsDisplay : MonoBehaviour {
         displayBuilder.Append(skillsSection);
 
         targetText.text = displayBuilder.ToString();
+        targetText.ForceMeshUpdate();
+
+        UpdateShowSkillsButtonPosition(loopState);
     }
 
     private void CacheShowSkillsButton() {
@@ -63,6 +70,9 @@ public class PlayerStatsDisplay : MonoBehaviour {
 
             if (showSkillsButtonLabel == null)
                 showSkillsButtonLabel = showSkillsButton.GetComponentInChildren<TMP_Text>();
+
+            if (showSkillsButtonRect == null)
+                showSkillsButtonRect = showSkillsButton.GetComponent<RectTransform>();
         }
     }
 
@@ -75,6 +85,37 @@ public class PlayerStatsDisplay : MonoBehaviour {
     private void UpdateShowSkillsButtonLabel() {
         if (showSkillsButtonLabel != null)
             showSkillsButtonLabel.text = skillsVisible ? "-" : "+";
+    }
+
+    private void UpdateShowSkillsButtonPosition(int loopState) {
+        if (showSkillsButtonRect == null || targetText == null)
+            return;
+
+        var textInfo = targetText.textInfo;
+        if (textInfo == null || textInfo.lineCount == 0)
+            return;
+
+        int linesBeforeSkills = 1; // Moral line is always present
+        if (loopState >= 2)
+            linesBeforeSkills++;
+
+        int skillsLineIndex = Mathf.Min(linesBeforeSkills, textInfo.lineCount - 1);
+        var lineInfo = textInfo.lineInfo[skillsLineIndex];
+
+        var baselineWorld = targetText.rectTransform.TransformPoint(new Vector3(0f, lineInfo.baseline, 0f));
+
+        if (!hasRecordedButtonOffset) {
+            showSkillsButtonBaselineOffset = showSkillsButtonRect.position.y - baselineWorld.y;
+            hasRecordedButtonOffset = true;
+        }
+
+        var targetWorld = baselineWorld;
+        targetWorld.y += showSkillsButtonBaselineOffset;
+
+        showSkillsButtonRect.position = new Vector3(
+            showSkillsButtonRect.position.x,
+            targetWorld.y,
+            showSkillsButtonRect.position.z);
     }
 
     private static string BuildSkillsBlock() {
