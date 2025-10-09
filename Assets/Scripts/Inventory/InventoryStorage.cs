@@ -126,6 +126,9 @@ public static class InventoryStorage {
             bool isIdentified = _identifiedItems.Contains(kvp.Key);
             return new Item(kvp.Key, kvp.Value.Count, isClue: isClue, isIdentified: isIdentified, clueScore: value)
             {
+                DisplayName = ItemIds.DisplayNames.TryGetValue(kvp.Key, out var displayName)
+                    ? displayName
+                    : string.Empty,
                 Description = ItemIds.Descriptions.TryGetValue(kvp.Key, out var desc) ? desc : string.Empty,
                 ImagePath = ItemIds.ImagePaths.TryGetValue(kvp.Key, out var img) ? img : string.Empty
             };
