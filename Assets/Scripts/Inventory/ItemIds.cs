@@ -50,7 +50,9 @@ public static class ItemIds {
         { MaintScrollHum, "Images/MaintScrollHum" },
         { VentFiddle, "Images/VentFiddle" },
         { EarPressureReports, "Images/EarPressureReports" },
-        { Mop, "Images/Broom" }
+        { Mop, "Images/Broom" },
+        { Mop, "Images/CubesNote" }
+
 
     };
 }
