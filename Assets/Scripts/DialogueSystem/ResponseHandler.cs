@@ -16,6 +16,9 @@ public class ResponseHandler : MonoBehaviour {
     [SerializeField] private Scrollbar scrollbar;
     [SerializeField] private ScrollRect scrollrect;
 
+    [Header("Prefix Colors")]
+    [SerializeField] private Color riskPrefixColor = Color.red;
+
     private List<GameObject> tempResponseButtons = new List<GameObject>();
 
     private void Awake() {
@@ -136,7 +139,7 @@ public class ResponseHandler : MonoBehaviour {
 
         TMP_Text tmpText = buttonObj.GetComponentInChildren<TMP_Text>();
         if (tmpText != null) {
-            string riskPrefix = ShouldHighlightRisk(branch.Target) ? "<color=#FF0000>[risk]</color> " : string.Empty;
+            string riskPrefix = ShouldHighlightRisk(branch.Target) ? FormatColoredPrefix("risk", riskPrefixColor) : string.Empty;
             tmpText.text = $"{responseIndex}. {riskPrefix}{buttonText}";
         }
 
@@ -201,6 +204,11 @@ public class ResponseHandler : MonoBehaviour {
         }
 
         return false;
+    }
+
+    private string FormatColoredPrefix(string label, Color color) {
+        string hex = ColorUtility.ToHtmlStringRGBA(color);
+        return $"<color=#{hex}>[{label}]</color> ";
     }
 
     /// <summary>
