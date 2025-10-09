@@ -85,7 +85,17 @@ public class InventoryUI : MonoBehaviour, ILoopResettable
     public void DisplayItem(Item item)
     {
         if (itemName != null)
-            itemName.text = item?.TechnicalName ?? string.Empty;
+        {
+            string nameToDisplay = string.Empty;
+            if (item != null)
+            {
+                nameToDisplay = string.IsNullOrWhiteSpace(item.DisplayName)
+                    ? item.TechnicalName
+                    : item.DisplayName;
+            }
+
+            itemName.text = nameToDisplay ?? string.Empty;
+        }
         if (itemDescription != null)
             itemDescription.text = item?.Description ?? string.Empty;
 
