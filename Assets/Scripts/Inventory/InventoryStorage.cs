@@ -12,6 +12,7 @@ public static class InventoryStorage {
 
     public static event Action<string, int> OnItemCountChanged;
     public static event Action OnInventoryCleared;
+    public static event Action OnFirstItemAdded;
 
     private static readonly HashSet<string> UniqueItemIds =
         new HashSet<string>(StringComparer.OrdinalIgnoreCase)
@@ -28,12 +29,16 @@ public static class InventoryStorage {
             ItemIds.EarPressureReports
         };
 
+    private static bool _hasTriggeredFirstItemAdded;
+
     static InventoryStorage() {
         ArticyInventorySync.PushAllCountsToArticy();
     }
 
     public static void Add(string technicalName, int count = 1, string instanceId = null) {
         if (string.IsNullOrEmpty(technicalName)) return;
+
+        bool wasEmpty = _items.Count == 0;
 
         if (!_items.TryGetValue(technicalName, out var set)) {
             set = new HashSet<string>();
@@ -52,6 +57,10 @@ public static class InventoryStorage {
 
         ArticyInventorySync.PushAllCountsToArticy();
         Notify(technicalName);
+        if (!_hasTriggeredFirstItemAdded && wasEmpty && TotalItemCount > 0) {
+            _hasTriggeredFirstItemAdded = true;
+            OnFirstItemAdded?.Invoke();
+        }
         if (ArticyClueSync.TryGetClueValue(technicalName, out _))
             ArticyClueSync.PushToArticy(technicalName, true);
         ArticyClueSync.PushTotalScoreToArticy();
@@ -100,6 +109,7 @@ public static class InventoryStorage {
         }
         ArticyClueSync.PushTotalScoreToArticy();
         OnInventoryCleared?.Invoke();
+        _hasTriggeredFirstItemAdded = false;
     }
 
     /// <summary>Marks all currently stored item types as identified.</summary>
@@ -140,6 +150,15 @@ public static class InventoryStorage {
 
     public static int GetCount(string technicalName) =>
         _items.TryGetValue(technicalName, out var set) ? set.Count : 0;
+
+    public static int TotalItemCount {
+        get {
+            int total = 0;
+            foreach (var set in _items.Values)
+                total += set.Count;
+            return total;
+        }
+    }
 
     public static bool Contains(string technicalName) => GetCount(technicalName) > 0;
 

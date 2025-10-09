@@ -18,7 +18,7 @@ public class InventoryItemUI : MonoBehaviour
         _inventoryUI = inventoryUI;
         var text = GetComponentInChildren<TMP_Text>();
         if (text != null)
-            text.text = item.ItemCount.ToString();
+            text.text = item.ItemCount > 1 ? item.ItemCount.ToString() : string.Empty;
 
         var image = GetComponent<Image>();
         if (image != null)

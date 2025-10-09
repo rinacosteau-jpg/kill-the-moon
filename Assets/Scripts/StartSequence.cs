@@ -33,6 +33,7 @@ public class StartSequence : MonoBehaviour
     [SerializeField] private CanvasGroup interactionBlockedCanvasGroup;
     [SerializeField] private float interactionBlockedFadeDuration = 1f;
     [SerializeField] private HintsPanelController hintsPanel;
+    [SerializeField] private string inventoryHintMessage = "Use I to open Inventory, Esc to close";
 
     private enum SequenceStep
     {
@@ -50,13 +51,16 @@ public class StartSequence : MonoBehaviour
     private bool hasLastTrackedPosition;
     private float movementStartDistance;
     private Coroutine interactionBlockedRoutine;
+    private bool hasShownInventoryHint;
 
     public static float TotalDistanceTraveled { get; private set; }
 
     private void Awake()
     {
+        InventoryStorage.Clear();
         TotalDistanceTraveled = 0f;
         hasLastTrackedPosition = false;
+        hasShownInventoryHint = false;
 
         if (backgroundPanel != null)
         {
@@ -98,6 +102,8 @@ public class StartSequence : MonoBehaviour
 
     private void OnEnable()
     {
+        InventoryStorage.OnFirstItemAdded += HandleFirstItemAdded;
+
         if (skipSequence)
             return;
 
@@ -111,6 +117,8 @@ public class StartSequence : MonoBehaviour
 
     private void OnDisable()
     {
+        InventoryStorage.OnFirstItemAdded -= HandleFirstItemAdded;
+
         if (skipSequence)
             return;
 
@@ -419,5 +427,15 @@ public class StartSequence : MonoBehaviour
 
         hintsPanel.SetHint("Press L to activate flashlight");
         hintsPanel.ShowPanel();
+    }
+
+    private void HandleFirstItemAdded()
+    {
+        if (hintsPanel == null || hasShownInventoryHint)
+            return;
+
+        hintsPanel.SetHint(inventoryHintMessage);
+        hintsPanel.ShowPanel();
+        hasShownInventoryHint = true;
     }
 }
