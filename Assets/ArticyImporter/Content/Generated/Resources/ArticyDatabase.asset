@@ -1,0 +1,6301 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6379347034137062569
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1174674681, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: LocalizationManager
+  m_EditorClassIdentifier: ArticyRuntime.dll::Articy.Unity.ArticyLocalizationManager
+  mLocalizeObjectDefinitions: 0
+  mLanguageId: 127
+  mLanguages:
+  - mArticyLanguageId: 128
+    mCultureName: en
+    mLanguageName: English
+    mIsVoiceOver: 1
+  - mArticyLanguageId: 127
+    mCultureName: ru
+    mLanguageName: Russian
+    mIsVoiceOver: 0
+  mThrowOnMissingText: 0
+  mClearOnLanguageSwitch: 1
+--- !u!114 &-795186008395033659
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1655710724, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: HierarchyManager
+  m_EditorClassIdentifier: ArticyRuntime.dll::Articy.Unity.ArticyHierarchyManager
+  serializedNodes:
+  - id: 72057594037927937
+    parent: 0
+    technicalName: World_Of_Red_Moon
+    articyType: Project
+    childCount: 10
+  - id: 216172786292838683
+    parent: 72057594037927937
+    technicalName: ProjectSettings
+    articyType: ProjectSettingsFolder
+    childCount: 4
+  - id: 72057594037927948
+    parent: 216172786292838683
+    technicalName: 
+    articyType: ProjectSettingsFlow
+    childCount: 0
+  - id: 72057594037927943
+    parent: 216172786292838683
+    technicalName: 
+    articyType: ProjectSettingsGeneral
+    childCount: 0
+  - id: 72057594037927946
+    parent: 216172786292838683
+    technicalName: 
+    articyType: ProjectSettingsJourneys
+    childCount: 0
+  - id: 72057594037927947
+    parent: 216172786292838683
+    technicalName: 
+    articyType: ProjectSettingsLocation
+    childCount: 0
+  - id: 216172782840400980
+    parent: 72057594037927937
+    technicalName: GlobalVariables
+    articyType: GlobalVariables
+    childCount: 12
+  - id: 72057594037935715
+    parent: 216172782840400980
+    technicalName: 
+    articyType: VariableSet
+    childCount: 0
+  - id: 72057594037931790
+    parent: 216172782840400980
+    technicalName: 
+    articyType: VariableSet
+    childCount: 0
+  - id: 72057594037930876
+    parent: 216172782840400980
+    technicalName: 
+    articyType: VariableSet
+    childCount: 0
+  - id: 72057594037930562
+    parent: 216172782840400980
+    technicalName: 
+    articyType: VariableSet
+    childCount: 0
+  - id: 72057594037932039
+    parent: 216172782840400980
+    technicalName: 
+    articyType: VariableSet
+    childCount: 0
+  - id: 72057594037931792
+    parent: 216172782840400980
+    technicalName: 
+    articyType: VariableSet
+    childCount: 0
+  - id: 72057594037940549
+    parent: 216172782840400980
+    technicalName: 
+    articyType: VariableSet
+    childCount: 0
+  - id: 72057594037931188
+    parent: 216172782840400980
+    technicalName: 
+    articyType: VariableSet
+    childCount: 0
+  - id: 72057594037930738
+    parent: 216172782840400980
+    technicalName: 
+    articyType: VariableSet
+    childCount: 0
+  - id: 72057594037930736
+    parent: 216172782840400980
+    technicalName: 
+    articyType: VariableSet
+    childCount: 0
+  - id: 72057594037932263
+    parent: 216172782840400980
+    technicalName: 
+    articyType: VariableSet
+    childCount: 0
+  - id: 72057594037932293
+    parent: 216172782840400980
+    technicalName: 
+    articyType: VariableSet
+    childCount: 0
+  - id: 216172783251375095
+    parent: 72057594037927937
+    technicalName: Flow
+    articyType: Flow
+    childCount: 23
+  - id: 72057594037939617
+    parent: 216172783251375095
+    technicalName: Dlg_F3DB042F
+    articyType: Dialogue
+    childCount: 128
+  - id: 72057594037940788
+    parent: 72057594037939617
+    technicalName: DFr_07E19126
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940793
+    parent: 72057594037939617
+    technicalName: Cnd_97F11EF1
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037940783
+    parent: 72057594037939617
+    technicalName: DFr_CA411654
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933303
+    parent: 72057594037939617
+    technicalName: DFr_6611D9EF
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940807
+    parent: 72057594037939617
+    technicalName: DFr_B14A8495
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940813
+    parent: 72057594037939617
+    technicalName: DFr_68C40B3A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940819
+    parent: 72057594037939617
+    technicalName: DFr_77790B3D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933324
+    parent: 72057594037939617
+    technicalName: DFr_F5E592CE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940830
+    parent: 72057594037939617
+    technicalName: Cnd_4C8681A1
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037940836
+    parent: 72057594037939617
+    technicalName: Cnd_D1A64136
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037940770
+    parent: 72057594037939617
+    technicalName: DFr_33E033C0
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934089
+    parent: 72057594037939617
+    technicalName: DFr_A5C2D917
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940844
+    parent: 72057594037939617
+    technicalName: Jmp_4C49B7A1
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037940849
+    parent: 72057594037939617
+    technicalName: Jmp_8CD03D1F
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037940854
+    parent: 72057594037939617
+    technicalName: Jmp_833D03DF
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037940858
+    parent: 72057594037939617
+    technicalName: Jmp_41B157D1
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037940777
+    parent: 72057594037939617
+    technicalName: Cnd_5E0FB9B0
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037934109
+    parent: 72057594037939617
+    technicalName: Cnd_BE7CEE96
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037938860
+    parent: 72057594037939617
+    technicalName: DFr_D461AD10
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934121
+    parent: 72057594037939617
+    technicalName: DFr_D325D7AC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933534
+    parent: 72057594037939617
+    technicalName: DFr_D7F8DE24
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933363
+    parent: 72057594037939617
+    technicalName: DFr_6AC8A5E3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938868
+    parent: 72057594037939617
+    technicalName: DFr_FC50E343
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940866
+    parent: 72057594037939617
+    technicalName: DFr_DB8D811A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940755
+    parent: 72057594037939617
+    technicalName: DFr_8EF028FB
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933548
+    parent: 72057594037939617
+    technicalName: Cnd_7AF20B83
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037933492
+    parent: 72057594037939617
+    technicalName: DFr_6EFF66EC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933379
+    parent: 72057594037939617
+    technicalName: DFr_F25658DF
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938875
+    parent: 72057594037939617
+    technicalName: DFr_0AB0C3A4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940874
+    parent: 72057594037939617
+    technicalName: DFr_D536A0AE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933336
+    parent: 72057594037939617
+    technicalName: DFr_401F1F5B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940897
+    parent: 72057594037939617
+    technicalName: DFr_0708A4E4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933397
+    parent: 72057594037939617
+    technicalName: DFr_F4B6B1D6
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933542
+    parent: 72057594037939617
+    technicalName: DFr_52B53B6D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939628
+    parent: 72057594037939617
+    technicalName: DFr_277B5DB6
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938882
+    parent: 72057594037939617
+    technicalName: DFr_8A7F5F77
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938888
+    parent: 72057594037939617
+    technicalName: DFr_3A29E346
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938896
+    parent: 72057594037939617
+    technicalName: DFr_89AE3561
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933342
+    parent: 72057594037939617
+    technicalName: DFr_321FFDE6
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940881
+    parent: 72057594037939617
+    technicalName: DFr_EE4EF827
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934115
+    parent: 72057594037939617
+    technicalName: DFr_C5B49D95
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940918
+    parent: 72057594037939617
+    technicalName: DFr_A914916F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940912
+    parent: 72057594037939617
+    technicalName: DFr_84EBFD50
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933407
+    parent: 72057594037939617
+    technicalName: DFr_943B683C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939623
+    parent: 72057594037939617
+    technicalName: Cnd_D3DC7142
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037933566
+    parent: 72057594037939617
+    technicalName: Cnd_06FF77FD
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037938911
+    parent: 72057594037939617
+    technicalName: DFr_3F7AE5A2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938918
+    parent: 72057594037939617
+    technicalName: DFr_8682FAD8
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938932
+    parent: 72057594037939617
+    technicalName: DFr_4A7A45DC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933351
+    parent: 72057594037939617
+    technicalName: DFr_BC16995F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934128
+    parent: 72057594037939617
+    technicalName: DFr_ECE895EC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940925
+    parent: 72057594037939617
+    technicalName: DFr_191DCA25
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940936
+    parent: 72057594037939617
+    technicalName: DFr_D06D6C28
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933414
+    parent: 72057594037939617
+    technicalName: Cnd_77B5E0D0
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037938925
+    parent: 72057594037939617
+    technicalName: DFr_E5A23A84
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933586
+    parent: 72057594037939617
+    technicalName: DFr_53EF80BC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933446
+    parent: 72057594037939617
+    technicalName: Cnd_98DD2C63
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037933572
+    parent: 72057594037939617
+    technicalName: DFr_B7D57202
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933427
+    parent: 72057594037939617
+    technicalName: DFr_8ADA54C4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933420
+    parent: 72057594037939617
+    technicalName: DFr_38EAD95A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938948
+    parent: 72057594037939617
+    technicalName: DFr_F695219B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940762
+    parent: 72057594037939617
+    technicalName: DFr_0A56F113
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938942
+    parent: 72057594037939617
+    technicalName: DFr_A9EF7867
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933459
+    parent: 72057594037939617
+    technicalName: DFr_14EABC40
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933593
+    parent: 72057594037939617
+    technicalName: DFr_19DB5F58
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933452
+    parent: 72057594037939617
+    technicalName: DFr_6ED7AB81
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933579
+    parent: 72057594037939617
+    technicalName: DFr_BCA20295
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933435
+    parent: 72057594037939617
+    technicalName: DFr_45144B10
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933499
+    parent: 72057594037939617
+    technicalName: Jmp_4A7C2FF9
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037940905
+    parent: 72057594037939617
+    technicalName: DFr_F25F0152
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939602
+    parent: 72057594037939617
+    technicalName: DFr_56F3491F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938962
+    parent: 72057594037939617
+    technicalName: DFr_86BA0358
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938999
+    parent: 72057594037939617
+    technicalName: DFr_5E3DADBD
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933466
+    parent: 72057594037939617
+    technicalName: DFr_A92E65B9
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939610
+    parent: 72057594037939617
+    technicalName: DFr_5C611984
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938969
+    parent: 72057594037939617
+    technicalName: DFr_3C67BA3F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939024
+    parent: 72057594037939617
+    technicalName: DFr_2CBF265A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939030
+    parent: 72057594037939617
+    technicalName: DFr_2A6AA547
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933473
+    parent: 72057594037939617
+    technicalName: DFr_C88428B6
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933487
+    parent: 72057594037939617
+    technicalName: Jmp_04B129B4
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037939138
+    parent: 72057594037939617
+    technicalName: DFr_660E30F9
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939039
+    parent: 72057594037939617
+    technicalName: DFr_0DEC286D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938978
+    parent: 72057594037939617
+    technicalName: DFr_D8CFAACB
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938984
+    parent: 72057594037939617
+    technicalName: DFr_F3A8FF7E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933505
+    parent: 72057594037939617
+    technicalName: DFr_C4BC093C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939150
+    parent: 72057594037939617
+    technicalName: DFr_84289C74
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939156
+    parent: 72057594037939617
+    technicalName: DFr_392C8C1F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939046
+    parent: 72057594037939617
+    technicalName: DFr_56FC68F0
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938992
+    parent: 72057594037939617
+    technicalName: DFr_5C7BB0EC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939164
+    parent: 72057594037939617
+    technicalName: DFr_74DE36C0
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933512
+    parent: 72057594037939617
+    technicalName: Jmp_3AC65E0A
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037933518
+    parent: 72057594037939617
+    technicalName: DFr_AC52636E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939190
+    parent: 72057594037939617
+    technicalName: DFr_0B3715CB
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939176
+    parent: 72057594037939617
+    technicalName: Jmp_FAD74F36
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037939052
+    parent: 72057594037939617
+    technicalName: Cnd_5953840D
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037939006
+    parent: 72057594037939617
+    technicalName: DFr_F16EF4B1
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939012
+    parent: 72057594037939617
+    technicalName: DFr_97B21A6F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933526
+    parent: 72057594037939617
+    technicalName: DFr_CB531E46
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939144
+    parent: 72057594037939617
+    technicalName: Jmp_6890FC46
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037939058
+    parent: 72057594037939617
+    technicalName: DFr_AD27409F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939064
+    parent: 72057594037939617
+    technicalName: DFr_DB9EF98B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939183
+    parent: 72057594037939617
+    technicalName: DFr_F895B90D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933386
+    parent: 72057594037939617
+    technicalName: DFr_9153B33E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939074
+    parent: 72057594037939617
+    technicalName: Hub_A2ACBC8F
+    articyType: Hub
+    childCount: 0
+  - id: 72057594037933392
+    parent: 72057594037939617
+    technicalName: Jmp_F155A0C4
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037933226
+    parent: 72057594037939617
+    technicalName: DFr_881C2F42
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933187
+    parent: 72057594037939617
+    technicalName: DFr_261066AE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933236
+    parent: 72057594037939617
+    technicalName: DFr_8B661463
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933204
+    parent: 72057594037939617
+    technicalName: DFr_E7F29957
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933253
+    parent: 72057594037939617
+    technicalName: DFr_8CCB974F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933211
+    parent: 72057594037939617
+    technicalName: DFr_0DF96B05
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933219
+    parent: 72057594037939617
+    technicalName: DFr_3F9CF69A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933261
+    parent: 72057594037939617
+    technicalName: DFr_D88C7B4D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933245
+    parent: 72057594037939617
+    technicalName: DFr_66CF8B55
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939018
+    parent: 72057594037939617
+    technicalName: DFr_7732370A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939086
+    parent: 72057594037939617
+    technicalName: DFr_29FE85D3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933281
+    parent: 72057594037939617
+    technicalName: DFr_78ED1F26
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939093
+    parent: 72057594037939617
+    technicalName: DFr_94838E2A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939100
+    parent: 72057594037939617
+    technicalName: DFr_72A0E524
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933288
+    parent: 72057594037939617
+    technicalName: DFr_FEABCB83
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939116
+    parent: 72057594037939617
+    technicalName: DFr_5426D933
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933295
+    parent: 72057594037939617
+    technicalName: DFr_94CEBFE4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939517
+    parent: 72057594037939617
+    technicalName: DFr_4ABFDEC1
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939131
+    parent: 72057594037939617
+    technicalName: DFr_43D43535
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933234
+    parent: 72057594037939617
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037933361
+    parent: 72057594037939617
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037939113
+    parent: 72057594037939617
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037933243
+    parent: 72057594037939617
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037939573
+    parent: 216172783251375095
+    technicalName: Dlg_558E3C14
+    articyType: Dialogue
+    childCount: 69
+  - id: 72057594037933904
+    parent: 72057594037939573
+    technicalName: DFr_B56F6465
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934023
+    parent: 72057594037939573
+    technicalName: DFr_E5A18EBC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939960
+    parent: 72057594037939573
+    technicalName: DFr_383DA3A5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939974
+    parent: 72057594037939573
+    technicalName: DFr_9AA7C282
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939980
+    parent: 72057594037939573
+    technicalName: DFr_74EF000A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939989
+    parent: 72057594037939573
+    technicalName: DFr_10A935F7
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932760
+    parent: 72057594037939573
+    technicalName: DFr_F1942FB5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939997
+    parent: 72057594037939573
+    technicalName: DFr_0A085FBE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932766
+    parent: 72057594037939573
+    technicalName: DFr_36CAC38C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932772
+    parent: 72057594037939573
+    technicalName: DFr_EDFFA849
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940005
+    parent: 72057594037939573
+    technicalName: DFr_C3728BB5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932789
+    parent: 72057594037939573
+    technicalName: DFr_1E5B4467
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932815
+    parent: 72057594037939573
+    technicalName: Cnd_43E737D2
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037940012
+    parent: 72057594037939573
+    technicalName: DFr_FD7DA795
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940018
+    parent: 72057594037939573
+    technicalName: DFr_E634B771
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932821
+    parent: 72057594037939573
+    technicalName: DFr_94F02C4D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932802
+    parent: 72057594037939573
+    technicalName: DFr_B4BAB565
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940028
+    parent: 72057594037939573
+    technicalName: DFr_0F83478E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940035
+    parent: 72057594037939573
+    technicalName: DFr_D61A8E33
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932836
+    parent: 72057594037939573
+    technicalName: DFr_09D2622A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932782
+    parent: 72057594037939573
+    technicalName: DFr_920191F9
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932827
+    parent: 72057594037939573
+    technicalName: DFr_F79D7DD8
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940042
+    parent: 72057594037939573
+    technicalName: DFr_49147ED3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932843
+    parent: 72057594037939573
+    technicalName: DFr_1BAC43B1
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932920
+    parent: 72057594037939573
+    technicalName: DFr_72FD0760
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932880
+    parent: 72057594037939573
+    technicalName: DFr_FEB06810
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932886
+    parent: 72057594037939573
+    technicalName: DFr_4973FBC7
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939954
+    parent: 72057594037939573
+    technicalName: DFr_469B3177
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932851
+    parent: 72057594037939573
+    technicalName: DFr_F723D760
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933276
+    parent: 72057594037939573
+    technicalName: Jmp_C0ECABD2
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037932896
+    parent: 72057594037939573
+    technicalName: DFr_3EA0FBE9
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932903
+    parent: 72057594037939573
+    technicalName: DFr_11FCCF0E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940051
+    parent: 72057594037939573
+    technicalName: DFr_8B77B193
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940057
+    parent: 72057594037939573
+    technicalName: DFr_754DDDCF
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942224
+    parent: 72057594037939573
+    technicalName: Cnd_E54294D2
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037933940
+    parent: 72057594037939573
+    technicalName: Cnd_411C2893
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037932910
+    parent: 72057594037939573
+    technicalName: Jmp_E5E4E65B
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037941008
+    parent: 72057594037939573
+    technicalName: DFr_F03CB7BD
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940064
+    parent: 72057594037939573
+    technicalName: DFr_45C2491F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932858
+    parent: 72057594037939573
+    technicalName: DFr_94C1D350
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942249
+    parent: 72057594037939573
+    technicalName: Cnd_CAE885C5
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037933930
+    parent: 72057594037939573
+    technicalName: DFr_2D1D42CC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037941015
+    parent: 72057594037939573
+    technicalName: DFr_A285EE0C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942256
+    parent: 72057594037939573
+    technicalName: DFr_1008B169
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942240
+    parent: 72057594037939573
+    technicalName: DFr_57F0CB94
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037941031
+    parent: 72057594037939573
+    technicalName: DFr_75B501F8
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933949
+    parent: 72057594037939573
+    technicalName: DFr_930FDDD5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037941022
+    parent: 72057594037939573
+    technicalName: DFr_33D5DAAA
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942264
+    parent: 72057594037939573
+    technicalName: DFr_1F884017
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037941889
+    parent: 72057594037939573
+    technicalName: DFr_19F6E422
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933968
+    parent: 72057594037939573
+    technicalName: Cnd_B2405C0D
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037942277
+    parent: 72057594037939573
+    technicalName: DFr_E752FFA9
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939942
+    parent: 72057594037939573
+    technicalName: Cnd_318FA93F
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037934030
+    parent: 72057594037939573
+    technicalName: DFr_122DE0F0
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940072
+    parent: 72057594037939573
+    technicalName: DFr_AC6EE51B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933975
+    parent: 72057594037939573
+    technicalName: DFr_7B8A9731
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933983
+    parent: 72057594037939573
+    technicalName: DFr_6B833877
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934044
+    parent: 72057594037939573
+    technicalName: DFr_DC17B7BA
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933998
+    parent: 72057594037939573
+    technicalName: DFr_83938254
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933991
+    parent: 72057594037939573
+    technicalName: DFr_B03EE541
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942230
+    parent: 72057594037939573
+    technicalName: DFr_400C5E4C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934057
+    parent: 72057594037939573
+    technicalName: DFr_B094D3A4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934051
+    parent: 72057594037939573
+    technicalName: DFr_A7E41B92
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934005
+    parent: 72057594037939573
+    technicalName: DFr_E22272DC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932915
+    parent: 72057594037939573
+    technicalName: Jmp_0A4A2BE2
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037934077
+    parent: 72057594037939573
+    technicalName: DFr_B728EB46
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934065
+    parent: 72057594037939573
+    technicalName: DFr_25AC3763
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933170
+    parent: 72057594037939573
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037934084
+    parent: 72057594037939573
+    technicalName: Jmp_71DE94A0
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037930163
+    parent: 216172783251375095
+    technicalName: Dlg_A405AA63
+    articyType: Dialogue
+    childCount: 30
+  - id: 72057594037937464
+    parent: 72057594037930163
+    technicalName: DFr_AA79CC6C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937474
+    parent: 72057594037930163
+    technicalName: DFr_DF918DB2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937481
+    parent: 72057594037930163
+    technicalName: DFr_29D726CE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937488
+    parent: 72057594037930163
+    technicalName: DFr_4B792378
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937495
+    parent: 72057594037930163
+    technicalName: DFr_DD59E279
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937502
+    parent: 72057594037930163
+    technicalName: DFr_57B81851
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937509
+    parent: 72057594037930163
+    technicalName: DFr_EED20F5D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937522
+    parent: 72057594037930163
+    technicalName: DFr_33194F97
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937528
+    parent: 72057594037930163
+    technicalName: DFr_953ED5C2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937534
+    parent: 72057594037930163
+    technicalName: DFr_C3962730
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937552
+    parent: 72057594037930163
+    technicalName: DFr_775B20BC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937546
+    parent: 72057594037930163
+    technicalName: DFr_B61F545D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937558
+    parent: 72057594037930163
+    technicalName: DFr_78F316E0
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937564
+    parent: 72057594037930163
+    technicalName: DFr_B400C50A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930312
+    parent: 72057594037930163
+    technicalName: DFr_8E1F1547
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937583
+    parent: 72057594037930163
+    technicalName: DFr_89CC3A26
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937452
+    parent: 72057594037930163
+    technicalName: DFr_CC3E0B6A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937574
+    parent: 72057594037930163
+    technicalName: DFr_86375FA7
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937591
+    parent: 72057594037930163
+    technicalName: DFr_863DC8F5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937612
+    parent: 72057594037930163
+    technicalName: DFr_D22ADE27
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938835
+    parent: 72057594037930163
+    technicalName: DFr_56A9E026
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937618
+    parent: 72057594037930163
+    technicalName: DFr_18C82A95
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937628
+    parent: 72057594037930163
+    technicalName: DFr_B4FF863F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937635
+    parent: 72057594037930163
+    technicalName: DFr_21B36AD4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937642
+    parent: 72057594037930163
+    technicalName: DFr_C10EBF18
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937656
+    parent: 72057594037930163
+    technicalName: DFr_1E02F165
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937663
+    parent: 72057594037930163
+    technicalName: DFr_86F0EAA0
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937649
+    parent: 72057594037930163
+    technicalName: DFr_8C5A633E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937598
+    parent: 72057594037930163
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037937581
+    parent: 72057594037930163
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037937671
+    parent: 216172783251375095
+    technicalName: Dlg_57DB9624
+    articyType: Dialogue
+    childCount: 28
+  - id: 72057594037937677
+    parent: 72057594037937671
+    technicalName: DFr_0E3DA00B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939639
+    parent: 72057594037937671
+    technicalName: DFr_177CFB88
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938311
+    parent: 72057594037937671
+    technicalName: DFr_8AC956C1
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937915
+    parent: 72057594037937671
+    technicalName: DFr_A092F0CA
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937928
+    parent: 72057594037937671
+    technicalName: DFr_590E33C0
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939647
+    parent: 72057594037937671
+    technicalName: DFr_7F7FE27B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939654
+    parent: 72057594037937671
+    technicalName: DFr_CC70FF69
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939660
+    parent: 72057594037937671
+    technicalName: DFr_D4104639
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937935
+    parent: 72057594037937671
+    technicalName: DFr_92AF876B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937692
+    parent: 72057594037937671
+    technicalName: DFr_74F14E50
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938319
+    parent: 72057594037937671
+    technicalName: Cnd_D9137390
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037937699
+    parent: 72057594037937671
+    technicalName: DFr_6CDA3F7F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937942
+    parent: 72057594037937671
+    technicalName: DFr_22303296
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938326
+    parent: 72057594037937671
+    technicalName: DFr_C7BD9109
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937705
+    parent: 72057594037937671
+    technicalName: DFr_00C7C4CA
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939672
+    parent: 72057594037937671
+    technicalName: DFr_3CDA8420
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937711
+    parent: 72057594037937671
+    technicalName: DFr_B6D7EA48
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939680
+    parent: 72057594037937671
+    technicalName: DFr_EFDF9194
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937717
+    parent: 72057594037937671
+    technicalName: DFr_AA504DC5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937723
+    parent: 72057594037937671
+    technicalName: DFr_36D342FE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937729
+    parent: 72057594037937671
+    technicalName: DFr_3D300DAD
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937735
+    parent: 72057594037937671
+    technicalName: DFr_A1207D63
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937741
+    parent: 72057594037937671
+    technicalName: DFr_8469228F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937747
+    parent: 72057594037937671
+    technicalName: DFr_950A60CE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937753
+    parent: 72057594037937671
+    technicalName: DFr_691C4B63
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937759
+    parent: 72057594037937671
+    technicalName: DFr_32456FF1
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938335
+    parent: 72057594037937671
+    technicalName: DFr_84D2D7B5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938342
+    parent: 72057594037937671
+    technicalName: Jmp_EDFC7235
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037938356
+    parent: 216172783251375095
+    technicalName: Dlg_FC603B2B
+    articyType: Dialogue
+    childCount: 19
+  - id: 72057594037938362
+    parent: 72057594037938356
+    technicalName: DFr_D1573319
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938284
+    parent: 72057594037938356
+    technicalName: DFr_5FEA8D2B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938368
+    parent: 72057594037938356
+    technicalName: DFr_A6A1FEA1
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938290
+    parent: 72057594037938356
+    technicalName: DFr_CAFA8C6F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938382
+    parent: 72057594037938356
+    technicalName: DFr_8CBF02A2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938388
+    parent: 72057594037938356
+    technicalName: DFr_551CA310
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938398
+    parent: 72057594037938356
+    technicalName: DFr_FB1F2AF2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938412
+    parent: 72057594037938356
+    technicalName: DFr_6B6BFCEF
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938420
+    parent: 72057594037938356
+    technicalName: DFr_2E7CB6A5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938433
+    parent: 72057594037938356
+    technicalName: DFr_F941CD60
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938427
+    parent: 72057594037938356
+    technicalName: DFr_04B6DC73
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938439
+    parent: 72057594037938356
+    technicalName: DFr_E8B5E1FD
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938449
+    parent: 72057594037938356
+    technicalName: DFr_1F7A8D5A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938462
+    parent: 72057594037938356
+    technicalName: DFr_56DA4475
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938468
+    parent: 72057594037938356
+    technicalName: DFr_E84A5DD7
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938479
+    parent: 72057594037938356
+    technicalName: DFr_E3D263F5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938485
+    parent: 72057594037938356
+    technicalName: DFr_0A2B7A38
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938495
+    parent: 72057594037938356
+    technicalName: DFr_292E171C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938501
+    parent: 72057594037938356
+    technicalName: DFr_893043D6
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939688
+    parent: 216172783251375095
+    technicalName: Dlg_85083316
+    articyType: Dialogue
+    childCount: 61
+  - id: 72057594037938814
+    parent: 72057594037939688
+    technicalName: DFr_4AA4C73B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938776
+    parent: 72057594037939688
+    technicalName: DFr_BD3F2A43
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938782
+    parent: 72057594037939688
+    technicalName: DFr_4A6853E9
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938789
+    parent: 72057594037939688
+    technicalName: DFr_022304C5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938796
+    parent: 72057594037939688
+    technicalName: DFr_5DD17C4B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938535
+    parent: 72057594037939688
+    technicalName: DFr_9A5B6B77
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937960
+    parent: 72057594037939688
+    technicalName: DFr_10561560
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938518
+    parent: 72057594037939688
+    technicalName: DFr_F40E5013
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937971
+    parent: 72057594037939688
+    technicalName: DFr_7D74421B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937983
+    parent: 72057594037939688
+    technicalName: DFr_10A85C46
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937996
+    parent: 72057594037939688
+    technicalName: DFr_49299159
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938002
+    parent: 72057594037939688
+    technicalName: DFr_4B529F03
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937989
+    parent: 72057594037939688
+    technicalName: DFr_11269FCB
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938239
+    parent: 72057594037939688
+    technicalName: DFr_6178FABC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938528
+    parent: 72057594037939688
+    technicalName: DFr_B203804D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938011
+    parent: 72057594037939688
+    technicalName: DFr_309DA80B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938202
+    parent: 72057594037939688
+    technicalName: DFr_4FC15C9D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938186
+    parent: 72057594037939688
+    technicalName: DFr_3428B650
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938024
+    parent: 72057594037939688
+    technicalName: DFr_4C33CF7A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938030
+    parent: 72057594037939688
+    technicalName: DFr_FBCBD4A4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938209
+    parent: 72057594037939688
+    technicalName: DFr_0E93E5D5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938193
+    parent: 72057594037939688
+    technicalName: DFr_7E2FA1EB
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938806
+    parent: 72057594037939688
+    technicalName: DFr_CCF7C4F8
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938038
+    parent: 72057594037939688
+    technicalName: Jmp_CA8921DC
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037938218
+    parent: 72057594037939688
+    technicalName: DFr_FD4A884A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938226
+    parent: 72057594037939688
+    technicalName: DFr_9B13BD05
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938232
+    parent: 72057594037939688
+    technicalName: Jmp_2CF190F8
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037937954
+    parent: 72057594037939688
+    technicalName: DFr_E6CA8353
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938268
+    parent: 72057594037939688
+    technicalName: DFr_E68C27ED
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938274
+    parent: 72057594037939688
+    technicalName: DFr_C08D15E7
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938297
+    parent: 72057594037939688
+    technicalName: DFr_76EE8AC1
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938510
+    parent: 72057594037939688
+    technicalName: DFr_55F9F8A1
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938558
+    parent: 72057594037939688
+    technicalName: DFr_E922D98C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938565
+    parent: 72057594037939688
+    technicalName: DFr_1CF6AAD8
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938574
+    parent: 72057594037939688
+    technicalName: DFr_20669C27
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938586
+    parent: 72057594037939688
+    technicalName: DFr_2C0FBFF8
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938580
+    parent: 72057594037939688
+    technicalName: DFr_A0BD7C61
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938596
+    parent: 72057594037939688
+    technicalName: DFr_4162F13D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938603
+    parent: 72057594037939688
+    technicalName: DFr_7F9CE232
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938610
+    parent: 72057594037939688
+    technicalName: DFr_2AA4F8B8
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938616
+    parent: 72057594037939688
+    technicalName: DFr_C59B86CE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938760
+    parent: 72057594037939688
+    technicalName: Hub_BEF43FB1
+    articyType: Hub
+    childCount: 0
+  - id: 72057594037938720
+    parent: 72057594037939688
+    technicalName: DFr_BA771575
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938726
+    parent: 72057594037939688
+    technicalName: DFr_34BE68FA
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938732
+    parent: 72057594037939688
+    technicalName: DFr_613D3F55
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938628
+    parent: 72057594037939688
+    technicalName: DFr_777E861C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938650
+    parent: 72057594037939688
+    technicalName: DFr_383E6FC9
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938738
+    parent: 72057594037939688
+    technicalName: DFr_034F473F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938636
+    parent: 72057594037939688
+    technicalName: DFr_8087D4D3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938642
+    parent: 72057594037939688
+    technicalName: DFr_9E6BE464
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938747
+    parent: 72057594037939688
+    technicalName: DFr_70C6F944
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938659
+    parent: 72057594037939688
+    technicalName: DFr_85D1DC62
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938668
+    parent: 72057594037939688
+    technicalName: DFr_44902FEB
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938675
+    parent: 72057594037939688
+    technicalName: DFr_B735678A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938683
+    parent: 72057594037939688
+    technicalName: DFr_6EAA36BD
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938691
+    parent: 72057594037939688
+    technicalName: DFr_6F44E1E4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938706
+    parent: 72057594037939688
+    technicalName: DFr_D3100FED
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938713
+    parent: 72057594037939688
+    technicalName: DFr_2ABE6EDE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938626
+    parent: 72057594037939688
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037938572
+    parent: 72057594037939688
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037938769
+    parent: 72057594037939688
+    technicalName: Jmp_68C8C29C
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037939585
+    parent: 216172783251375095
+    technicalName: Dlg_C247B212
+    articyType: Dialogue
+    childCount: 27
+  - id: 72057594037942038
+    parent: 72057594037939585
+    technicalName: DFr_10BC4925
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932268
+    parent: 72057594037939585
+    technicalName: DFr_016EAB7E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939398
+    parent: 72057594037939585
+    technicalName: DFr_A3F63E39
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939480
+    parent: 72057594037939585
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037939512
+    parent: 72057594037939585
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037932234
+    parent: 72057594037939585
+    technicalName: Cnd_196019A7
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037939393
+    parent: 72057594037939585
+    technicalName: Cnd_F4B4204E
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037942033
+    parent: 72057594037939585
+    technicalName: DFr_C6D682BD
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939235
+    parent: 72057594037939585
+    technicalName: DFr_1231FB64
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939227
+    parent: 72057594037939585
+    technicalName: DFr_2E0ABC59
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939414
+    parent: 72057594037939585
+    technicalName: DFr_7AB0C28A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939408
+    parent: 72057594037939585
+    technicalName: DFr_1BAF6AEB
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939242
+    parent: 72057594037939585
+    technicalName: DFr_AB36269E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939262
+    parent: 72057594037939585
+    technicalName: DFr_F8D46A9B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939438
+    parent: 72057594037939585
+    technicalName: DFr_BAC80CFA
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939426
+    parent: 72057594037939585
+    technicalName: DFr_116A1835
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939248
+    parent: 72057594037939585
+    technicalName: DFr_36C0DB15
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939453
+    parent: 72057594037939585
+    technicalName: DFr_70591639
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939420
+    parent: 72057594037939585
+    technicalName: DFr_AC0ED9CF
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939255
+    parent: 72057594037939585
+    technicalName: DFr_E3C5A4DD
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939460
+    parent: 72057594037939585
+    technicalName: DFr_02295678
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939432
+    parent: 72057594037939585
+    technicalName: DFr_A23FACFE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939473
+    parent: 72057594037939585
+    technicalName: DFr_BE0A671A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939490
+    parent: 72057594037939585
+    technicalName: DFr_865ED9BB
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939497
+    parent: 72057594037939585
+    technicalName: DFr_D5914BCE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939504
+    parent: 72057594037939585
+    technicalName: DFr_C2723903
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939483
+    parent: 72057594037939585
+    technicalName: DFr_8C427E92
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940098
+    parent: 216172783251375095
+    technicalName: Dlg_B3B93E83
+    articyType: Dialogue
+    childCount: 20
+  - id: 72057594037940104
+    parent: 72057594037940098
+    technicalName: DFr_0AAC91D9
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940116
+    parent: 72057594037940098
+    technicalName: DFr_B6212330
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940110
+    parent: 72057594037940098
+    technicalName: DFr_70D83A53
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940133
+    parent: 72057594037940098
+    technicalName: DFr_DC7E30AA
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940139
+    parent: 72057594037940098
+    technicalName: DFr_CD618525
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940124
+    parent: 72057594037940098
+    technicalName: DFr_0D4BE42B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940147
+    parent: 72057594037940098
+    technicalName: DFr_4576152E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940177
+    parent: 72057594037940098
+    technicalName: DFr_78AA6741
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940194
+    parent: 72057594037940098
+    technicalName: DFr_999A3DC7
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940200
+    parent: 72057594037940098
+    technicalName: DFr_14545900
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940184
+    parent: 72057594037940098
+    technicalName: DFr_E1C4D58C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940154
+    parent: 72057594037940098
+    technicalName: DFr_D34E1F62
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940161
+    parent: 72057594037940098
+    technicalName: DFr_111ADE71
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940167
+    parent: 72057594037940098
+    technicalName: DFr_10359DFB
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940207
+    parent: 72057594037940098
+    technicalName: DFr_F5572319
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940214
+    parent: 72057594037940098
+    technicalName: DFr_079A021A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940241
+    parent: 72057594037940098
+    technicalName: DFr_624C787A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940221
+    parent: 72057594037940098
+    technicalName: DFr_F8780F1F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940227
+    parent: 72057594037940098
+    technicalName: DFr_E50445E2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940233
+    parent: 72057594037940098
+    technicalName: DFr_1B5D8856
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940630
+    parent: 216172783251375095
+    technicalName: Dlg_BDAC091F
+    articyType: Dialogue
+    childCount: 3
+  - id: 72057594037940636
+    parent: 72057594037940630
+    technicalName: DFr_7648EFEA
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940649
+    parent: 72057594037940630
+    technicalName: DFr_5BAF0F04
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940655
+    parent: 72057594037940630
+    technicalName: DFr_2BFBDA7C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942044
+    parent: 216172783251375095
+    technicalName: Dlg_13C2E3BD
+    articyType: Dialogue
+    childCount: 13
+  - id: 72057594037942050
+    parent: 72057594037942044
+    technicalName: DFr_639E5167
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942056
+    parent: 72057594037942044
+    technicalName: DFr_74283B52
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942063
+    parent: 72057594037942044
+    technicalName: DFr_F526C762
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942070
+    parent: 72057594037942044
+    technicalName: DFr_AEEA4313
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942085
+    parent: 72057594037942044
+    technicalName: DFr_A04E31AE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942091
+    parent: 72057594037942044
+    technicalName: DFr_D8FD6DAC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942076
+    parent: 72057594037942044
+    technicalName: DFr_17D1404C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942101
+    parent: 72057594037942044
+    technicalName: DFr_15C1D5CA
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942115
+    parent: 72057594037942044
+    technicalName: DFr_DF64E7E8
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942108
+    parent: 72057594037942044
+    technicalName: DFr_184F6061
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942123
+    parent: 72057594037942044
+    technicalName: DFr_1233FD18
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942137
+    parent: 72057594037942044
+    technicalName: DFr_5E4A7A21
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942130
+    parent: 72057594037942044
+    technicalName: DFr_2597C3D3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930485
+    parent: 216172783251375095
+    technicalName: Dlg_8005AF27
+    articyType: Dialogue
+    childCount: 43
+  - id: 72057594037932326
+    parent: 72057594037930485
+    technicalName: DFr_3A5BDC06
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940358
+    parent: 72057594037930485
+    technicalName: DFr_8B505A27
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932354
+    parent: 72057594037930485
+    technicalName: DFr_06738120
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935734
+    parent: 72057594037930485
+    technicalName: DFr_13DF6EE7
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940368
+    parent: 72057594037930485
+    technicalName: DFr_4EE0543E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932361
+    parent: 72057594037930485
+    technicalName: DFr_3DBDCDD3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932373
+    parent: 72057594037930485
+    technicalName: Jmp_9E6C06BF
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037940376
+    parent: 72057594037930485
+    technicalName: DFr_1EDB1F6B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939596
+    parent: 72057594037930485
+    technicalName: DFr_A0551FAA
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940383
+    parent: 72057594037930485
+    technicalName: Cnd_0B21FD06
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037940389
+    parent: 72057594037930485
+    technicalName: DFr_66DCF3D0
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940396
+    parent: 72057594037930485
+    technicalName: DFr_8B09EBBD
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940404
+    parent: 72057594037930485
+    technicalName: DFr_8F1331FF
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940410
+    parent: 72057594037930485
+    technicalName: DFr_4FE6A4CE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932333
+    parent: 72057594037930485
+    technicalName: Hub_3FC0B6E5
+    articyType: Hub
+    childCount: 0
+  - id: 72057594037930538
+    parent: 72057594037930485
+    technicalName: DFr_217A1E23
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932701
+    parent: 72057594037930485
+    technicalName: DFr_D9870D5D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037941955
+    parent: 72057594037930485
+    technicalName: DFr_82A8E21F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932574
+    parent: 72057594037930485
+    technicalName: DFr_D46AB7B3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932043
+    parent: 72057594037930485
+    technicalName: DFr_3FB9AB92
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940420
+    parent: 72057594037930485
+    technicalName: DFr_C37127F3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037941963
+    parent: 72057594037930485
+    technicalName: DFr_5CE8CA82
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037941984
+    parent: 72057594037930485
+    technicalName: DFr_8B18A06E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932709
+    parent: 72057594037930485
+    technicalName: DFr_82AF7A8C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932588
+    parent: 72057594037930485
+    technicalName: DFr_3BA78F85
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940427
+    parent: 72057594037930485
+    technicalName: Cnd_47A44B65
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037941970
+    parent: 72057594037930485
+    technicalName: DFr_94B62DEE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037941991
+    parent: 72057594037930485
+    technicalName: DFr_236326AC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932595
+    parent: 72057594037930485
+    technicalName: DFr_E2FDEA60
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932717
+    parent: 72057594037930485
+    technicalName: DFr_3FB6A2C5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940433
+    parent: 72057594037930485
+    technicalName: DFr_30CBC110
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940440
+    parent: 72057594037930485
+    technicalName: DFr_C7820EE9
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037941977
+    parent: 72057594037930485
+    technicalName: DFr_3E4286DE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037941998
+    parent: 72057594037930485
+    technicalName: DFr_5EED8998
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932602
+    parent: 72057594037930485
+    technicalName: Cnd_8E54AD26
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037940574
+    parent: 72057594037930485
+    technicalName: DFr_D848CFAB
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940566
+    parent: 72057594037930485
+    technicalName: DFr_604C57F2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932608
+    parent: 72057594037930485
+    technicalName: DFr_7C5BDB1C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940582
+    parent: 72057594037930485
+    technicalName: DFr_8FE94D18
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932615
+    parent: 72057594037930485
+    technicalName: DFr_488B5E3C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940589
+    parent: 72057594037930485
+    technicalName: DFr_3FCBC0D2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940596
+    parent: 72057594037930485
+    technicalName: DFr_C324EE15
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940605
+    parent: 72057594037930485
+    technicalName: DFr_802A2BD4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937287
+    parent: 216172783251375095
+    technicalName: Dlg_CBCA0DC0
+    articyType: Dialogue
+    childCount: 20
+  - id: 72057594037937304
+    parent: 72057594037937287
+    technicalName: DFr_9B864250
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937294
+    parent: 72057594037937287
+    technicalName: DFr_B5D28B41
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937326
+    parent: 72057594037937287
+    technicalName: DFr_87640BCF
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937415
+    parent: 72057594037937287
+    technicalName: DFr_B71064C4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937441
+    parent: 72057594037937287
+    technicalName: DFr_B9459452
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937312
+    parent: 72057594037937287
+    technicalName: DFr_CB6EB51C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937333
+    parent: 72057594037937287
+    technicalName: Jmp_43FA445D
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037937319
+    parent: 72057594037937287
+    technicalName: DFr_547CFFB7
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937338
+    parent: 72057594037937287
+    technicalName: Cnd_36FCF16A
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037937351
+    parent: 72057594037937287
+    technicalName: DFr_4EE3C2C2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937344
+    parent: 72057594037937287
+    technicalName: DFr_F8FDB29A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937372
+    parent: 72057594037937287
+    technicalName: DFr_D1714813
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937358
+    parent: 72057594037937287
+    technicalName: DFr_6E215695
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937379
+    parent: 72057594037937287
+    technicalName: DFr_E7BF101E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937365
+    parent: 72057594037937287
+    technicalName: DFr_3E775AB0
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937388
+    parent: 72057594037937287
+    technicalName: DFr_B92E5A57
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937395
+    parent: 72057594037937287
+    technicalName: DFr_83AE8CA7
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937402
+    parent: 72057594037937287
+    technicalName: DFr_64A94446
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037937427
+    parent: 72057594037937287
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037937386
+    parent: 72057594037937287
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037940996
+    parent: 216172783251375095
+    technicalName: Dlg_7B8C057E
+    articyType: Dialogue
+    childCount: 0
+  - id: 72057594037932408
+    parent: 216172783251375095
+    technicalName: Dlg_693D5183
+    articyType: Dialogue
+    childCount: 165
+  - id: 72057594037935080
+    parent: 72057594037932408
+    technicalName: DFr_5D32F881
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933082
+    parent: 72057594037932408
+    technicalName: DFr_65614FB7
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934513
+    parent: 72057594037932408
+    technicalName: DFr_61623D58
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934445
+    parent: 72057594037932408
+    technicalName: DFr_A8F2C59D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934598
+    parent: 72057594037932408
+    technicalName: DFr_227E0236
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932430
+    parent: 72057594037932408
+    technicalName: DFr_885EEE70
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934462
+    parent: 72057594037932408
+    technicalName: DFr_3E979160
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935075
+    parent: 72057594037932408
+    technicalName: DFr_43303E32
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934579
+    parent: 72057594037932408
+    technicalName: DFr_051F02EC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932424
+    parent: 72057594037932408
+    technicalName: DFr_91AC4871
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942201
+    parent: 72057594037932408
+    technicalName: DFr_6581D44E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933088
+    parent: 72057594037932408
+    technicalName: DFr_A084ACD1
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933094
+    parent: 72057594037932408
+    technicalName: DFr_DDFF9D1F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934480
+    parent: 72057594037932408
+    technicalName: Cnd_33BC20F4
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037935096
+    parent: 72057594037932408
+    technicalName: DFr_628F3124
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935102
+    parent: 72057594037932408
+    technicalName: DFr_9ECAE49A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935108
+    parent: 72057594037932408
+    technicalName: DFr_5646FBF6
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934592
+    parent: 72057594037932408
+    technicalName: DFr_C55FF382
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932443
+    parent: 72057594037932408
+    technicalName: Cnd_28528004
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037934607
+    parent: 72057594037932408
+    technicalName: Jmp_2AB62464
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037933104
+    parent: 72057594037932408
+    technicalName: DFr_8A99296A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934486
+    parent: 72057594037932408
+    technicalName: DFr_4E097F90
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934493
+    parent: 72057594037932408
+    technicalName: DFr_521CC8C3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935138
+    parent: 72057594037932408
+    technicalName: Jmp_6E3B5A94
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037935116
+    parent: 72057594037932408
+    technicalName: DFr_11F266DA
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935125
+    parent: 72057594037932408
+    technicalName: DFr_5858A6F5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932463
+    parent: 72057594037932408
+    technicalName: DFr_8C616D5B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932455
+    parent: 72057594037932408
+    technicalName: DFr_5A42C4ED
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933111
+    parent: 72057594037932408
+    technicalName: DFr_C05791E8
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934613
+    parent: 72057594037932408
+    technicalName: DFr_BA7C6F88
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934533
+    parent: 72057594037932408
+    technicalName: Jmp_C034E7D4
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037934500
+    parent: 72057594037932408
+    technicalName: DFr_25FB88B4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932473
+    parent: 72057594037932408
+    technicalName: Cnd_E0303ABA
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037934632
+    parent: 72057594037932408
+    technicalName: Jmp_5B7EFE05
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037934637
+    parent: 72057594037932408
+    technicalName: DFr_9F337513
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934519
+    parent: 72057594037932408
+    technicalName: DFr_0AD8D3FF
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933118
+    parent: 72057594037932408
+    technicalName: DFr_83C7DA79
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933124
+    parent: 72057594037932408
+    technicalName: DFr_ECBC8319
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933130
+    parent: 72057594037932408
+    technicalName: DFr_38B9A29C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932487
+    parent: 72057594037932408
+    technicalName: DFr_C1688DCC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932479
+    parent: 72057594037932408
+    technicalName: DFr_A11BEE56
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934645
+    parent: 72057594037932408
+    technicalName: DFr_2DD44394
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934378
+    parent: 72057594037932408
+    technicalName: DFr_DB2FC08C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933140
+    parent: 72057594037932408
+    technicalName: DFr_0060E97B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934526
+    parent: 72057594037932408
+    technicalName: DFr_C8AFCF2A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936731
+    parent: 72057594037932408
+    technicalName: DFr_F0C35BF5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932507
+    parent: 72057594037932408
+    technicalName: Cnd_D775022A
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037934652
+    parent: 72057594037932408
+    technicalName: DFr_8D892525
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936749
+    parent: 72057594037932408
+    technicalName: DFr_FD07D847
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936737
+    parent: 72057594037932408
+    technicalName: DFr_F4FB6120
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933147
+    parent: 72057594037932408
+    technicalName: DFr_731D7D8A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934550
+    parent: 72057594037932408
+    technicalName: DFr_2A8C8639
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936755
+    parent: 72057594037932408
+    technicalName: DFr_4A96CCB6
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936822
+    parent: 72057594037932408
+    technicalName: DFr_2CBC2A34
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933154
+    parent: 72057594037932408
+    technicalName: DFr_B7622185
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932501
+    parent: 72057594037932408
+    technicalName: DFr_4012D459
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932495
+    parent: 72057594037932408
+    technicalName: DFr_05F33120
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942150
+    parent: 72057594037932408
+    technicalName: DFr_E38DDDAC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037941902
+    parent: 72057594037932408
+    technicalName: DFr_A9F4E2F4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037941897
+    parent: 72057594037932408
+    technicalName: Jmp_2024977A
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037933162
+    parent: 72057594037932408
+    technicalName: Hub_C59032A7
+    articyType: Hub
+    childCount: 0
+  - id: 72057594037942157
+    parent: 72057594037932408
+    technicalName: DFr_A6E840B1
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942163
+    parent: 72057594037932408
+    technicalName: DFr_C2EA80A4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932516
+    parent: 72057594037932408
+    technicalName: DFr_1D8EE88B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932525
+    parent: 72057594037932408
+    technicalName: DFr_1E18946E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037941915
+    parent: 72057594037932408
+    technicalName: Cnd_77C37AD2
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037934353
+    parent: 72057594037932408
+    technicalName: DFr_420935EA
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934359
+    parent: 72057594037932408
+    technicalName: DFr_065DD696
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934365
+    parent: 72057594037932408
+    technicalName: DFr_B12B223D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037941941
+    parent: 72057594037932408
+    technicalName: DFr_67A83361
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037941934
+    parent: 72057594037932408
+    technicalName: DFr_323E7C01
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942173
+    parent: 72057594037932408
+    technicalName: DFr_A9C2A182
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934388
+    parent: 72057594037932408
+    technicalName: DFr_86A14E53
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936948
+    parent: 72057594037932408
+    technicalName: DFr_799CD57A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936929
+    parent: 72057594037932408
+    technicalName: DFr_FE10C451
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942289
+    parent: 72057594037932408
+    technicalName: DFr_B9C4A0AB
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934395
+    parent: 72057594037932408
+    technicalName: DFr_6539D6E3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936954
+    parent: 72057594037932408
+    technicalName: DFr_65BFEEF3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936935
+    parent: 72057594037932408
+    technicalName: DFr_62E150F1
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934556
+    parent: 72057594037932408
+    technicalName: DFr_EE272C6F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942303
+    parent: 72057594037932408
+    technicalName: DFr_F1FCC9C3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934403
+    parent: 72057594037932408
+    technicalName: DFr_57F68208
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936960
+    parent: 72057594037932408
+    technicalName: DFr_F7D09AC5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936941
+    parent: 72057594037932408
+    technicalName: DFr_12FFD628
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942194
+    parent: 72057594037932408
+    technicalName: DFr_4C099054
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942316
+    parent: 72057594037932408
+    technicalName: DFr_A5C3A6D9
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942322
+    parent: 72057594037932408
+    technicalName: DFr_2E3C0171
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936765
+    parent: 72057594037932408
+    technicalName: Cnd_FD5DF8B9
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037942332
+    parent: 72057594037932408
+    technicalName: DFr_EE93B243
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936771
+    parent: 72057594037932408
+    technicalName: DFr_BD428460
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934410
+    parent: 72057594037932408
+    technicalName: Hub_56844C16
+    articyType: Hub
+    childCount: 0
+  - id: 72057594037942340
+    parent: 72057594037932408
+    technicalName: DFr_DA141CBD
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942346
+    parent: 72057594037932408
+    technicalName: DFr_E7B23AC4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934418
+    parent: 72057594037932408
+    technicalName: DFr_6137E783
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934424
+    parent: 72057594037932408
+    technicalName: DFr_61338D34
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934430
+    parent: 72057594037932408
+    technicalName: DFr_637C62EE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936778
+    parent: 72057594037932408
+    technicalName: DFr_5606ADAF
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934438
+    parent: 72057594037932408
+    technicalName: DFr_45C6FC99
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936860
+    parent: 72057594037932408
+    technicalName: DFr_97452194
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936893
+    parent: 72057594037932408
+    technicalName: DFr_78D7C689
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936785
+    parent: 72057594037932408
+    technicalName: DFr_742CF9F7
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942356
+    parent: 72057594037932408
+    technicalName: DFr_6BA2BBD9
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936832
+    parent: 72057594037932408
+    technicalName: DFr_8A879517
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936866
+    parent: 72057594037932408
+    technicalName: DFr_6397C80B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936899
+    parent: 72057594037932408
+    technicalName: DFr_11F1B9B1
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037941948
+    parent: 72057594037932408
+    technicalName: DFr_B31A9372
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942364
+    parent: 72057594037932408
+    technicalName: DFr_2B6D3F5F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936905
+    parent: 72057594037932408
+    technicalName: DFr_A55617D9
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936911
+    parent: 72057594037932408
+    technicalName: DFr_466AFB74
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936838
+    parent: 72057594037932408
+    technicalName: DFr_303F6DD8
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942380
+    parent: 72057594037932408
+    technicalName: DFr_2BC389A2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942386
+    parent: 72057594037932408
+    technicalName: DFr_EDE7521E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936845
+    parent: 72057594037932408
+    technicalName: DFr_A0E2FE9F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936917
+    parent: 72057594037932408
+    technicalName: DFr_3BD907FC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942396
+    parent: 72057594037932408
+    technicalName: DFr_BEFEDC92
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934805
+    parent: 72057594037932408
+    technicalName: Cnd_9B449B53
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037936852
+    parent: 72057594037932408
+    technicalName: DFr_4DC6B317
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942404
+    parent: 72057594037932408
+    technicalName: DFr_627B0C7C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934828
+    parent: 72057594037932408
+    technicalName: DFr_0CAAC794
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934821
+    parent: 72057594037932408
+    technicalName: DFr_71F1556D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942411
+    parent: 72057594037932408
+    technicalName: DFr_D7D904A2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942417
+    parent: 72057594037932408
+    technicalName: DFr_619DA7C7
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934922
+    parent: 72057594037932408
+    technicalName: DFr_F6453F07
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934715
+    parent: 72057594037932408
+    technicalName: DFr_F80A07D9
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934745
+    parent: 72057594037932408
+    technicalName: DFr_88CEF106
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934858
+    parent: 72057594037932408
+    technicalName: DFr_D4663E81
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934864
+    parent: 72057594037932408
+    technicalName: DFr_BEBE3534
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934881
+    parent: 72057594037932408
+    technicalName: DFr_301DA5A2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934760
+    parent: 72057594037932408
+    technicalName: DFr_91C77963
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934754
+    parent: 72057594037932408
+    technicalName: DFr_A68AA01A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934895
+    parent: 72057594037932408
+    technicalName: DFr_B016AE74
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935163
+    parent: 72057594037932408
+    technicalName: DFr_B661AD96
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934784
+    parent: 72057594037932408
+    technicalName: DFr_03C79829
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934770
+    parent: 72057594037932408
+    technicalName: Cnd_5F6CA844
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037934902
+    parent: 72057594037932408
+    technicalName: Cnd_9CFE2364
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037935170
+    parent: 72057594037932408
+    technicalName: Cnd_CA9FA39B
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037934791
+    parent: 72057594037932408
+    technicalName: DFr_4B20CB79
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934908
+    parent: 72057594037932408
+    technicalName: DFr_4D91CB2D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934915
+    parent: 72057594037932408
+    technicalName: DFr_109CF1E7
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935195
+    parent: 72057594037932408
+    technicalName: DFr_B50DF56C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935202
+    parent: 72057594037932408
+    technicalName: DFr_EA54B40C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934776
+    parent: 72057594037932408
+    technicalName: DFr_696AE899
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934798
+    parent: 72057594037932408
+    technicalName: DFr_AB8D3B68
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934937
+    parent: 72057594037932408
+    technicalName: DFr_18F5CD66
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934932
+    parent: 72057594037932408
+    technicalName: Jmp_A344E4E6
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037935209
+    parent: 72057594037932408
+    technicalName: Jmp_515EB065
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037934842
+    parent: 72057594037932408
+    technicalName: DFr_822884B6
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942371
+    parent: 72057594037932408
+    technicalName: Jmp_B94780FB
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037934944
+    parent: 72057594037932408
+    technicalName: DFr_5DE08061
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934951
+    parent: 72057594037932408
+    technicalName: DFr_974515AC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934958
+    parent: 72057594037932408
+    technicalName: DFr_A18BBD67
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934965
+    parent: 72057594037932408
+    technicalName: DFr_89AF7546
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935176
+    parent: 72057594037932408
+    technicalName: Hub_266D5DA9
+    articyType: Hub
+    childCount: 0
+  - id: 72057594037934972
+    parent: 72057594037932408
+    technicalName: DFr_D2E749BC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936792
+    parent: 72057594037932408
+    technicalName: DFr_FB2BCEB7
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935006
+    parent: 72057594037932408
+    technicalName: DFr_EE754C0C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935051
+    parent: 72057594037932408
+    technicalName: DFr_3133C328
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936806
+    parent: 72057594037932408
+    technicalName: DFr_F327FD1D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936830
+    parent: 72057594037932408
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037936820
+    parent: 72057594037932408
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037935091
+    parent: 72057594037932408
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037935088
+    parent: 72057594037932408
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037933168
+    parent: 72057594037932408
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037935093
+    parent: 72057594037932408
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037936813
+    parent: 72057594037932408
+    technicalName: Jmp_6A060BEA
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037930445
+    parent: 216172783251375095
+    technicalName: Dlg_E64EBBD1
+    articyType: Dialogue
+    childCount: 81
+  - id: 72057594037931056
+    parent: 72057594037930445
+    technicalName: DFr_B04B826F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931074
+    parent: 72057594037930445
+    technicalName: DFr_0217B371
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935290
+    parent: 72057594037930445
+    technicalName: DFr_7B370436
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939386
+    parent: 72057594037930445
+    technicalName: DFr_A40A5ABE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931984
+    parent: 72057594037930445
+    technicalName: DFr_B3C53081
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931976
+    parent: 72057594037930445
+    technicalName: DFr_860E0F0A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935215
+    parent: 72057594037930445
+    technicalName: DFr_9BF0A88A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932623
+    parent: 72057594037930445
+    technicalName: DFr_D6D7870C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935629
+    parent: 72057594037930445
+    technicalName: DFr_6298A33A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935387
+    parent: 72057594037930445
+    technicalName: DFr_73377DD8
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935297
+    parent: 72057594037930445
+    technicalName: DFr_0C4F0643
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935303
+    parent: 72057594037930445
+    technicalName: DFr_8C6059F3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935254
+    parent: 72057594037930445
+    technicalName: DFr_82948EF6
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931914
+    parent: 72057594037930445
+    technicalName: DFr_FD390E97
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935248
+    parent: 72057594037930445
+    technicalName: Jmp_10F3536F
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037935382
+    parent: 72057594037930445
+    technicalName: Jmp_ED213165
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037935243
+    parent: 72057594037930445
+    technicalName: Jmp_51AE830A
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037935577
+    parent: 72057594037930445
+    technicalName: Jmp_DB5A50CD
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037935671
+    parent: 72057594037930445
+    technicalName: Jmp_80116392
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037939404
+    parent: 72057594037930445
+    technicalName: Jmp_199D67A6
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037935637
+    parent: 72057594037930445
+    technicalName: DFr_02789DA7
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932383
+    parent: 72057594037930445
+    technicalName: DFr_42DB7C7F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935311
+    parent: 72057594037930445
+    technicalName: DFr_EAC235D2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935320
+    parent: 72057594037930445
+    technicalName: DFr_632302E5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942021
+    parent: 72057594037930445
+    technicalName: DFr_44DF4BB6
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935644
+    parent: 72057594037930445
+    technicalName: DFr_3707ABA7
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935516
+    parent: 72057594037930445
+    technicalName: DFr_5E862938
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935334
+    parent: 72057594037930445
+    technicalName: Cnd_0C67AC1D
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037935651
+    parent: 72057594037930445
+    technicalName: Cnd_EE9FC216
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037935529
+    parent: 72057594037930445
+    technicalName: DFr_0BB2DD1C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935535
+    parent: 72057594037930445
+    technicalName: DFr_9F01EE0F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935342
+    parent: 72057594037930445
+    technicalName: DFr_2EC3ACDD
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935350
+    parent: 72057594037930445
+    technicalName: DFr_D61500C3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935664
+    parent: 72057594037930445
+    technicalName: DFr_ED5EE595
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935657
+    parent: 72057594037930445
+    technicalName: DFr_00C551A9
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935545
+    parent: 72057594037930445
+    technicalName: DFr_7DD18863
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935552
+    parent: 72057594037930445
+    technicalName: DFr_D12C1EFB
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935358
+    parent: 72057594037930445
+    technicalName: DFr_05E816BD
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935260
+    parent: 72057594037930445
+    technicalName: DFr_F18C7366
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942006
+    parent: 72057594037930445
+    technicalName: DFr_6A449A05
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931129
+    parent: 72057594037930445
+    technicalName: DFr_573A1058
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931081
+    parent: 72057594037930445
+    technicalName: DFr_798C443F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935676
+    parent: 72057594037930445
+    technicalName: DFr_5E6EFA76
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935366
+    parent: 72057594037930445
+    technicalName: DFr_62D5F5D9
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935372
+    parent: 72057594037930445
+    technicalName: DFr_56D97BCC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935594
+    parent: 72057594037930445
+    technicalName: Cnd_B9D4FF0D
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037935621
+    parent: 72057594037930445
+    technicalName: DFr_DB66F0CF
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935270
+    parent: 72057594037930445
+    technicalName: DFr_14AEBA52
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942014
+    parent: 72057594037930445
+    technicalName: DFr_FB32E562
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931137
+    parent: 72057594037930445
+    technicalName: DFr_DFD2051E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931108
+    parent: 72057594037930445
+    technicalName: DFr_0A946349
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935684
+    parent: 72057594037930445
+    technicalName: DFr_4716A3AD
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935401
+    parent: 72057594037930445
+    technicalName: DFr_AEFC0319
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935601
+    parent: 72057594037930445
+    technicalName: DFr_B72C5A17
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935699
+    parent: 72057594037930445
+    technicalName: DFr_06FD3B06
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935408
+    parent: 72057594037930445
+    technicalName: DFr_8C9EA93E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935574
+    parent: 72057594037930445
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037935284
+    parent: 72057594037930445
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037935277
+    parent: 72057594037930445
+    technicalName: Cnd_2FD51DA7
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037931116
+    parent: 72057594037930445
+    technicalName: DFr_596C0F67
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935692
+    parent: 72057594037930445
+    technicalName: DFr_38F89524
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935609
+    parent: 72057594037930445
+    technicalName: DFr_9F470317
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935707
+    parent: 72057594037930445
+    technicalName: DFr_FAAF3E1F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935239
+    parent: 72057594037930445
+    technicalName: Ins_7857AA9C
+    articyType: Instruction
+    childCount: 0
+  - id: 72057594037932002
+    parent: 72057594037930445
+    technicalName: DFr_FCBBD9C8
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935474
+    parent: 72057594037930445
+    technicalName: DFr_AA5FAE41
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931100
+    parent: 72057594037930445
+    technicalName: DFr_7CBCAF29
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935616
+    parent: 72057594037930445
+    technicalName: Jmp_230FC19C
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037935559
+    parent: 72057594037930445
+    technicalName: DFr_88E5A017
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932009
+    parent: 72057594037930445
+    technicalName: Cnd_D1F29F2C
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037935482
+    parent: 72057594037930445
+    technicalName: DFr_A579A1CE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931144
+    parent: 72057594037930445
+    technicalName: DFr_34325394
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935567
+    parent: 72057594037930445
+    technicalName: DFr_DC73031C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935499
+    parent: 72057594037930445
+    technicalName: DFr_F57BB9EE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932015
+    parent: 72057594037930445
+    technicalName: DFr_E4F50147
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932022
+    parent: 72057594037930445
+    technicalName: DFr_401DC442
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037935507
+    parent: 72057594037930445
+    technicalName: DFr_8B49C76B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932030
+    parent: 72057594037930445
+    technicalName: DFr_55124340
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932295
+    parent: 72057594037930445
+    technicalName: Cnd_C596B47C
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037932306
+    parent: 72057594037930445
+    technicalName: DFr_D607864D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932301
+    parent: 72057594037930445
+    technicalName: Jmp_7FE2DA92
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037930451
+    parent: 216172783251375095
+    technicalName: Dlg_09EA056A
+    articyType: Dialogue
+    childCount: 28
+  - id: 72057594037930963
+    parent: 72057594037930451
+    technicalName: DFr_21463126
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940665
+    parent: 72057594037930451
+    technicalName: DFr_D250A462
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940719
+    parent: 72057594037930451
+    technicalName: Jmp_F083E4FD
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037942028
+    parent: 72057594037930451
+    technicalName: Jmp_45F6FF11
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037940671
+    parent: 72057594037930451
+    technicalName: DFr_77A2811B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940681
+    parent: 72057594037930451
+    technicalName: DFr_582FD257
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936475
+    parent: 72057594037930451
+    technicalName: DFr_A28987B1
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940694
+    parent: 72057594037930451
+    technicalName: DFr_39EBF6B9
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936482
+    parent: 72057594037930451
+    technicalName: DFr_9CE278E2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940701
+    parent: 72057594037930451
+    technicalName: DFr_67895D7E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940707
+    parent: 72057594037930451
+    technicalName: DFr_08C7FCB3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940713
+    parent: 72057594037930451
+    technicalName: DFr_D0D37B03
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936489
+    parent: 72057594037930451
+    technicalName: DFr_0E0D0DAB
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940726
+    parent: 72057594037930451
+    technicalName: DFr_8AFC08FF
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936509
+    parent: 72057594037930451
+    technicalName: DFr_B441B42F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940733
+    parent: 72057594037930451
+    technicalName: DFr_01ACD265
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940739
+    parent: 72057594037930451
+    technicalName: DFr_E8DF70FC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940746
+    parent: 72057594037930451
+    technicalName: DFr_FF8ECAA2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932089
+    parent: 72057594037930451
+    technicalName: Hub_18968792
+    articyType: Hub
+    childCount: 0
+  - id: 72057594037939365
+    parent: 72057594037930451
+    technicalName: DFr_03835923
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939339
+    parent: 72057594037930451
+    technicalName: DFr_B7A1759B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932725
+    parent: 72057594037930451
+    technicalName: DFr_20763A03
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932750
+    parent: 72057594037930451
+    technicalName: DFr_AA550A0C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931010
+    parent: 72057594037930451
+    technicalName: DFr_B2E57E4A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932097
+    parent: 72057594037930451
+    technicalName: DFr_391AA5F6
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932742
+    parent: 72057594037930451
+    technicalName: DFr_26F32B9D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939371
+    parent: 72057594037930451
+    technicalName: DFr_3A726FA5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939377
+    parent: 72057594037930451
+    technicalName: DFr_3B9135EB
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930457
+    parent: 216172783251375095
+    technicalName: Dlg_C0AE23D7
+    articyType: Dialogue
+    childCount: 57
+  - id: 72057594037930945
+    parent: 72057594037930457
+    technicalName: DFr_796FADC0
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936576
+    parent: 72057594037930457
+    technicalName: DFr_94FB6C24
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936568
+    parent: 72057594037930457
+    technicalName: DFr_442585FE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936206
+    parent: 72057594037930457
+    technicalName: DFr_9B15B2C2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936559
+    parent: 72057594037930457
+    technicalName: DFr_163127A9
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936016
+    parent: 72057594037930457
+    technicalName: DFr_66692978
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936213
+    parent: 72057594037930457
+    technicalName: DFr_3C0FF39A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936031
+    parent: 72057594037930457
+    technicalName: DFr_0A6F383E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936283
+    parent: 72057594037930457
+    technicalName: Jmp_CDF345B1
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037936597
+    parent: 72057594037930457
+    technicalName: DFr_4140079B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936220
+    parent: 72057594037930457
+    technicalName: DFr_8F695AD3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936045
+    parent: 72057594037930457
+    technicalName: DFr_E95AE577
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936583
+    parent: 72057594037930457
+    technicalName: DFr_7BCB5986
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936052
+    parent: 72057594037930457
+    technicalName: DFr_C3028015
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936058
+    parent: 72057594037930457
+    technicalName: DFr_90B57F78
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936605
+    parent: 72057594037930457
+    technicalName: DFr_8E98197E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936069
+    parent: 72057594037930457
+    technicalName: DFr_DE59EE5C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936590
+    parent: 72057594037930457
+    technicalName: DFr_D9FF35DD
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936076
+    parent: 72057594037930457
+    technicalName: DFr_C0D278CE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936104
+    parent: 72057594037930457
+    technicalName: Cnd_AE0AEF6E
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037936114
+    parent: 72057594037930457
+    technicalName: DFr_39E82EB8
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936613
+    parent: 72057594037930457
+    technicalName: DFr_F71AC152
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936090
+    parent: 72057594037930457
+    technicalName: DFr_E15A1EED
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936096
+    parent: 72057594037930457
+    technicalName: DFr_9CE50A35
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936122
+    parent: 72057594037930457
+    technicalName: DFr_9DE28CAD
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936620
+    parent: 72057594037930457
+    technicalName: DFr_6A392CAB
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936626
+    parent: 72057594037930457
+    technicalName: DFr_9717D267
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936135
+    parent: 72057594037930457
+    technicalName: DFr_3D81CB63
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936636
+    parent: 72057594037930457
+    technicalName: DFr_EFD91C3F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936261
+    parent: 72057594037930457
+    technicalName: DFr_6855C3C5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936227
+    parent: 72057594037930457
+    technicalName: DFr_82CA9158
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936143
+    parent: 72057594037930457
+    technicalName: DFr_BB693EDA
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936149
+    parent: 72057594037930457
+    technicalName: DFr_9E65F6C5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936644
+    parent: 72057594037930457
+    technicalName: DFr_107E3B39
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936275
+    parent: 72057594037930457
+    technicalName: DFr_30631B03
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936156
+    parent: 72057594037930457
+    technicalName: DFr_20224081
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936162
+    parent: 72057594037930457
+    technicalName: DFr_72FC3C02
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936651
+    parent: 72057594037930457
+    technicalName: DFr_AD4EB9EA
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936249
+    parent: 72057594037930457
+    technicalName: DFr_18A52F24
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936658
+    parent: 72057594037930457
+    technicalName: DFr_96493380
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936178
+    parent: 72057594037930457
+    technicalName: DFr_3416466D
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936185
+    parent: 72057594037930457
+    technicalName: DFr_F3C97C34
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936665
+    parent: 72057594037930457
+    technicalName: DFr_4780CC33
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936671
+    parent: 72057594037930457
+    technicalName: DFr_BEF821D5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936192
+    parent: 72057594037930457
+    technicalName: DFr_437187DC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936681
+    parent: 72057594037930457
+    technicalName: DFr_0E73FBDD
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936689
+    parent: 72057594037930457
+    technicalName: DFr_036AA1D3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936695
+    parent: 72057594037930457
+    technicalName: DFr_C5FB62FE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936705
+    parent: 72057594037930457
+    technicalName: DFr_543DFAD7
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936235
+    parent: 72057594037930457
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037936573
+    parent: 72057594037930457
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037936199
+    parent: 72057594037930457
+    technicalName: Hub_006FC604
+    articyType: Hub
+    childCount: 0
+  - id: 72057594037936270
+    parent: 72057594037930457
+    technicalName: Jmp_D0EF76AD
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037936172
+    parent: 72057594037930457
+    technicalName: Cnd_526F3039
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037936256
+    parent: 72057594037930457
+    technicalName: Jmp_3CBE8900
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037936237
+    parent: 72057594037930457
+    technicalName: Jmp_66C21B48
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037936242
+    parent: 72057594037930457
+    technicalName: Jmp_BC9C019A
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037929574
+    parent: 216172783251375095
+    technicalName: Dlg_3567F3D6
+    articyType: Dialogue
+    childCount: 23
+  - id: 72057594037929581
+    parent: 72057594037929574
+    technicalName: DFr_8F8538EE
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931620
+    parent: 72057594037929574
+    technicalName: DFr_977CC64E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931613
+    parent: 72057594037929574
+    technicalName: Cnd_7A35DFCF
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037929704
+    parent: 72057594037929574
+    technicalName: Hub_1ABB4FC5
+    articyType: Hub
+    childCount: 0
+  - id: 72057594037931627
+    parent: 72057594037929574
+    technicalName: DFr_7AE2CA5C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931633
+    parent: 72057594037929574
+    technicalName: DFr_8BEF9094
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929587
+    parent: 72057594037929574
+    technicalName: DFr_734C9661
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931648
+    parent: 72057594037929574
+    technicalName: DFr_0313795E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929593
+    parent: 72057594037929574
+    technicalName: DFr_EAF3C7F4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929599
+    parent: 72057594037929574
+    technicalName: DFr_F826A4D2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929609
+    parent: 72057594037929574
+    technicalName: DFr_3F2C7AB2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929615
+    parent: 72057594037929574
+    technicalName: DFr_58DB3636
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929651
+    parent: 72057594037929574
+    technicalName: DFr_D643BAF2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929784
+    parent: 72057594037929574
+    technicalName: DFr_215963FA
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929790
+    parent: 72057594037929574
+    technicalName: DFr_3800F819
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929798
+    parent: 72057594037929574
+    technicalName: DFr_BF6970B8
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929804
+    parent: 72057594037929574
+    technicalName: DFr_28538ADB
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929818
+    parent: 72057594037929574
+    technicalName: DFr_5F392726
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929824
+    parent: 72057594037929574
+    technicalName: DFr_74F3C26A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929831
+    parent: 72057594037929574
+    technicalName: DFr_FC7ABBA1
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929838
+    parent: 72057594037929574
+    technicalName: DFr_30FC4455
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929844
+    parent: 72057594037929574
+    technicalName: DFr_485AB343
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037929854
+    parent: 72057594037929574
+    technicalName: DFr_5A13FA8F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037928818
+    parent: 216172783251375095
+    technicalName: Dlg_4609965F
+    articyType: Dialogue
+    childCount: 27
+  - id: 72057594037931880
+    parent: 72057594037928818
+    technicalName: DFr_3A7940B5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934336
+    parent: 72057594037928818
+    technicalName: DFr_7CBC544E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936288
+    parent: 72057594037928818
+    technicalName: DFr_EC506C9E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934322
+    parent: 72057594037928818
+    technicalName: DFr_77858099
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934344
+    parent: 72057594037928818
+    technicalName: DFr_B15BC688
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936394
+    parent: 72057594037928818
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037936306
+    parent: 72057594037928818
+    technicalName: Jmp_E0A86277
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037936299
+    parent: 72057594037928818
+    technicalName: DFr_1EDD5222
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936311
+    parent: 72057594037928818
+    technicalName: DFr_969EA8DD
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936318
+    parent: 72057594037928818
+    technicalName: DFr_3EF2B37F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936325
+    parent: 72057594037928818
+    technicalName: DFr_BA681592
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936332
+    parent: 72057594037928818
+    technicalName: DFr_53FA8AEC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936339
+    parent: 72057594037928818
+    technicalName: Cnd_38DAC29D
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037936345
+    parent: 72057594037928818
+    technicalName: DFr_9754F456
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936352
+    parent: 72057594037928818
+    technicalName: DFr_B8F20547
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936359
+    parent: 72057594037928818
+    technicalName: DFr_180A7769
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936366
+    parent: 72057594037928818
+    technicalName: DFr_4682D56A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936372
+    parent: 72057594037928818
+    technicalName: DFr_6AA10F77
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936378
+    parent: 72057594037928818
+    technicalName: DFr_46E9A106
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936387
+    parent: 72057594037928818
+    technicalName: DFr_98BD6FF4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936398
+    parent: 72057594037928818
+    technicalName: DFr_7804EF2E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936428
+    parent: 72057594037928818
+    technicalName: DFr_9B85F23F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936405
+    parent: 72057594037928818
+    technicalName: DFr_4C1FBFD9
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936435
+    parent: 72057594037928818
+    technicalName: DFr_C446A873
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936412
+    parent: 72057594037928818
+    technicalName: DFr_A228FED3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936442
+    parent: 72057594037928818
+    technicalName: DFr_47EC14E3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936419
+    parent: 72057594037928818
+    technicalName: DFr_21CD1FE2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930439
+    parent: 216172783251375095
+    technicalName: Dlg_DA82C497
+    articyType: Dialogue
+    childCount: 11
+  - id: 72057594037930835
+    parent: 72057594037930439
+    technicalName: DFr_724D9615
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933311
+    parent: 72057594037930439
+    technicalName: DFr_BC89C5D8
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037936456
+    parent: 72057594037930439
+    technicalName: Jmp_B465A5E7
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037930815
+    parent: 72057594037930439
+    technicalName: DFr_7BEEAE60
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930856
+    parent: 72057594037930439
+    technicalName: DFr_04317423
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940553
+    parent: 72057594037930439
+    technicalName: Jmp_73D849F7
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037936450
+    parent: 72057594037930439
+    technicalName: DFr_87312638
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930827
+    parent: 72057594037930439
+    technicalName: DFr_6E3CBE45
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930863
+    parent: 72057594037930439
+    technicalName: Ins_EEEA285F
+    articyType: Instruction
+    childCount: 0
+  - id: 72057594037936468
+    parent: 72057594037930439
+    technicalName: DFr_B6974AD3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930868
+    parent: 72057594037930439
+    technicalName: DFr_4A52AFAF
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930348
+    parent: 216172783251375095
+    technicalName: Dlg_1FB33FDD
+    articyType: Dialogue
+    childCount: 35
+  - id: 72057594037930808
+    parent: 72057594037930348
+    technicalName: DFr_51E5E710
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939525
+    parent: 72057594037930348
+    technicalName: DFr_96BF5BF8
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939199
+    parent: 72057594037930348
+    technicalName: DFr_3E34F04C
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934015
+    parent: 72057594037930348
+    technicalName: DFr_7250088A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933896
+    parent: 72057594037930348
+    technicalName: DFr_FA0CB569
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932180
+    parent: 72057594037930348
+    technicalName: DFr_2DD444E4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938844
+    parent: 72057594037930348
+    technicalName: DFr_6BB269CA
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938851
+    parent: 72057594037930348
+    technicalName: DFr_07E59B81
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940952
+    parent: 72057594037930348
+    technicalName: DFr_563266A7
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934228
+    parent: 72057594037930348
+    technicalName: DFr_965C5C50
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940625
+    parent: 72057594037930348
+    technicalName: Jmp_0E0ADDF7
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037939533
+    parent: 72057594037930348
+    technicalName: DFr_C17F7BA2
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939207
+    parent: 72057594037930348
+    technicalName: DFr_842784FC
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934136
+    parent: 72057594037930348
+    technicalName: Jmp_9336A4B2
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037934141
+    parent: 72057594037930348
+    technicalName: Jmp_33C8D494
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037940960
+    parent: 72057594037930348
+    technicalName: DFr_1D3EE5CF
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037938902
+    parent: 72057594037930348
+    technicalName: Jmp_DB288103
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037939540
+    parent: 72057594037930348
+    technicalName: DFr_2E14DAA6
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939546
+    parent: 72057594037930348
+    technicalName: DFr_2E793996
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939215
+    parent: 72057594037930348
+    technicalName: Jmp_C7E4CEB6
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037940967
+    parent: 72057594037930348
+    technicalName: DFr_DDBA0274
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940973
+    parent: 72057594037930348
+    technicalName: DFr_9587D380
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940979
+    parent: 72057594037930348
+    technicalName: DFr_D1489C33
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037942144
+    parent: 72057594037930348
+    technicalName: DFr_0BD2B607
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940989
+    parent: 72057594037930348
+    technicalName: Jmp_B576E85B
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037939556
+    parent: 72057594037930348
+    technicalName: DFr_68DF7DF0
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939564
+    parent: 72057594037930348
+    technicalName: DFr_7114DE8E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932240
+    parent: 72057594037930348
+    technicalName: DFr_87344F87
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932247
+    parent: 72057594037930348
+    technicalName: DFr_46078695
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932203
+    parent: 72057594037930348
+    technicalName: DFr_42355259
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037932256
+    parent: 72057594037930348
+    technicalName: DFr_95CF5186
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037933175
+    parent: 72057594037930348
+    technicalName: DFr_546726CA
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934254
+    parent: 72057594037930348
+    technicalName: DFr_11FFD888
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934262
+    parent: 72057594037930348
+    technicalName: DFr_8F2CBB88
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939213
+    parent: 72057594037930348
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037930479
+    parent: 216172783251375095
+    technicalName: Dlg_181923DD
+    articyType: Dialogue
+    childCount: 22
+  - id: 72057594037931018
+    parent: 72057594037930479
+    technicalName: DFr_098BC5F3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940079
+    parent: 72057594037930479
+    technicalName: DFr_F0A39FE5
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940248
+    parent: 72057594037930479
+    technicalName: DFr_63BE0517
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931036
+    parent: 72057594037930479
+    technicalName: Cnd_E61743DC
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037940255
+    parent: 72057594037930479
+    technicalName: DFr_B57978B6
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940085
+    parent: 72057594037930479
+    technicalName: DFr_B90DEC9A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940091
+    parent: 72057594037930479
+    technicalName: DFr_22DAC56B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940351
+    parent: 72057594037930479
+    technicalName: Jmp_CCF785AC
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037931049
+    parent: 72057594037930479
+    technicalName: DFr_6689CD5F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931042
+    parent: 72057594037930479
+    technicalName: DFr_DA3DF338
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940262
+    parent: 72057594037930479
+    technicalName: DFr_A734FB8E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940269
+    parent: 72057594037930479
+    technicalName: DFr_C2DA6A59
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940275
+    parent: 72057594037930479
+    technicalName: DFr_F0A58FDB
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940281
+    parent: 72057594037930479
+    technicalName: DFr_D5BD6F0E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940289
+    parent: 72057594037930479
+    technicalName: DFr_C91E6DAA
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940328
+    parent: 72057594037930479
+    technicalName: DFr_C8C1DEC4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940297
+    parent: 72057594037930479
+    technicalName: DFr_AAA6FC48
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940336
+    parent: 72057594037930479
+    technicalName: DFr_F20FDAA6
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940304
+    parent: 72057594037930479
+    technicalName: DFr_70921A58
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940311
+    parent: 72057594037930479
+    technicalName: DFr_4FE7F182
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940319
+    parent: 72057594037930479
+    technicalName: DFr_3F2DD50F
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037940343
+    parent: 72057594037930479
+    technicalName: DFr_604FB782
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037939221
+    parent: 216172783251375095
+    technicalName: Dlg_3F798923
+    articyType: Dialogue
+    childCount: 38
+  - id: 72057594037930779
+    parent: 72057594037939221
+    technicalName: DFr_CA48F185
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931689
+    parent: 72057594037939221
+    technicalName: Cnd_139CAAB0
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037934165
+    parent: 72057594037939221
+    technicalName: Hub_3963F13D
+    articyType: Hub
+    childCount: 0
+  - id: 72057594037934177
+    parent: 72057594037939221
+    technicalName: DFr_0F9A2F36
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934171
+    parent: 72057594037939221
+    technicalName: DFr_F5CDB55A
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934211
+    parent: 72057594037939221
+    technicalName: DFr_6B5BAFB3
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934183
+    parent: 72057594037939221
+    technicalName: DFr_C30EB441
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934203
+    parent: 72057594037939221
+    technicalName: Hub_1311AF2B
+    articyType: Hub
+    childCount: 0
+  - id: 72057594037931746
+    parent: 72057594037939221
+    technicalName: DFr_89D70950
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930787
+    parent: 72057594037939221
+    technicalName: Ins_B39E28D2
+    articyType: Instruction
+    childCount: 0
+  - id: 72057594037930798
+    parent: 72057594037939221
+    technicalName: DFr_C8B79309
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930792
+    parent: 72057594037939221
+    technicalName: DFr_AECD8027
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934269
+    parent: 72057594037939221
+    technicalName: DFr_998AD8E6
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934276
+    parent: 72057594037939221
+    technicalName: Jmp_DF6014C1
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037930354
+    parent: 72057594037939221
+    technicalName: DFr_2AE4BE13
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934157
+    parent: 72057594037939221
+    technicalName: DFr_B58ADCD4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934220
+    parent: 72057594037939221
+    technicalName: DFr_58A07229
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930360
+    parent: 72057594037939221
+    technicalName: DFr_C17CB943
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930366
+    parent: 72057594037939221
+    technicalName: DFr_FFC9EE88
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930375
+    parent: 72057594037939221
+    technicalName: DFr_C609474B
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934198
+    parent: 72057594037939221
+    technicalName: Jmp_C2E38F98
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037934236
+    parent: 72057594037939221
+    technicalName: Jmp_89BF8584
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037930391
+    parent: 72057594037939221
+    technicalName: DFr_0B192248
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930383
+    parent: 72057594037939221
+    technicalName: DFr_C1760F47
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930686
+    parent: 72057594037939221
+    technicalName: DFr_5810E334
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930715
+    parent: 72057594037939221
+    technicalName: Jmp_2E2D2CAB
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037930699
+    parent: 72057594037939221
+    technicalName: DFr_2D0C3873
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930693
+    parent: 72057594037939221
+    technicalName: DFr_D9DA1A85
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931938
+    parent: 72057594037939221
+    technicalName: Cnd_3AFBD758
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037930729
+    parent: 72057594037939221
+    technicalName: DFr_D3504513
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930705
+    parent: 72057594037939221
+    technicalName: DFr_410D4C7E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931945
+    parent: 72057594037939221
+    technicalName: DFr_957E5EA0
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930722
+    parent: 72057594037939221
+    technicalName: DFr_B431D83E
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037931953
+    parent: 72057594037939221
+    technicalName: DFr_8A881F77
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930750
+    parent: 72057594037939221
+    technicalName: DFr_3E3D7CF4
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037934241
+    parent: 72057594037939221
+    technicalName: DFr_6F98CE04
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037930745
+    parent: 72057594037939221
+    technicalName: Jmp_7198C50E
+    articyType: Jump
+    childCount: 0
+  - id: 72057594037934248
+    parent: 72057594037939221
+    technicalName: Jmp_363385CC
+    articyType: Jump
+    childCount: 0
+  - id: 216172785005863603
+    parent: 72057594037927937
+    technicalName: Entities
+    articyType: Entities
+    childCount: 8
+  - id: 72057594037929170
+    parent: 216172785005863603
+    technicalName: Ufo_633C83CB
+    articyType: EntitiesUserFolder
+    childCount: 9
+  - id: 72057594037929162
+    parent: 72057594037929170
+    technicalName: Ntt_C3ED7955
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037939320
+    parent: 72057594037929170
+    technicalName: Ntt_0B2E52CC
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037937269
+    parent: 72057594037929170
+    technicalName: Ntt_733E16C8
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037929176
+    parent: 72057594037929170
+    technicalName: Ntt_22723ED6
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037929154
+    parent: 72057594037929170
+    technicalName: Ntt_FBBC1797
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037929158
+    parent: 72057594037929170
+    technicalName: Ntt_C47E9A28
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037929166
+    parent: 72057594037929170
+    technicalName: Ntt_A3F59FEE
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037932414
+    parent: 72057594037929170
+    technicalName: Ntt_096D7DE7
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037929172
+    parent: 72057594037929170
+    technicalName: Ntt_76D06331
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037937516
+    parent: 216172785005863603
+    technicalName: Ufo_7F69948C
+    articyType: EntitiesUserFolder
+    childCount: 1
+  - id: 72057594037937518
+    parent: 72057594037937516
+    technicalName: Ntt_91E8FF49
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037929138
+    parent: 216172785005863603
+    technicalName: Ufo_1E47C269
+    articyType: EntitiesUserFolder
+    childCount: 4
+  - id: 72057594037930317
+    parent: 72057594037929138
+    technicalName: Ntt_52E9A0BB
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037929142
+    parent: 72057594037929138
+    technicalName: Ntt_E987BAF1
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037929146
+    parent: 72057594037929138
+    technicalName: Ntt_6760898D
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037929150
+    parent: 72057594037929138
+    technicalName: Ntt_F6777F3C
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037934577
+    parent: 216172785005863603
+    technicalName: Ufo_5F2D0084
+    articyType: EntitiesUserFolder
+    childCount: 5
+  - id: 72057594037938352
+    parent: 72057594037934577
+    technicalName: Ntt_5839EB53
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037937469
+    parent: 72057594037934577
+    technicalName: Ntt_C97C6662
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037937682
+    parent: 72057594037934577
+    technicalName: Ntt_D2492D0A
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037934573
+    parent: 72057594037934577
+    technicalName: Ntt_36F19B79
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037934817
+    parent: 72057594037934577
+    technicalName: Ntt_37327A72
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037939571
+    parent: 216172785005863603
+    technicalName: Ufo_3ADE9107
+    articyType: EntitiesUserFolder
+    childCount: 1
+  - id: 72057594037930426
+    parent: 72057594037939571
+    technicalName: Ntt_ADC79C07
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037939271
+    parent: 216172785005863603
+    technicalName: Ufo_2C945CC4
+    articyType: EntitiesUserFolder
+    childCount: 0
+  - id: 72057594037928221
+    parent: 216172785005863603
+    technicalName: Ntt_6418934C
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037928225
+    parent: 216172785005863603
+    technicalName: Ntt_90F83D21
+    articyType: Entity
+    childCount: 0
+  - id: 216172782940115884
+    parent: 72057594037927937
+    technicalName: Locations
+    articyType: Locations
+    childCount: 1
+  - id: 72057594037929343
+    parent: 216172782940115884
+    technicalName: Loc_29E04FC0
+    articyType: Location
+    childCount: 12
+  - id: 72057594037929388
+    parent: 72057594037929343
+    technicalName: Lnk_573C732C
+    articyType: Link
+    childCount: 0
+  - id: 72057594037929385
+    parent: 72057594037929343
+    technicalName: Lnk_C5603B3E
+    articyType: Link
+    childCount: 0
+  - id: 72057594037929382
+    parent: 72057594037929343
+    technicalName: Lnk_5DC9DD85
+    articyType: Link
+    childCount: 0
+  - id: 72057594037929379
+    parent: 72057594037929343
+    technicalName: Lnk_6769C92D
+    articyType: Link
+    childCount: 0
+  - id: 72057594037929376
+    parent: 72057594037929343
+    technicalName: Lnk_5781E3F7
+    articyType: Link
+    childCount: 0
+  - id: 72057594037929370
+    parent: 72057594037929343
+    technicalName: Lnk_18563EC2
+    articyType: Link
+    childCount: 0
+  - id: 72057594037929367
+    parent: 72057594037929343
+    technicalName: Lnk_9F18F7FD
+    articyType: Link
+    childCount: 0
+  - id: 72057594037929364
+    parent: 72057594037929343
+    technicalName: Lnk_840424CC
+    articyType: Link
+    childCount: 0
+  - id: 72057594037929361
+    parent: 72057594037929343
+    technicalName: Lnk_47FC75BD
+    articyType: Link
+    childCount: 0
+  - id: 72057594037929358
+    parent: 72057594037929343
+    technicalName: Lnk_8CF4F4E3
+    articyType: Link
+    childCount: 0
+  - id: 72057594037929355
+    parent: 72057594037929343
+    technicalName: Lnk_05C62694
+    articyType: Link
+    childCount: 0
+  - id: 72057594037929351
+    parent: 72057594037929343
+    technicalName: Zon_D6F451FB
+    articyType: Zone
+    childCount: 0
+  - id: 216172782386062064
+    parent: 72057594037927937
+    technicalName: Documents
+    articyType: Documents
+    childCount: 3
+  - id: 72057594037940498
+    parent: 216172782386062064
+    technicalName: Doc_BFBD238E
+    articyType: Document
+    childCount: 8
+  - id: 72057594037940501
+    parent: 72057594037940498
+    technicalName: Txt_FC4E42BA
+    articyType: TextObject
+    childCount: 0
+  - id: 72057594037940507
+    parent: 72057594037940498
+    technicalName: Txt_6E5B34BB
+    articyType: TextObject
+    childCount: 0
+  - id: 72057594037940513
+    parent: 72057594037940498
+    technicalName: Txt_345B40DE
+    articyType: TextObject
+    childCount: 0
+  - id: 72057594037940519
+    parent: 72057594037940498
+    technicalName: Txt_79B158A8
+    articyType: TextObject
+    childCount: 0
+  - id: 72057594037940525
+    parent: 72057594037940498
+    technicalName: Txt_3EA9B795
+    articyType: TextObject
+    childCount: 0
+  - id: 72057594037940531
+    parent: 72057594037940498
+    technicalName: Txt_31AB804F
+    articyType: TextObject
+    childCount: 0
+  - id: 72057594037940537
+    parent: 72057594037940498
+    technicalName: Txt_4B381C95
+    articyType: TextObject
+    childCount: 0
+  - id: 72057594037940543
+    parent: 72057594037940498
+    technicalName: Txt_6CE816F7
+    articyType: TextObject
+    childCount: 0
+  - id: 72057594037940447
+    parent: 216172782386062064
+    technicalName: Doc_05E62E09
+    articyType: Document
+    childCount: 8
+  - id: 72057594037940450
+    parent: 72057594037940447
+    technicalName: Txt_FC3C21ED
+    articyType: TextObject
+    childCount: 0
+  - id: 72057594037940456
+    parent: 72057594037940447
+    technicalName: Txt_416BF85F
+    articyType: TextObject
+    childCount: 0
+  - id: 72057594037940462
+    parent: 72057594037940447
+    technicalName: Txt_596F80C7
+    articyType: TextObject
+    childCount: 0
+  - id: 72057594037940468
+    parent: 72057594037940447
+    technicalName: Txt_11A84938
+    articyType: TextObject
+    childCount: 0
+  - id: 72057594037940474
+    parent: 72057594037940447
+    technicalName: Txt_7A66FD1B
+    articyType: TextObject
+    childCount: 0
+  - id: 72057594037940480
+    parent: 72057594037940447
+    technicalName: Txt_17C5223C
+    articyType: TextObject
+    childCount: 0
+  - id: 72057594037940486
+    parent: 72057594037940447
+    technicalName: Txt_5420D9DD
+    articyType: TextObject
+    childCount: 0
+  - id: 72057594037940492
+    parent: 72057594037940447
+    technicalName: Txt_B6010281
+    articyType: TextObject
+    childCount: 0
+  - id: 72057594037940888
+    parent: 216172782386062064
+    technicalName: Doc_AC9E0E25
+    articyType: Document
+    childCount: 1
+  - id: 72057594037940891
+    parent: 72057594037940888
+    technicalName: Txt_6C08AED6
+    articyType: TextObject
+    childCount: 0
+  - id: 216172782708290162
+    parent: 72057594037927937
+    technicalName: Journeys
+    articyType: Journeys
+    childCount: 0
+  - id: 216172782815217020
+    parent: 72057594037927937
+    technicalName: TemplateDesign
+    articyType: TemplateDesign
+    childCount: 3
+  - id: 216172785641213376
+    parent: 216172782815217020
+    technicalName: Features
+    articyType: Features
+    childCount: 8
+  - id: 72057594037941050
+    parent: 216172785641213376
+    technicalName: ElevenlabsVoiceLibrary
+    articyType: Feature
+    childCount: 0
+  - id: 72057594037927951
+    parent: 216172785641213376
+    technicalName: DefaultBasicCharacterFeature
+    articyType: Feature
+    childCount: 0
+  - id: 72057594037928016
+    parent: 216172785641213376
+    technicalName: DefaultExtendedCharacterFeature
+    articyType: Feature
+    childCount: 0
+  - id: 72057594037937021
+    parent: 216172785641213376
+    technicalName: CharacterCard
+    articyType: Feature
+    childCount: 0
+  - id: 72057594037931439
+    parent: 216172785641213376
+    technicalName: Duration
+    articyType: Feature
+    childCount: 0
+  - id: 72057594037937786
+    parent: 216172785641213376
+    technicalName: PauseOn
+    articyType: Feature
+    childCount: 0
+  - id: 72057594037939277
+    parent: 216172785641213376
+    technicalName: QuestBase
+    articyType: Feature
+    childCount: 0
+  - id: 72057594037937841
+    parent: 216172785641213376
+    technicalName: RiskCheck
+    articyType: Feature
+    childCount: 0
+  - id: 216172782852592046
+    parent: 216172782815217020
+    technicalName: PropertyTemplates
+    articyType: PropertyTemplates
+    childCount: 6
+  - id: 216172785252364728
+    parent: 216172782852592046
+    technicalName: 
+    articyType: TypedPropertyTemplates
+    childCount: 0
+  - id: 216172783051006960
+    parent: 216172782852592046
+    technicalName: 
+    articyType: TypedPropertyTemplates
+    childCount: 0
+  - id: 216172783962167179
+    parent: 216172782852592046
+    technicalName: 
+    articyType: TypedPropertyTemplates
+    childCount: 0
+  - id: 216172785725457481
+    parent: 216172782852592046
+    technicalName: 
+    articyType: TypedPropertyTemplates
+    childCount: 0
+  - id: 216172783022940736
+    parent: 216172782852592046
+    technicalName: 
+    articyType: TypedPropertyTemplates
+    childCount: 0
+  - id: 216172783984629646
+    parent: 216172782852592046
+    technicalName: 
+    articyType: TypedPropertyTemplates
+    childCount: 0
+  - id: 216172784713633229
+    parent: 216172782815217020
+    technicalName: Templates
+    articyType: Templates
+    childCount: 18
+  - id: 216172782925599000
+    parent: 216172784713633229
+    technicalName: 
+    articyType: TemplateTypeFolder
+    childCount: 0
+  - id: 216172785817780125
+    parent: 216172784713633229
+    technicalName: 
+    articyType: TemplateTypeFolder
+    childCount: 0
+  - id: 216172782164859599
+    parent: 216172784713633229
+    technicalName: 
+    articyType: TemplateTypeFolder
+    childCount: 2
+  - id: 72057594037931429
+    parent: 216172782164859599
+    technicalName: DialogueFragment_Extended
+    articyType: Template
+    childCount: 0
+  - id: 72057594037937827
+    parent: 216172782164859599
+    technicalName: DialogueFragment_Extended_02
+    articyType: Template
+    childCount: 0
+  - id: 216172784493379826
+    parent: 216172784713633229
+    technicalName: 
+    articyType: TemplateTypeFolder
+    childCount: 0
+  - id: 216172786085793667
+    parent: 216172784713633229
+    technicalName: 
+    articyType: TemplateTypeFolder
+    childCount: 0
+  - id: 216172784138869361
+    parent: 216172784713633229
+    technicalName: 
+    articyType: TemplateTypeFolder
+    childCount: 4
+  - id: 72057594037928062
+    parent: 216172784138869361
+    technicalName: DefaultSupportingCharacterTemplate
+    articyType: Template
+    childCount: 0
+  - id: 72057594037928104
+    parent: 216172784138869361
+    technicalName: DefaultMainCharacterTemplate
+    articyType: Template
+    childCount: 0
+  - id: 72057594037937230
+    parent: 216172784138869361
+    technicalName: Item
+    articyType: Template
+    childCount: 0
+  - id: 72057594037939273
+    parent: 216172784138869361
+    technicalName: Quest_Template
+    articyType: Template
+    childCount: 0
+  - id: 216172783944319605
+    parent: 216172784713633229
+    technicalName: 
+    articyType: TemplateTypeFolder
+    childCount: 0
+  - id: 216172782447180314
+    parent: 216172784713633229
+    technicalName: 
+    articyType: TemplateTypeFolder
+    childCount: 0
+  - id: 216172785542236144
+    parent: 216172784713633229
+    technicalName: 
+    articyType: TemplateTypeFolder
+    childCount: 0
+  - id: 216172785234488879
+    parent: 216172784713633229
+    technicalName: 
+    articyType: TemplateTypeFolder
+    childCount: 0
+  - id: 216172785027381783
+    parent: 216172784713633229
+    technicalName: 
+    articyType: TemplateTypeFolder
+    childCount: 0
+  - id: 216172786328477020
+    parent: 216172784713633229
+    technicalName: 
+    articyType: TemplateTypeFolder
+    childCount: 0
+  - id: 216172784576846222
+    parent: 216172784713633229
+    technicalName: 
+    articyType: TemplateTypeFolder
+    childCount: 0
+  - id: 216172783507662867
+    parent: 216172784713633229
+    technicalName: 
+    articyType: TemplateTypeFolder
+    childCount: 0
+  - id: 216172783227679388
+    parent: 216172784713633229
+    technicalName: 
+    articyType: TemplateTypeFolder
+    childCount: 0
+  - id: 216172786225525660
+    parent: 216172784713633229
+    technicalName: 
+    articyType: TemplateTypeFolder
+    childCount: 0
+  - id: 216172784638832577
+    parent: 216172784713633229
+    technicalName: 
+    articyType: TemplateTypeFolder
+    childCount: 0
+  - id: 216172784917004375
+    parent: 216172784713633229
+    technicalName: 
+    articyType: TemplateTypeFolder
+    childCount: 0
+  - id: 216172782503605138
+    parent: 72057594037927937
+    technicalName: 
+    articyType: RuleSets
+    childCount: 1
+  - id: 72057594037928205
+    parent: 216172782503605138
+    technicalName: 
+    articyType: RuleSet
+    childCount: 1
+  - id: 72057594037928208
+    parent: 72057594037928205
+    technicalName: 
+    articyType: RuleSetPackage
+    childCount: 0
+  - id: 216172783392894804
+    parent: 72057594037927937
+    technicalName: Assets
+    articyType: Assets
+    childCount: 7
+  - id: 72057594037928215
+    parent: 216172783392894804
+    technicalName: Ufo_E01F05A5
+    articyType: AssetsUserFolder
+    childCount: 0
+  - id: 72057594037928213
+    parent: 216172783392894804
+    technicalName: Ufo_B5863A1B
+    articyType: AssetsUserFolder
+    childCount: 0
+  - id: 72057594037928217
+    parent: 216172783392894804
+    technicalName: Ufo_172F0F0E
+    articyType: AssetsUserFolder
+    childCount: 0
+  - id: 72057594037928211
+    parent: 216172783392894804
+    technicalName: Ufo_47AB8424
+    articyType: AssetsUserFolder
+    childCount: 23
+  - id: 72057594037930294
+    parent: 72057594037928211
+    technicalName: Ast_6656B18E
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037930297
+    parent: 72057594037928211
+    technicalName: Ast_045813F8
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037930300
+    parent: 72057594037928211
+    technicalName: Ast_7F047CB7
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037930303
+    parent: 72057594037928211
+    technicalName: Ast_379DA346
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037930306
+    parent: 72057594037928211
+    technicalName: Ast_DE1529CA
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037930309
+    parent: 72057594037928211
+    technicalName: Ast_24F75D12
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037930411
+    parent: 72057594037928211
+    technicalName: Ast_617FDB92
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037930414
+    parent: 72057594037928211
+    technicalName: Ast_65F7B208
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037930417
+    parent: 72057594037928211
+    technicalName: Ast_756561CC
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037930420
+    parent: 72057594037928211
+    technicalName: Ast_11B7A185
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037930430
+    parent: 72057594037928211
+    technicalName: Ast_02F9B08A
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037930423
+    parent: 72057594037928211
+    technicalName: Ast_D6C9BEBF
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037939314
+    parent: 72057594037928211
+    technicalName: Ast_A7CF4E06
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037939317
+    parent: 72057594037928211
+    technicalName: Ast_3ED8865F
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037939324
+    parent: 72057594037928211
+    technicalName: Ast_A96409A0
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037928829
+    parent: 72057594037928211
+    technicalName: Ast_CD56BC06
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037930252
+    parent: 72057594037928211
+    technicalName: Ast_1282CCCB
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037939305
+    parent: 72057594037928211
+    technicalName: Ast_C943CA23
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037939308
+    parent: 72057594037928211
+    technicalName: Ast_34D3CCB1
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037939311
+    parent: 72057594037928211
+    technicalName: Ast_F6F2DA05
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037929132
+    parent: 72057594037928211
+    technicalName: Ast_94C1C5CE
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037929126
+    parent: 72057594037928211
+    technicalName: Ast_11EEF94F
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037929135
+    parent: 72057594037928211
+    technicalName: Ast_7D691AEA
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037928219
+    parent: 216172783392894804
+    technicalName: Ufo_CDF30863
+    articyType: AssetsUserFolder
+    childCount: 0
+  - id: 72057594037941109
+    parent: 216172783392894804
+    technicalName: Ufo_DF6A7B8E
+    articyType: AssetsUserFolder
+    childCount: 16
+  - id: 72057594037941801
+    parent: 72057594037941109
+    technicalName: DFr_2DD444E4_Text_en
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941845
+    parent: 72057594037941109
+    technicalName: DFr_2E14DAA6_Text_en
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941853
+    parent: 72057594037941109
+    technicalName: DFr_2E793996_Text_en
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941833
+    parent: 72057594037941109
+    technicalName: DFr_3E34F04C_Text_en
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941817
+    parent: 72057594037941109
+    technicalName: DFr_6BB269CA_Text_en
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941825
+    parent: 72057594037941109
+    technicalName: DFr_07E59B81_Text_en
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941797
+    parent: 72057594037941109
+    technicalName: DFr_51E5E710_Text_en
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941885
+    parent: 72057594037941109
+    technicalName: DFr_95CF5186_Text_en
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941837
+    parent: 72057594037941109
+    technicalName: DFr_96BF5BF8_Text_en
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941813
+    parent: 72057594037941109
+    technicalName: DFr_965C5C50_Text_en
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941873
+    parent: 72057594037941109
+    technicalName: DFr_9587D380_Text_en
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941861
+    parent: 72057594037941109
+    technicalName: DFr_563266A7_Text_en
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941809
+    parent: 72057594037941109
+    technicalName: DFr_7250088A_Text_en
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941877
+    parent: 72057594037941109
+    technicalName: DFr_D1489C33_Text_en
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941869
+    parent: 72057594037941109
+    technicalName: DFr_DDBA0274_Text_en
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941805
+    parent: 72057594037941109
+    technicalName: DFr_FA0CB569_Text_en
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941499
+    parent: 216172783392894804
+    technicalName: Ufo_AB7C7DAA
+    articyType: AssetsUserFolder
+    childCount: 7
+  - id: 72057594037941841
+    parent: 72057594037941499
+    technicalName: DFr_2E14DAA6_Text_ru
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941849
+    parent: 72057594037941499
+    technicalName: DFr_2E793996_Text_ru
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941829
+    parent: 72057594037941499
+    technicalName: DFr_3E34F04C_Text_ru
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941821
+    parent: 72057594037941499
+    technicalName: DFr_07E59B81_Text_ru
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941881
+    parent: 72057594037941499
+    technicalName: DFr_95CF5186_Text_ru
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941857
+    parent: 72057594037941499
+    technicalName: DFr_563266A7_Text_ru
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037941865
+    parent: 72057594037941499
+    technicalName: DFr_DDBA0274_Text_ru
+    articyType: Asset
+    childCount: 0
+--- !u!114 &-467671454026252920
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65213dc888abacb419e6db477e6764ea, type: 3}
+  m_Name: DefaultGlobalVariables
+  m_EditorClassIdentifier: Assembly-CSharp::Articy.World_Of_Red_Moon.GlobalVariables.ArticyGlobalVariables
+  mBoolVariableCache:
+  - mFullQualifiedName: NKNW.hadGun
+    mVar:
+      values: 00
+  - mFullQualifiedName: NKNW.ratCanDistractGuard
+    mVar:
+      values: 00
+  - mFullQualifiedName: NKNW.tomasSus
+    mVar:
+      values: 00
+  - mFullQualifiedName: NKNW.aoBlamesHimself
+    mVar:
+      values: 00
+  - mFullQualifiedName: NKNW.popularNovel
+    mVar:
+      values: 00
+  - mFullQualifiedName: NKNW.code_shadyPeople
+    mVar:
+      values: 00
+  - mFullQualifiedName: NKNW.tomAttemptsMurder
+    mVar:
+      values: 00
+  - mFullQualifiedName: NKNW.legalLoophole
+    mVar:
+      values: 00
+  - mFullQualifiedName: NKNW.canPreventMurder
+    mVar:
+      values: 00
+  - mFullQualifiedName: NKNW.gunLooks
+    mVar:
+      values: 00
+  - mFullQualifiedName: NKNW.secretPathToConfiscated
+    mVar:
+      values: 00
+  - mFullQualifiedName: NKNW.guardsNeedEvidence
+    mVar:
+      values: 00
+  - mFullQualifiedName: NKNW.kotIdentify
+    mVar:
+      values: 00
+  - mFullQualifiedName: NKNW.purpleCode
+    mVar:
+      values: 00
+  - mFullQualifiedName: NKNW.stoleSweets
+    mVar:
+      values: 00
+  - mFullQualifiedName: NKNW.testA
+    mVar:
+      values: 01
+  - mFullQualifiedName: NKNW.testB
+    mVar:
+      values: 01
+  - mFullQualifiedName: NKNW.testC
+    mVar:
+      values: 01
+  - mFullQualifiedName: NKNW.testD
+    mVar:
+      values: 00
+  - mFullQualifiedName: NKNW.testE
+    mVar:
+      values: 00
+  - mFullQualifiedName: NKNW.lockpick
+    mVar:
+      values: 00
+  - mFullQualifiedName: RFLG.neutralizedByGuard
+    mVar:
+      values: 00
+  - mFullQualifiedName: RFLG.murderAttempt
+    mVar:
+      values: 00
+  - mFullQualifiedName: RFLG.helpedAo
+    mVar:
+      values: 00
+  - mFullQualifiedName: RFLG.prepareForRatPath
+    mVar:
+      values: 00
+  - mFullQualifiedName: RFLG.kotIdentify
+    mVar:
+      values: 00
+  - mFullQualifiedName: RFLG.refusedRatStealQuest
+    mVar:
+      values: 00
+  - mFullQualifiedName: RFLG.ratHasStealQuest
+    mVar:
+      values: 00
+  - mFullQualifiedName: RFLG.callLoopReset
+    mVar:
+      values: 00
+  - mFullQualifiedName: TEST.test
+    mVar:
+      values: 00
+  - mFullQualifiedName: CLUE.HarmonicRow
+    mVar:
+      values: 00
+  - mFullQualifiedName: CLUE.SonoceramicShard
+    mVar:
+      values: 00
+  - mFullQualifiedName: CLUE.SonusGuideTube
+    mVar:
+      values: 00
+  - mFullQualifiedName: CLUE.ReceiptWhisperer
+    mVar:
+      values: 01
+  - mFullQualifiedName: CLUE.WaxStoppers
+    mVar:
+      values: 00
+  - mFullQualifiedName: CLUE.MaintScrollHum
+    mVar:
+      values: 01
+  - mFullQualifiedName: CLUE.FloorMark
+    mVar:
+      values: 00
+  - mFullQualifiedName: CLUE.VentFiddle
+    mVar:
+      values: 00
+  - mFullQualifiedName: CLUE.EarPressureReports
+    mVar:
+      values: 00
+  mIntVariableCache:
+  - mFullQualifiedName: NKNW.libSusCounter
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: NKNW.kill_tasha
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: NKNW.kill_rat
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: NKNW.kill_self
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: NKNW.kill_vaza
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: NKNW.kill_ru
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: NKNW.kill_kot
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: NKNW.kill_lib
+    mVar:
+      values: f5ffffff
+  - mFullQualifiedName: NKNW.kill_guard
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: NKNW.kill_ao
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: NKNW.kill_tom
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: RQUE.testic
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: ITM.item_kotsukiNote_delta
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: ITM.item_kotsukiNote_count
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: ITM.item_InventoryArtefact_count
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: ITM.item_InventoryArtefact_delta
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: ITM.item_Gun_count
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: ITM.item_Gun_delta
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: ITM.item_RuleBook_count
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: ITM.item_RuleBook_delta
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: ITM.item_JapaneseSweets_delta
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: ITM.item_JapaneseSweets_count
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: ITM.item_RatStaff_count
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: ITM.item_RatStaff_delta
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: ITM.item_Mop_count
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: ITM.item_Mop_delta
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: ITM.item_CubesNote_count
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: ITM.item_CubesNote_delta
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: RCNT.ratTrust
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: RCNT.waitForAoRead
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: RCNT.stealGunMistakes
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: EVT.event_murderAttempt
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: EVT.event_gunStealing
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: PS.loopCounter
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: PS.skill_Confidence
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: PS.skill_Perseption
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: PS.skill_Dexterity
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: PS.skill_Willpower
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: PS.standing_purple
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: PS.standing_akaimoon
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: PS.moralCap
+    mVar:
+      values: 0a000000
+  - mFullQualifiedName: PS.moralVal
+    mVar:
+      values: 0a000000
+  - mFullQualifiedName: PS.skill_Logic
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: PS.clueTotalScore
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: PS.skill_Lux
+    mVar:
+      values: 01000000
+  - mFullQualifiedName: PS.skill_Tempus
+    mVar:
+      values: 01000000
+  - mFullQualifiedName: PS.skill_Sonus
+    mVar:
+      values: 01000000
+  - mFullQualifiedName: PS.magicCap_Lux
+    mVar:
+      values: 01000000
+  - mFullQualifiedName: PS.magicCap_Tempus
+    mVar:
+      values: 01000000
+  - mFullQualifiedName: PS.magicCap_Sonus
+    mVar:
+      values: 01000000
+  - mFullQualifiedName: NQUE.testic
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: SCH.Perseption
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: SCH.Persuasion
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: SCH.Accuracy
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: SCH.Willpower
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: SCH.boost
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.BackgroundCheck_Result
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.BackgroundCheck_Stage
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.BackgroundCheck_State
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.FindMemories_Result
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.FindMemories_Stage
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.FindMemories_State
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.advertise_Obj_A
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.advertise_Result
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.advertise_Obj_B
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.advertise_Obj_C
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.advertise_Stage
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.advertise_State
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.getArtefact_Result
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.preventMurderAttempt_State
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.getGun_Result
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.getGun_Obj_ratA
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.getArtefact_State
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.getGun_Obj_getRuleBook
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.getArtefact_Stage
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.getGun_Obj_ratB
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.advertise_TalkedCount
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.getGun_Stage
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.preventMurderAttempt_Result
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.preventMurderAttempt_Stage
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.stealFromRu_Result
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.stealFromRu_Stage
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.stealFromRu_State
+    mVar:
+      values: 00000000
+  - mFullQualifiedName: QUEST.getGun_State
+    mVar:
+      values: 00000000
+  mStringVariableCache: []
+  mLiveBoolVariableCache: []
+  mLiveIntVariableCache: []
+  mLiveStringVariableCache: []
+  mIsInitialized: 1
+  mNKNW:
+    _VariableStorage: {fileID: -467671454026252920}
+  mRQUE:
+    _VariableStorage: {fileID: -467671454026252920}
+  mRFLG:
+    _VariableStorage: {fileID: -467671454026252920}
+  mITM:
+    _VariableStorage: {fileID: -467671454026252920}
+  mRCNT:
+    _VariableStorage: {fileID: -467671454026252920}
+  mEVT:
+    _VariableStorage: {fileID: -467671454026252920}
+  mPS:
+    _VariableStorage: {fileID: -467671454026252920}
+  mNQUE:
+    _VariableStorage: {fileID: -467671454026252920}
+  mSCH:
+    _VariableStorage: {fileID: -467671454026252920}
+  mTEST:
+    _VariableStorage: {fileID: -467671454026252920}
+  mCLUE:
+    _VariableStorage: {fileID: -467671454026252920}
+  mQUEST:
+    _VariableStorage: {fileID: -467671454026252920}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1676762633, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: ArticyDatabase
+  m_EditorClassIdentifier: ArticyRuntime.dll::Articy.Unity.ArticyDatabase
+  mHierarchy: {fileID: -795186008395033659}
+  mLocalization: {fileID: -6379347034137062569}
+  mRuleSetId: 269
+  mArticyAssetsUseResourcesFolder: 1
+  mInternalProject:
+    mName: world of red moon
+    mDetailName: 
+    mId: 6b45a52e-5605-4c95-a051-48da04bae055
+    mTechnicalName: World_Of_Red_Moon
+  mImportedAssets:
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/\u0410\u0410\u0420\u0410\u0414\u0425\u0418\u042F.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/photomode_20092024_155726.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/photomode_20092024_154652_\u2014_\u043A\u043E\u043F\u0438\u044F.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/photomode_26092024_151241_\u2014_\u043A\u043E\u043F\u0438\u044F_\u2014_\u043A\u043E\u043F\u0438\u044F.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/\u0410\u0410\u0420\u0410\u0414\u0425\u0418\u042F2.0..png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1015_Cyan_Background_Portrait_remix_01k38a0pg6fttr4tn9tc0r1bqe_(1).png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1125_Mysterious_Female_Character_Portrait_remix_01k38e1w23ftxamgccafj7f0nn.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1244_Mystical_Veiled_Portrait_remix_01k38jhbeaf30vhm4r09gj4jh5.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1313_Mysterious_Male_Character_remix_01k38m6espe0kb4p415rce5qc1.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1335_Mysterious_Asian_Sorceress_remix_01k38ne504fjrvvt1nyxy7edg3.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1437_Gothic_Attire_Portrait_remix_01k38s10qbeynaayc0vq0cbvbv.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1624_Intense_Character_Portrait_remix_01k38z4q34ey38xgcxv992mfhp.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1645_Detailed_Portrait_Study_remix_01k390ad3deg29zwses6y7bpsc.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1703_Curious_Expression_Portrait_remix_01k391av94fhn83zctbv23nwcc.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1705_Shady_Game_Character_remix_01k391g1nee32ra8q8yft1rnvm.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1756_Revenge-Driven_Game_Character_remix_01k394d5bwf22t9g3jbb3626zd.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250822_1754_Game_Character_Portrait_remix_01k3948yxreacsvh79vk46m5xa.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/\u041A\u041B\u0415\u0420\u041A.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/\u0420\u0423\u041D\u0410\u041A\u041E.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/NIVIE.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250927_1816_\u0422\u0435\u043C\u043D\u044B\u0439_\u0444\u043E\u043D_remix_01k65vwpd1f0xr2748yrgrrppk.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250927_2030_Carefree_Servant_Portrait_remix_01k663hh87fkprs2vqdac8yz4x.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250927_2033_Carefree_Servant_Portrait_remix_01k663p5t9fzmvyd8jn18jhq7c.png"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_51E5E710_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_2DD444E4_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_FA0CB569_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_7250088A_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_965C5C50_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_6BB269CA_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_07E59B81_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_3E34F04C_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_96BF5BF8_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_2E14DAA6_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_2E793996_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_563266A7_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_DDBA0274_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_9587D380_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_D1489C33_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/en/DFr_95CF5186_Text_en.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_07E59B81_Text_ru.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_3E34F04C_Text_ru.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_2E14DAA6_Text_ru.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_2E793996_Text_ru.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_563266A7_Text_ru.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_DDBA0274_Text_ru.mp3"
+  - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/ru/DFr_95CF5186_Text_ru.mp3"
+  mDefaultGlobalVariables: {fileID: -467671454026252920}
+  mPackages:
+  - PackageId: 72057594037928208
+    PackageName: "\u0412\u0441\u0435 \u043E\u0431\u044A\u0435\u043A\u0442\u044B"
+    PackagePath: package_0x100000000000110
+    mIsDefaultPackage: 1

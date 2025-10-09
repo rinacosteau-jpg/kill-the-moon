@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1080164415, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: loc_0x100000000000110_128
+  m_EditorClassIdentifier: ArticyRuntime.dll::Articy.Unity.ArticyLocalizationPackage
+  mLocalizedStringsKeys:
+  - DFr_51E5E710.Text
+  - DFr_2DD444E4.Text
+  - DFr_95CF5186.Text
+  - DFr_FA0CB569.Text
+  - DFr_7250088A.Text
+  - DFr_965C5C50.Text
+  - DFr_6BB269CA.Text
+  - DFr_07E59B81.Text
+  - DFr_3E34F04C.Text
+  - DFr_842784FC.Text
+  - DFr_96BF5BF8.Text
+  - DFr_C17F7BA2.Text
+  - DFr_2E14DAA6.Text
+  - DFr_2E793996.Text
+  - DFr_68DF7DF0.Text
+  - DFr_7114DE8E.Text
+  - DFr_563266A7.Text
+  - DFr_1D3EE5CF.Text
+  - DFr_DDBA0274.Text
+  - DFr_9587D380.Text
+  - DFr_D1489C33.Text
+  - Ntt_6418934C.CharacterCard.Name
+  - Ntt_6418934C.CharacterCard.Fraction
+  - Ntt_6418934C.CharacterCard.Title
+  mLocalizedStringsValues:
+  - "You approach a suspicious-looking man. It\u2019s unclear whether he noticed
+    you. Rummaging through the produce seems to occupy him more."
+  - "You\u2019re going to kill Ratko. Granted, he\u2019s annoying... but what\u2019s
+    the point, really? Out of curiosity? For the sake of satisfaction?"
+  - You black out.
+  - "\u201CWill you help me get a revolver out of impound?\u201D"
+  - "\u201CI\u2019m ready. What do we do?\u201D"
+  - "Still... you don\u2019t want to waste time on him."
+  - "You can\u2019t be the one to start the conversation. Too pushy. Making random
+    noises, now that\u2019s a champion\u2019s strategy."
+  - "\u201CLose something?\u201D"
+  - "\u201CI\u2019m willing to help you in exchange for information.\u201D"
+  - "\u201CWell, I knew you\u2019d be back.\u201D"
+  - "\u201CI\u2019ve changed my mind. I\u2019ll help you \u2018borrow\u2019 that
+    thing.\u201D"
+  - "\u201CYour refusal hurt me a lot. I don\u2019t know how my pride will recover
+    from a blow like that.\u201D"
+  - "\u201CExcuse me?\u201D"
+  - "\u201CI\u2019m sure you\u2019ll manage.\u201D"
+  - "\u201CMy kind heart will be the death of me... Fine, here\u2019s the artifact
+    description, now off you go to greatness.\u201D"
+  - He shoves a note into your hand without even looking.
+  - "\u201CI have a question for you.\u201D"
+  - "\u201CGo ahead, ask.\u201D"
+  - "\u201CHow did I end up here?\u201D"
+  - "\u201CBy any chance, do you know how I could get a revolver out of storage?\u201D"
+  - "\u201CWhat is this place? Not the Isolator itself, but overall? You should be
+    more specific... but have it your way.\u201D"
+  - AARADCHIA
+  - MAUGFELL
+  - DOES NOT SPECIFIED
+  mLocalizedAudioAssetsKeys:
+  - DFr_51E5E710.Text
+  - DFr_2DD444E4.Text
+  - DFr_95CF5186.Text
+  - DFr_FA0CB569.Text
+  - DFr_7250088A.Text
+  - DFr_965C5C50.Text
+  - DFr_6BB269CA.Text
+  - DFr_07E59B81.Text
+  - DFr_3E34F04C.Text
+  - DFr_842784FC.Text
+  - DFr_96BF5BF8.Text
+  - DFr_C17F7BA2.Text
+  - DFr_2E14DAA6.Text
+  - DFr_2E793996.Text
+  - DFr_68DF7DF0.Text
+  - DFr_7114DE8E.Text
+  - DFr_563266A7.Text
+  - DFr_1D3EE5CF.Text
+  - DFr_DDBA0274.Text
+  - DFr_9587D380.Text
+  - DFr_D1489C33.Text
+  mLocalizedAudioAssetsValues: 253600000000000129360000000000017d360000000000012d360000000000013136000000000001353600000000000139360000000000014136000000000001493600000000000101350000000000014d36000000000001773300000000000155360000000000015d3600000000000105350000000000010d35000000000001653600000000000111350000000000016d3600000000000171360000000000017536000000000001
