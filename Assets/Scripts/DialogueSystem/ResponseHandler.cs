@@ -135,7 +135,10 @@ public class ResponseHandler : MonoBehaviour {
             buttonText = branch.Target.GetType().Name;
 
         TMP_Text tmpText = buttonObj.GetComponentInChildren<TMP_Text>();
-        if (tmpText != null) tmpText.text = $"{responseIndex}. {buttonText}";
+        if (tmpText != null) {
+            string riskPrefix = ShouldHighlightRisk(branch.Target) ? "<color=#FF0000>[risk]</color> " : string.Empty;
+            tmpText.text = $"{responseIndex}. {riskPrefix}{buttonText}";
+        }
 
         var localBranch = branch; // ôèêñèðóåì äëÿ çàìûêàíèÿ
         Button btnComponent = buttonObj.GetComponent<Button>();
@@ -187,6 +190,17 @@ public class ResponseHandler : MonoBehaviour {
         } catch { }
 
         return null;
+    }
+
+    private bool ShouldHighlightRisk(IFlowObject obj) {
+        if (obj == null) return false;
+
+        if (obj is DialogueFragment && obj is IObjectWithFeatureRiskCheck riskHolder) {
+            var riskFeature = riskHolder.GetFeatureRiskCheck();
+            return riskFeature != null && riskFeature.RiskCheckInit;
+        }
+
+        return false;
     }
 
     /// <summary>
