@@ -20,7 +20,7 @@ public static class ItemIds {
     public static readonly Dictionary<string, string> DisplayNames = new Dictionary<string, string>
     {
         { InventoryArtefact, "Wandering Artifact" },
-        { Gun, "Gun" },
+        { Gun, "Revolver" },
         { HarmonicRow, "Harmonic Row" },
         { SonoceramicShard, "Sonoceramic Shard" },
         { SonusGuideTube, "Sonus Guide Tube" },
