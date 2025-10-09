@@ -15,15 +15,16 @@ public static class ItemIds {
     public const string Mop = "Mop";
     public const string CubesNote = "CubesNote";
     public const string JapaneseSweets = "JapaneseSweets";
+    public const string RatkoThings = "RatkoThings";
 
     public static readonly Dictionary<string, string> Descriptions = new Dictionary<string, string>
     {
         { InventoryArtefact, "wandering artifact scribbles" },
-        { Mop, "швабра! чтобы мыть полы. или кого-нибудь доставать." },
+        { Mop, "It's a broom! What else to say?" },
         { TestCube, "cool cube" },
-        { JapaneseSweets, "wow truly magnificent artefact" },
-        { CubesNote, "Странное описание на мятой бумажке. \n\"Они изменят ход времени. Идеальные гексаэдры, в божественном количестве. Изысканные ощущения для тех, кто достоин. Расставание тяжело, но неизбежно.\"\nОкей, это звучит глупо. Мы ищем кубики. С идиотским описанием." },
-        { Gun, "super gun" },
+        { JapaneseSweets, "Legendary artefact. Or not." },
+        { CubesNote, "A strange note on crumpled paper.\n\"They will alter the course of time. Perfect hexahedrons, in a divine quantity. Exquisite sensations for those who are worthy. Parting is painful, yet inevitable.\"\nAlright, that sounds stupid. I'm looking for cubes. With a ridiculous description." },
+        { Gun, "It is mine." },
         { HarmonicRow, "gobbledygook melody of squirrels" },
         { SonoceramicShard, "fragment of whispering teapots" },
         { SonusGuideTube, "tube guiding sounds of marshmallows" },
@@ -31,7 +32,8 @@ public static class ItemIds {
         { WaxStoppers, "sticky nonsense of waxy blobs" },
         { MaintScrollHum, "humming scroll of baffling fumes" },
         { VentFiddle, "perplexing fiddle for vents" },
-        { EarPressureReports, "reports full of earwig gibberish" }
+        { EarPressureReports, "reports full of earwig gibberish" },
+        {RatkoThings, "I have no idea what this is." }
     };
 
     public static readonly Dictionary<string, string> ImagePaths = new Dictionary<string, string>
@@ -47,6 +49,8 @@ public static class ItemIds {
         { WaxStoppers, "Images/WaxStoppers" },
         { MaintScrollHum, "Images/MaintScrollHum" },
         { VentFiddle, "Images/VentFiddle" },
-        { EarPressureReports, "Images/EarPressureReports" }
+        { EarPressureReports, "Images/EarPressureReports" },
+        { Mop, "Images/Broom" }
+
     };
 }
