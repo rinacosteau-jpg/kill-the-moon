@@ -37,6 +37,8 @@ public class LoopResetInputScript : MonoBehaviour {
         if (resetAction != null && resetAction.WasPressedThisFrame()) {
             TryLoopReset();
         }
+
+        CheckArticyLoopResetFlag();
     }
 
     /// <summary>
@@ -52,7 +54,16 @@ public class LoopResetInputScript : MonoBehaviour {
         s_lastResetFrame = Time.frameCount;
         s_lastResetTime = Time.unscaledTime;
 
-        DoLoopReset();
+        var screenShading = ScreenShading.Instance;
+        if (screenShading != null)
+            screenShading.Shade();
+
+        try {
+            DoLoopReset();
+        } finally {
+            if (screenShading != null)
+                screenShading.Unshade();
+        }
     }
 
     /// <summary>
@@ -103,6 +114,20 @@ public class LoopResetInputScript : MonoBehaviour {
     /// Inspector/UnityEvent hook to trigger a reset.
     /// </summary>
     public void LoopReset() => TryLoopReset();
+
+    private static void CheckArticyLoopResetFlag()
+    {
+        var globals = ArticyGlobalVariables.Default;
+        if (globals == null)
+            return;
+
+        var rflg = globals.RFLG;
+        if (rflg == null || !rflg.callLoopReset)
+            return;
+
+        rflg.callLoopReset = false;
+        TryLoopReset();
+    }
 
 }
 
