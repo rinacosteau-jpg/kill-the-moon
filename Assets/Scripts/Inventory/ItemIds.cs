@@ -42,7 +42,7 @@ public static class ItemIds {
         { Mop, "It's a broom! What else to say?" },
         { TestCube, "cool cube" },
         { JapaneseSweets, "Legendary artefact. Or not." },
-        { CubesNote, "A strange note on crumpled paper.\n\"They will alter the course of time. Perfect hexahedrons, in a divine quantity. Exquisite sensations for those who are worthy. Parting is painful, yet inevitable.\"\nAlright, that sounds stupid. I'm looking for cubes. With a ridiculous description." },
+        { CubesNote, "A strange note on crumpled paper.\n/*\"They will alter the course of time. Perfect hexahedrons, in a divine quantity. Exquisite sensations for those who are worthy. Parting is painful, yet inevitable.\"*/\nAlright, that sounds stupid. I'm looking for cubes. With a ridiculous description." },
         { Gun, "It is mine." },
         { HarmonicRow, "gobbledygook melody of squirrels" },
         { SonoceramicShard, "fragment of whispering teapots" },
