@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class DoorInteractable : MonoBehaviour, IInteractable, ILoopResettable
@@ -12,10 +13,17 @@ public class DoorInteractable : MonoBehaviour, IInteractable, ILoopResettable
     [SerializeField] private AudioClip openSound;
     [SerializeField] private AudioClip closeSound;
 
+    [Header("Locked Feedback")]
+    [SerializeField] private TMP_Text lockedInteractionLabel;
+    [SerializeField] private CanvasGroup lockedInteractionCanvasGroup;
+    [SerializeField] private float lockedInteractionFadeDuration = 1f;
+
     private bool startIsOpen;
     private Transform doorTransform;
     private Quaternion originalRotation;
     private Coroutine rotationCoroutine;
+    private Coroutine lockedInteractionRoutine;
+    private DialogueInteractable dialogueInteractable;
 
     private void Awake()
     {
@@ -26,14 +34,22 @@ public class DoorInteractable : MonoBehaviour, IInteractable, ILoopResettable
         if (doorTransform != null)
             originalRotation = doorTransform.localRotation;
 
+        dialogueInteractable = GetComponent<DialogueInteractable>();
+
         startIsOpen = isOpen;
         ApplyState(isOpen, true);
+
+        InitializeLockedInteractionMessage();
     }
 
     public void Interact()
     {
         if (isLocked)
+        {
+            ShowLockedInteractionMessage();
+            TryStartLockedDialogue();
             return;
+        }
 
         ApplyState(!isOpen);
     }
@@ -103,5 +119,78 @@ public class DoorInteractable : MonoBehaviour, IInteractable, ILoopResettable
 
         doorTransform.localRotation = targetRotation;
         rotationCoroutine = null;
+    }
+
+    private void InitializeLockedInteractionMessage()
+    {
+        if (lockedInteractionCanvasGroup != null)
+            lockedInteractionCanvasGroup.alpha = 0f;
+
+        if (lockedInteractionLabel != null)
+        {
+            lockedInteractionLabel.text = string.Empty;
+            lockedInteractionLabel.color = Color.white;
+        }
+    }
+
+    private void ShowLockedInteractionMessage()
+    {
+        if (lockedInteractionLabel == null || lockedInteractionCanvasGroup == null)
+            return;
+
+        lockedInteractionLabel.text = "Door is locked";
+        lockedInteractionLabel.color = Color.white;
+
+        if (lockedInteractionRoutine != null)
+        {
+            StopCoroutine(lockedInteractionRoutine);
+            lockedInteractionRoutine = null;
+        }
+
+        lockedInteractionRoutine = StartCoroutine(FadeLockedInteractionMessage());
+    }
+
+    private IEnumerator FadeLockedInteractionMessage()
+    {
+        if (lockedInteractionCanvasGroup == null)
+            yield break;
+
+        float duration = Mathf.Max(lockedInteractionFadeDuration, Mathf.Epsilon);
+        lockedInteractionCanvasGroup.alpha = 1f;
+
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / duration);
+            lockedInteractionCanvasGroup.alpha = Mathf.Lerp(1f, 0f, t);
+            yield return null;
+        }
+
+        lockedInteractionCanvasGroup.alpha = 0f;
+        lockedInteractionRoutine = null;
+    }
+
+    private void TryStartLockedDialogue()
+    {
+        if (dialogueInteractable == null)
+            return;
+
+        dialogueInteractable.Interact();
+    }
+
+    private void OnDisable()
+    {
+        if (lockedInteractionRoutine != null)
+        {
+            StopCoroutine(lockedInteractionRoutine);
+            lockedInteractionRoutine = null;
+        }
+
+        if (lockedInteractionCanvasGroup != null)
+            lockedInteractionCanvasGroup.alpha = 0f;
+
+        if (lockedInteractionLabel != null)
+            lockedInteractionLabel.text = string.Empty;
     }
 }
