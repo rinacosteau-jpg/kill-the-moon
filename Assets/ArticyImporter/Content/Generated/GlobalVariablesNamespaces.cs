@@ -641,6 +641,19 @@ namespace Articy.World_Of_Red_Moon.GlobalVariables
             }
         }
         
+        // 
+        public bool checkedDoor
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(30);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(30, value);
+            }
+        }
+        
         public void RegisterVariables(BaseGlobalVariables aStorage)
         {
             _VariableStorage = aStorage;
@@ -653,6 +666,7 @@ namespace Articy.World_Of_Red_Moon.GlobalVariables
             aStorage.RegisterVariable("RFLG.ratHasStealQuest", false);
             aStorage.RegisterVariable("RFLG.callLoopReset", false);
             aStorage.RegisterVariable("RFLG.callGuard", false);
+            aStorage.RegisterVariable("RFLG.checkedDoor", false);
         }
     }
 }
@@ -1394,11 +1408,11 @@ namespace Articy.World_Of_Red_Moon.GlobalVariables
         {
             get
             {
-                return _VariableStorage.Internal_GetVariableValueBoolean(30);
+                return _VariableStorage.Internal_GetVariableValueBoolean(31);
             }
             set
             {
-                _VariableStorage.Internal_SetVariableValueBoolean(30, value);
+                _VariableStorage.Internal_SetVariableValueBoolean(31, value);
             }
         }
         
@@ -1425,19 +1439,6 @@ namespace Articy.World_Of_Red_Moon.GlobalVariables
         {
             get
             {
-                return _VariableStorage.Internal_GetVariableValueBoolean(31);
-            }
-            set
-            {
-                _VariableStorage.Internal_SetVariableValueBoolean(31, value);
-            }
-        }
-        
-        // 
-        public bool SonoceramicShard
-        {
-            get
-            {
                 return _VariableStorage.Internal_GetVariableValueBoolean(32);
             }
             set
@@ -1447,7 +1448,7 @@ namespace Articy.World_Of_Red_Moon.GlobalVariables
         }
         
         // 
-        public bool SonusGuideTube
+        public bool SonoceramicShard
         {
             get
             {
@@ -1460,7 +1461,7 @@ namespace Articy.World_Of_Red_Moon.GlobalVariables
         }
         
         // 
-        public bool ReceiptWhisperer
+        public bool SonusGuideTube
         {
             get
             {
@@ -1473,7 +1474,7 @@ namespace Articy.World_Of_Red_Moon.GlobalVariables
         }
         
         // 
-        public bool WaxStoppers
+        public bool ReceiptWhisperer
         {
             get
             {
@@ -1486,7 +1487,7 @@ namespace Articy.World_Of_Red_Moon.GlobalVariables
         }
         
         // 
-        public bool MaintScrollHum
+        public bool WaxStoppers
         {
             get
             {
@@ -1499,7 +1500,7 @@ namespace Articy.World_Of_Red_Moon.GlobalVariables
         }
         
         // 
-        public bool FloorMark
+        public bool MaintScrollHum
         {
             get
             {
@@ -1512,7 +1513,7 @@ namespace Articy.World_Of_Red_Moon.GlobalVariables
         }
         
         // 
-        public bool VentFiddle
+        public bool FloorMark
         {
             get
             {
@@ -1525,7 +1526,7 @@ namespace Articy.World_Of_Red_Moon.GlobalVariables
         }
         
         // 
-        public bool EarPressureReports
+        public bool VentFiddle
         {
             get
             {
@@ -1534,6 +1535,19 @@ namespace Articy.World_Of_Red_Moon.GlobalVariables
             set
             {
                 _VariableStorage.Internal_SetVariableValueBoolean(39, value);
+            }
+        }
+        
+        // 
+        public bool EarPressureReports
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(40);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(40, value);
             }
         }
         

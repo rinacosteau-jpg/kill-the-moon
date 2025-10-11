@@ -117,6 +117,7 @@ namespace Articy.World_Of_Red_Moon.GlobalVariables
             variableNames.Add("RFLG.ratHasStealQuest");
             variableNames.Add("RFLG.callLoopReset");
             variableNames.Add("RFLG.callGuard");
+            variableNames.Add("RFLG.checkedDoor");
             variableNames.Add("ITM.item_kotsukiNote_delta");
             variableNames.Add("ITM.item_kotsukiNote_count");
             variableNames.Add("ITM.item_InventoryArtefact_count");

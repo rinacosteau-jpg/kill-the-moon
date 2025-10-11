@@ -596,21 +596,21 @@ aGlobalVariablesState.ITM.item_Gun_delta++;
         }
         
         /// <summary>
-        /// ObjectID: 0x100000000002DE4
-        /// Articy Object ref: articy://localhost/view/6b45a52e-5605-4c95-a051-48da04bae055/72057594037939684?pane=selected&amp;tab=current
-        /// </summary>
-        public void Script_720575940379282080x100000000002DE4Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
-        {
-            aGlobalVariablesState.RFLG.callGuard = true;
-        }
-        
-        /// <summary>
         /// ObjectID: 0x1000000000028BD
         /// Articy Object ref: articy://localhost/view/6b45a52e-5605-4c95-a051-48da04bae055/72057594037938365?pane=selected&amp;tab=current
         /// </summary>
         public bool Script_720575940379282080x1000000000028BDText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
         {
-            return aGlobalVariablesState.PS.loopCounter==0;
+            return aGlobalVariablesState.PS.loopCounter==0 && !aGlobalVariablesState.RFLG.checkedDoor;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x1000000000028F0
+        /// Articy Object ref: articy://localhost/view/6b45a52e-5605-4c95-a051-48da04bae055/72057594037938416?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_720575940379282080x1000000000028F0Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.RFLG.checkedDoor = true;
         }
         
         /// <summary>
@@ -1126,6 +1126,15 @@ aGlobalVariablesState.QUEST.stealFromRu_State=3;
         public void Script_720575940379282080x100000000002836Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
         {
             aGlobalVariablesState.PS.moralVal--;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x100000000002989
+        /// Articy Object ref: articy://localhost/view/6b45a52e-5605-4c95-a051-48da04bae055/72057594037938569?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_720575940379282080x100000000002989Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.RFLG.callGuard = true;
         }
         
         /// <summary>
@@ -2053,8 +2062,8 @@ aGlobalVariablesState.QUEST.advertise_TalkedCount++;
             Instructions.Add(810973786u, this.Script_720575940379282080x1000000000039B4Text);
             Instructions.Add(3696548469u, this.Script_720575940379282080x100000000003A90Text);
             Conditions.Add(1193646396u, this.Script_720575940379282080x100000000003AD2Text);
-            Instructions.Add(742934832u, this.Script_720575940379282080x100000000002DE4Text);
             Conditions.Add(2603801781u, this.Script_720575940379282080x1000000000028BDText);
+            Instructions.Add(1002608097u, this.Script_720575940379282080x1000000000028F0Text);
             Conditions.Add(2743778636u, this.Script_720575940379282080x100000000002904Text);
             Conditions.Add(2582556215u, this.Script_720575940379282080x100000000002932Text);
             Conditions.Add(402356112u, this.Script_720575940379282080x10000000000286FText);
@@ -2110,6 +2119,7 @@ aGlobalVariablesState.QUEST.advertise_TalkedCount++;
             Instructions.Add(778353707u, this.Script_720575940379282080x10000000000280EText);
             Instructions.Add(3965806761u, this.Script_720575940379282080x10000000000281EText);
             Instructions.Add(784781872u, this.Script_720575940379282080x100000000002836Text);
+            Instructions.Add(3215213392u, this.Script_720575940379282080x100000000002989Text);
             Conditions.Add(3276585950u, this.Script_720575940379282080x100000000002959Text);
             Conditions.Add(3217058661u, this.Script_720575940379282080x100000000002A81Text);
             Conditions.Add(983461266u, this.Script_720575940379282080x10000000000300CText);
