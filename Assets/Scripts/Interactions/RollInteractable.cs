@@ -8,7 +8,7 @@ public class RollInteractable : MonoBehaviour, IInteractable, ILoopResettable
     [SerializeField] private bool isOpen;
     [SerializeField] private bool canClose = true;
     [SerializeField] private GameObject rollObject;
-    [SerializeField] private float openZOffset = 1f;
+    [SerializeField] private float openYOffset = 1f;
     [SerializeField] private float moveDuration = 0.5f;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip openSound;
@@ -81,7 +81,7 @@ public class RollInteractable : MonoBehaviour, IInteractable, ILoopResettable
         {
             Vector3 targetPosition = originalPosition;
             if (open)
-                targetPosition = originalPosition + new Vector3(0f, 0f, openZOffset);
+                targetPosition = originalPosition + new Vector3(0f, openYOffset, 0f);
 
             if (moveCoroutine != null)
             {
