@@ -69,6 +69,11 @@ public class DoorInteractable : MonoBehaviour, IInteractable, ILoopResettable
         ApplyState(true);
     }
 
+    public void SetLocked(bool locked)
+    {
+        isLocked = locked;
+    }
+
     private void ApplyState(bool open, bool instant = false, bool force = false)
     {
         bool wasOpen = isOpen;
