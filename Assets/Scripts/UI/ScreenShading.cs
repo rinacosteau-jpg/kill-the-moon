@@ -38,6 +38,7 @@ public class ScreenShading : MonoBehaviour
             EnsureImageActive();
             SetAlpha(0f);
             shadeImage.raycastTarget = false; // do not block regular UI interactions.
+            EnsureShadeDoesNotCoverInterface();
             shadeImage.gameObject.SetActive(false);
         }
     }
@@ -60,6 +61,7 @@ public class ScreenShading : MonoBehaviour
             return;
 
         EnsureImageActive();
+        EnsureShadeDoesNotCoverInterface();
 
         if (isActiveAndEnabled)
         {
@@ -156,5 +158,34 @@ public class ScreenShading : MonoBehaviour
     {
         if (shadeImage != null && !shadeImage.gameObject.activeSelf)
             shadeImage.gameObject.SetActive(true);
+    }
+
+    private void EnsureShadeDoesNotCoverInterface()
+    {
+        if (shadeImage == null)
+            return;
+
+        RectTransform rectTransform = shadeImage.rectTransform;
+
+        if (rectTransform == null)
+            return;
+
+        Transform parent = rectTransform.parent;
+
+        if (parent == null)
+            return;
+
+        int targetIndex = 0;
+
+        if (hintsPanel != null)
+        {
+            Transform hintsTransform = hintsPanel.transform;
+
+            if (hintsTransform != null && hintsTransform.parent == parent)
+                targetIndex = Mathf.Clamp(hintsTransform.GetSiblingIndex() + 1, 0, parent.childCount - 1);
+        }
+
+        if (rectTransform.GetSiblingIndex() != targetIndex)
+            rectTransform.SetSiblingIndex(targetIndex);
     }
 }
