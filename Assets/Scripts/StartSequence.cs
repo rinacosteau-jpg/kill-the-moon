@@ -5,7 +5,7 @@ using UnityEngine;
 
 /// <summary>
 /// Controls the opening sequence: dialogue A → skill selection → dialogue B.
-/// Ensures the background panel stays visible for the entire sequence.
+/// Keeps the screen shaded until the sequence progresses past dialogue B.
 /// </summary>
 public class StartSequence : MonoBehaviour
 {
@@ -26,8 +26,7 @@ public class StartSequence : MonoBehaviour
     [SerializeField] private float distanceAfterDialogueB = 20f;
 
     [Header("UI")]
-    [SerializeField] private GameObject backgroundPanel;
-    [SerializeField] private int backgroundSortingOrder = -100;
+    [SerializeField] private ScreenShading screenShading;
     [SerializeField] private PlayerInteractScript playerInteract;
     [SerializeField] private TMP_Text interactionBlockedLabel;
     [SerializeField] private CanvasGroup interactionBlockedCanvasGroup;
@@ -52,6 +51,7 @@ public class StartSequence : MonoBehaviour
     private float movementStartDistance;
     private Coroutine interactionBlockedRoutine;
     private bool hasShownInventoryHint;
+    private bool hasAppliedScreenShading;
 
     public static float TotalDistanceTraveled { get; private set; }
 
@@ -62,12 +62,6 @@ public class StartSequence : MonoBehaviour
         hasLastTrackedPosition = false;
         hasShownInventoryHint = false;
 
-        if (backgroundPanel != null)
-        {
-            ApplyBackgroundLayout();
-            backgroundPanel.SetActive(false);
-        }
-
         if (interactionBlockedCanvasGroup != null)
             interactionBlockedCanvasGroup.alpha = 0f;
 
@@ -76,6 +70,9 @@ public class StartSequence : MonoBehaviour
             interactionBlockedLabel.text = string.Empty;
             interactionBlockedLabel.color = Color.white;
         }
+
+        if (!skipSequence)
+            ShadeScreen();
     }
 
     private void Update()
@@ -146,9 +143,7 @@ public class StartSequence : MonoBehaviour
         if (currentStep != SequenceStep.None)
             return;
 
-        if (backgroundPanel != null)
-            ShowBackground();
-
+        ShadeScreen();
         BlockInteractions();
 
         if (dialogueUI == null)
@@ -180,7 +175,7 @@ public class StartSequence : MonoBehaviour
                 StartSkillSelection();
                 break;
             case SequenceStep.DialogueB:
-                HideBackground();
+                UnshadeScreen();
                 StartWaitingForMovement();
                 break;
             case SequenceStep.DialogueC:
@@ -231,38 +226,6 @@ public class StartSequence : MonoBehaviour
         }
 
         dialogueUI.StartDialogue(dialogueStartB);
-    }
-
-    private void ShowBackground()
-    {
-        if (backgroundPanel == null)
-            return;
-
-        ApplyBackgroundLayout();
-        backgroundPanel.SetActive(true);
-    }
-
-    private void HideBackground()
-    {
-        if (backgroundPanel == null)
-            return;
-
-        backgroundPanel.SetActive(false);
-    }
-
-    private void ApplyBackgroundLayout()
-    {
-        if (backgroundPanel == null)
-            return;
-
-        var canvas = backgroundPanel.GetComponent<Canvas>();
-        if (canvas != null)
-        {
-            canvas.overrideSorting = true;
-            canvas.sortingOrder = backgroundSortingOrder;
-        }
-
-        backgroundPanel.transform.SetAsFirstSibling();
     }
 
     private void StartWaitingForMovement()
@@ -360,7 +323,7 @@ public class StartSequence : MonoBehaviour
 
         currentStep = SequenceStep.Completed;
 
-        HideBackground();
+        UnshadeScreen();
 
         if (dialogueUI != null)
             dialogueUI.DialogueClosed -= HandleDialogueClosed;
@@ -382,6 +345,50 @@ public class StartSequence : MonoBehaviour
 
         if (interactionBlockedLabel != null)
             interactionBlockedLabel.text = string.Empty;
+    }
+
+    private ScreenShading ResolveScreenShading()
+    {
+        if (screenShading != null)
+            return screenShading;
+
+        screenShading = ScreenShading.Instance != null
+            ? ScreenShading.Instance
+            : FindObjectOfType<ScreenShading>(true);
+
+        if (screenShading == null)
+            Debug.LogWarning("[StartSequence] ScreenShading reference is missing.");
+
+        return screenShading;
+    }
+
+    private void ShadeScreen()
+    {
+        if (hasAppliedScreenShading)
+            return;
+
+        var shading = ResolveScreenShading();
+        if (shading == null)
+            return;
+
+        shading.Shade();
+        hasAppliedScreenShading = true;
+    }
+
+    private void UnshadeScreen()
+    {
+        if (!hasAppliedScreenShading)
+            return;
+
+        var shading = ResolveScreenShading();
+        if (shading == null)
+        {
+            hasAppliedScreenShading = false;
+            return;
+        }
+
+        shading.Unshade();
+        hasAppliedScreenShading = false;
     }
 
     private void UpdateTotalDistance()
