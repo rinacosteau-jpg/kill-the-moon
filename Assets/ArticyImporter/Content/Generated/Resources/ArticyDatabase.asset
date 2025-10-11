@@ -787,7 +787,7 @@ MonoBehaviour:
     parent: 216172783251375095
     technicalName: Dlg_558E3C14
     articyType: Dialogue
-    childCount: 69
+    childCount: 68
   - id: 72057594037933904
     parent: 72057594037939573
     technicalName: DFr_B56F6465
@@ -848,11 +848,6 @@ MonoBehaviour:
     technicalName: DFr_1E5B4467
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037932815
-    parent: 72057594037939573
-    technicalName: Cnd_43E737D2
-    articyType: Condition
-    childCount: 0
   - id: 72057594037940012
     parent: 72057594037939573
     technicalName: DFr_FD7DA795
@@ -893,11 +888,6 @@ MonoBehaviour:
     technicalName: DFr_920191F9
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037932827
-    parent: 72057594037939573
-    technicalName: DFr_F79D7DD8
-    articyType: DialogueFragment
-    childCount: 0
   - id: 72057594037940042
     parent: 72057594037939573
     technicalName: DFr_49147ED3
@@ -906,11 +896,6 @@ MonoBehaviour:
   - id: 72057594037932843
     parent: 72057594037939573
     technicalName: DFr_1BAC43B1
-    articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037932920
-    parent: 72057594037939573
-    technicalName: DFr_72FD0760
     articyType: DialogueFragment
     childCount: 0
   - id: 72057594037932880
@@ -932,11 +917,6 @@ MonoBehaviour:
     parent: 72057594037939573
     technicalName: DFr_F723D760
     articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037933276
-    parent: 72057594037939573
-    technicalName: Jmp_C0ECABD2
-    articyType: Jump
     childCount: 0
   - id: 72057594037932896
     parent: 72057594037939573
@@ -1038,20 +1018,15 @@ MonoBehaviour:
     technicalName: DFr_19F6E422
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037933968
+  - id: 72057594037943544
     parent: 72057594037939573
-    technicalName: Cnd_B2405C0D
-    articyType: Condition
+    technicalName: DFr_3E13DFF9
+    articyType: DialogueFragment
     childCount: 0
   - id: 72057594037942277
     parent: 72057594037939573
     technicalName: DFr_E752FFA9
     articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037939942
-    parent: 72057594037939573
-    technicalName: Cnd_318FA93F
-    articyType: Condition
     childCount: 0
   - id: 72057594037934030
     parent: 72057594037939573
@@ -1108,11 +1083,6 @@ MonoBehaviour:
     technicalName: DFr_E22272DC
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037932915
-    parent: 72057594037939573
-    technicalName: Jmp_0A4A2BE2
-    articyType: Jump
-    childCount: 0
   - id: 72057594037934077
     parent: 72057594037939573
     technicalName: DFr_B728EB46
@@ -1123,10 +1093,35 @@ MonoBehaviour:
     technicalName: DFr_25AC3763
     articyType: DialogueFragment
     childCount: 0
+  - id: 72057594037943552
+    parent: 72057594037939573
+    technicalName: 
+    articyType: Comment
+    childCount: 0
+  - id: 72057594037943554
+    parent: 72057594037939573
+    technicalName: 
+    articyType: Comment
+    childCount: 0
   - id: 72057594037933170
     parent: 72057594037939573
     technicalName: 
     articyType: Comment
+    childCount: 0
+  - id: 72057594037933968
+    parent: 72057594037939573
+    technicalName: Cnd_B2405C0D
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037939942
+    parent: 72057594037939573
+    technicalName: Cnd_318FA93F
+    articyType: Condition
+    childCount: 0
+  - id: 72057594037932915
+    parent: 72057594037939573
+    technicalName: Jmp_0A4A2BE2
+    articyType: Jump
     childCount: 0
   - id: 72057594037934084
     parent: 72057594037939573
@@ -6013,13 +6008,13 @@ MonoBehaviour:
   - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250927_1816_\u0422\u0435\u043C\u043D\u044B\u0439_\u0444\u043E\u043D_remix_01k65vwpd1f0xr2748yrgrrppk.png"
   - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250927_2030_Carefree_Servant_Portrait_remix_01k663hh87fkprs2vqdac8yz4x.png"
   - "\u0420\u0435\u0441\u0443\u0440\u0441\u044B/\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/20250927_2033_Carefree_Servant_Portrait_remix_01k663p5t9fzmvyd8jn18jhq7c.png"
-  mDefaultGlobalVariables: {fileID: 7240047645722433453}
+  mDefaultGlobalVariables: {fileID: 5970066880136737401}
   mPackages:
   - PackageId: 72057594037928208
     PackageName: "\u0412\u0441\u0435 \u043E\u0431\u044A\u0435\u043A\u0442\u044B"
     PackagePath: package_0x100000000000110
     mIsDefaultPackage: 1
---- !u!114 &7240047645722433453
+--- !u!114 &5970066880136737401
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6408,26 +6403,26 @@ MonoBehaviour:
   mLiveStringVariableCache: []
   mIsInitialized: 1
   mNKNW:
-    _VariableStorage: {fileID: 7240047645722433453}
+    _VariableStorage: {fileID: 5970066880136737401}
   mRQUE:
-    _VariableStorage: {fileID: 7240047645722433453}
+    _VariableStorage: {fileID: 5970066880136737401}
   mRFLG:
-    _VariableStorage: {fileID: 7240047645722433453}
+    _VariableStorage: {fileID: 5970066880136737401}
   mITM:
-    _VariableStorage: {fileID: 7240047645722433453}
+    _VariableStorage: {fileID: 5970066880136737401}
   mRCNT:
-    _VariableStorage: {fileID: 7240047645722433453}
+    _VariableStorage: {fileID: 5970066880136737401}
   mEVT:
-    _VariableStorage: {fileID: 7240047645722433453}
+    _VariableStorage: {fileID: 5970066880136737401}
   mPS:
-    _VariableStorage: {fileID: 7240047645722433453}
+    _VariableStorage: {fileID: 5970066880136737401}
   mNQUE:
-    _VariableStorage: {fileID: 7240047645722433453}
+    _VariableStorage: {fileID: 5970066880136737401}
   mSCH:
-    _VariableStorage: {fileID: 7240047645722433453}
+    _VariableStorage: {fileID: 5970066880136737401}
   mTEST:
-    _VariableStorage: {fileID: 7240047645722433453}
+    _VariableStorage: {fileID: 5970066880136737401}
   mCLUE:
-    _VariableStorage: {fileID: 7240047645722433453}
+    _VariableStorage: {fileID: 5970066880136737401}
   mQUEST:
-    _VariableStorage: {fileID: 7240047645722433453}
+    _VariableStorage: {fileID: 5970066880136737401}

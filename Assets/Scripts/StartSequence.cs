@@ -2,6 +2,7 @@ using System.Collections;
 using Articy.Unity;
 using TMPro;
 using UnityEngine;
+using static Unity.Cinemachine.CinemachineOrbitalTransposer;
 
 /// <summary>
 /// Controls the opening sequence: dialogue A → skill selection → dialogue B.
@@ -34,6 +35,7 @@ public class StartSequence : MonoBehaviour
     [SerializeField] private HintsPanelController hintsPanel;
     [SerializeField] private string inventoryHintMessage = "Use I to open Inventory, Esc to close";
 
+
     private enum SequenceStep
     {
         None,
@@ -57,6 +59,7 @@ public class StartSequence : MonoBehaviour
 
     public static float TotalDistanceTraveled { get; private set; }
 
+
     private void Awake()
     {
         InventoryStorage.Clear();
@@ -73,8 +76,14 @@ public class StartSequence : MonoBehaviour
             interactionBlockedLabel.color = Color.white;
         }
 
-        if (!skipSequence)
-            ShadeScreen();
+        if (!skipSequence) {
+            var screenShading = ScreenShading.Instance;
+            if (screenShading != null)
+                screenShading.Shade();
+        }
+            
+
+        //ScreenShading.Shade();
     }
 
     private void Update()
@@ -101,6 +110,12 @@ public class StartSequence : MonoBehaviour
 
     private void OnEnable()
     {
+        foreach (ArticyLanguage language in ArticyDatabase.Localization.Languages) {
+            Debug.Log($"{language.ArticyLanguageId}, {language.CultureName}, {language.LanguageName}");
+        }
+        ArticyDatabase.Localization.SetLanguage("ru");
+        //Debug.Log((kk.Language).ToString());
+        //kk.
         InventoryStorage.OnFirstItemAdded += HandleFirstItemAdded;
 
         if (skipSequence)

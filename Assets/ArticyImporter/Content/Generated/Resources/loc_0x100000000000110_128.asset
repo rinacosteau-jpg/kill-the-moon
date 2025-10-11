@@ -13,6 +13,35 @@ MonoBehaviour:
   m_Name: loc_0x100000000000110_128
   m_EditorClassIdentifier: ArticyRuntime.dll::Articy.Unity.ArticyLocalizationPackage
   mLocalizedStringsKeys:
+  - DFr_8E1F1547.Text
+  - DFr_CC3E0B6A.Text
+  - DFr_AA79CC6C.Text
+  - DFr_DF918DB2.Text
+  - DFr_29D726CE.Text
+  - DFr_4B792378.Text
+  - DFr_DD59E279.Text
+  - DFr_57B81851.Text
+  - DFr_EED20F5D.Text
+  - DFr_33194F97.PreviewText
+  - DFr_953ED5C2.PreviewText
+  - DFr_C3962730.PreviewText
+  - DFr_B61F545D.Text
+  - DFr_775B20BC.Text
+  - DFr_78F316E0.Text
+  - DFr_B400C50A.Text
+  - DFr_86375FA7.Text
+  - DFr_89CC3A26.Text
+  - DFr_863DC8F5.Text
+  - DFr_18C82A95.PreviewText
+  - DFr_18C82A95.Text
+  - DFr_B4FF863F.Text
+  - DFr_21B36AD4.Text
+  - DFr_C10EBF18.Text
+  - DFr_8C5A633E.Text
+  - DFr_1E02F165.Text
+  - DFr_86F0EAA0.Text
+  - DFr_56A9E026.PreviewText
+  - DFr_56A9E026.Text
   - DFr_51E5E710.Text
   - DFr_2DD444E4.Text
   - DFr_95CF5186.Text
@@ -37,6 +66,51 @@ MonoBehaviour:
   - Ntt_6418934C.CharacterCard.Fraction
   - Ntt_6418934C.CharacterCard.Title
   mLocalizedStringsValues:
+  - "\u201CExcellent. You can hear me.\u201D"
+  - "\u201CFirst, you\u2019ll find the revolver. Otherwise the link\u2026\u201D"
+  - Nothing happens.
+  - Nothing ever happened.
+  - And nothing ever will.
+  - "Choice doesn\u2019t matter, since it doesn\u2019t exist."
+  - But you already know that.
+  - "Only\u2026"
+  - Who are you?
+  - "I\u2026 I don\u2019t remember."
+  - Who ARE you?
+  - "Where am I? What\u2019s happening?"
+  - "It\u2019s rude to answer a question with a question, you know. Besides, you\u2019re
+    not really interested. And it\u2019s better not to think about it anyway. But\u2026"
+  - "No wonder you don\u2019t. But does that change who you are? Or not? Will you
+    ever learn the answer to that question? Because\u2026"
+  - "I know no more than you do, believe me. Or don\u2019t. It won\u2019t make any
+    difference \u2014 I still can\u2019t give you any information, and will just
+    stall for time until\u2026"
+  - "Unfortunately, the sweet, sweet oblivion has already been stolen. You\u2019ll
+    have to choose. But who will?"
+  - Something unintelligible echoes in your head. Assuming you even have one.
+  - "Before you appears the image of a woman whose name is branded into your mind.
+    A proper name \u2014 still nothing."
+  - "\u201C\u2026this anomaly stands out among the previous ones. And I don\u2019t
+    like what that might mean.\u201D"
+  - "Why don\u2019t I remember anything?"
+  - "\u201CWhy don\u2019t I remember anything?\u201D you mouth soundlessly. The only
+    question that matters now. After all, you *should* remember."
+  - "\u201CAnd that shouldn\u2019t have\u2026 Never mind. Find the revolver, then
+    I\u2019ll be able to explain more.\u201D"
+  - "\u201CIf the oddities are involved\u2026 No, that\u2019s too much, but if\u2026\u201D
+    A sharp sound pierces your eardrums. No pain. None? \u201CTrust no one, they\u2019re
+    changing\u2026\u201D"
+  - "You can\u2019t make out anything else. Undoubtedly, it was very important. Now
+    you can either succumb to paranoia, or let the misunderstood words slip past
+    and die a horrible death, bring about the end of the world, and cruelly betray
+    ideals you no longer remember."
+  - "It\u2019s time to open your eyes."
+  - The possibilities are dazzling.
+  - "And unfortunately\u2026"
+  - "I don\u2019t understand anything. What\u2019s going on?"
+  - "\u201CI don\u2019t understand anything. What\u2019s going on?\u201D you mouth
+    soundlessly.\r\n\r\nBut were those words even meant for you? Now that\u2019s
+    a good question."
   - "You approach a suspicious-looking man. It\u2019s unclear whether he noticed
     you. Rummaging through the produce seems to occupy him more."
   - "You\u2019re going to kill Ratko. Granted, he\u2019s annoying... but what\u2019s

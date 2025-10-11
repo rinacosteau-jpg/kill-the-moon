@@ -1735,15 +1735,6 @@ aGlobalVariablesState.QUEST.getGun_Obj_getRuleBook = 2;
         }
         
         /// <summary>
-        /// ObjectID: 0x10000000000130F
-        /// Articy Object ref: articy://localhost/view/6b45a52e-5605-4c95-a051-48da04bae055/72057594037932815?pane=selected&amp;tab=current
-        /// </summary>
-        public bool Script_720575940379282080x10000000000130FExpression(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
-        {
-            return aGlobalVariablesState.QUEST.stealFromRu_State == 2;
-        }
-        
-        /// <summary>
         /// ObjectID: 0x100000000001790
         /// Articy Object ref: articy://localhost/view/6b45a52e-5605-4c95-a051-48da04bae055/72057594037933968?pane=selected&amp;tab=current
         /// </summary>
@@ -2176,7 +2167,6 @@ aGlobalVariablesState.QUEST.advertise_TalkedCount++;
             Conditions.Add(374006481u, this.Script_720575940379282080x10000000000288FExpression);
             Conditions.Add(542915228u, this.Script_720575940379282080x100000000000FA2Expression);
             Conditions.Add(1676078437u, this.Script_720575940379282080x100000000000EA9Expression);
-            Conditions.Add(2920380305u, this.Script_720575940379282080x10000000000130FExpression);
             Conditions.Add(625507775u, this.Script_720575940379282080x100000000001790Expression);
             Conditions.Add(288557375u, this.Script_720575940379282080x100000000001774Expression);
             Instructions.Add(3384233020u, this.Script_720575940379282080x100000000001778Text);
