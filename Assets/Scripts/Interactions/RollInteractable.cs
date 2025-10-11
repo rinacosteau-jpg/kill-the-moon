@@ -2,14 +2,14 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 
-public class DoorInteractable : MonoBehaviour, IInteractable, ILoopResettable
+public class RollInteractable : MonoBehaviour, IInteractable, ILoopResettable
 {
     [SerializeField] private bool isLocked;
     [SerializeField] private bool isOpen;
     [SerializeField] private bool canClose = true;
-    [SerializeField] private GameObject doorObject;
-    [SerializeField] private float openZRotation = 90f;
-    [SerializeField] private float rotationDuration = 0.5f;
+    [SerializeField] private GameObject rollObject;
+    [SerializeField] private float openZOffset = 1f;
+    [SerializeField] private float moveDuration = 0.5f;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip openSound;
     [SerializeField] private AudioClip closeSound;
@@ -20,20 +20,20 @@ public class DoorInteractable : MonoBehaviour, IInteractable, ILoopResettable
     [SerializeField] private float lockedInteractionFadeDuration = 1f;
 
     private bool startIsOpen;
-    private Transform doorTransform;
-    private Quaternion originalRotation;
-    private Coroutine rotationCoroutine;
+    private Transform rollTransform;
+    private Vector3 originalPosition;
+    private Coroutine moveCoroutine;
     private Coroutine lockedInteractionRoutine;
     private DialogueInteractable dialogueInteractable;
 
     private void Awake()
     {
-        if (doorObject == null && transform.childCount > 0)
-            doorObject = transform.GetChild(0).gameObject;
+        if (rollObject == null && transform.childCount > 0)
+            rollObject = transform.GetChild(0).gameObject;
 
-        doorTransform = doorObject != null ? doorObject.transform : transform;
-        if (doorTransform != null)
-            originalRotation = doorTransform.localRotation;
+        rollTransform = rollObject != null ? rollObject.transform : transform;
+        if (rollTransform != null)
+            originalPosition = rollTransform.localPosition;
 
         dialogueInteractable = GetComponent<DialogueInteractable>();
 
@@ -77,25 +77,25 @@ public class DoorInteractable : MonoBehaviour, IInteractable, ILoopResettable
 
         isOpen = open;
 
-        if (doorTransform != null)
+        if (rollTransform != null)
         {
-            Quaternion targetRotation = originalRotation;
+            Vector3 targetPosition = originalPosition;
             if (open)
-                targetRotation = originalRotation * Quaternion.Euler(0f, 0f, openZRotation);
+                targetPosition = originalPosition + new Vector3(0f, 0f, openZOffset);
 
-            if (rotationCoroutine != null)
+            if (moveCoroutine != null)
             {
-                StopCoroutine(rotationCoroutine);
-                rotationCoroutine = null;
+                StopCoroutine(moveCoroutine);
+                moveCoroutine = null;
             }
 
-            if (instant || rotationDuration <= 0f)
+            if (instant || moveDuration <= 0f)
             {
-                doorTransform.localRotation = targetRotation;
+                rollTransform.localPosition = targetPosition;
             }
             else
             {
-                rotationCoroutine = StartCoroutine(RotateDoor(targetRotation));
+                moveCoroutine = StartCoroutine(MoveRoll(targetPosition));
             }
         }
 
@@ -112,21 +112,21 @@ public class DoorInteractable : MonoBehaviour, IInteractable, ILoopResettable
         }
     }
 
-    private IEnumerator RotateDoor(Quaternion targetRotation)
+    private IEnumerator MoveRoll(Vector3 targetPosition)
     {
-        Quaternion startRotation = doorTransform.localRotation;
+        Vector3 startPosition = rollTransform.localPosition;
         float elapsed = 0f;
 
-        while (elapsed < rotationDuration)
+        while (elapsed < moveDuration)
         {
             elapsed += Time.deltaTime;
-            float t = Mathf.Clamp01(elapsed / rotationDuration);
-            doorTransform.localRotation = Quaternion.Slerp(startRotation, targetRotation, t);
+            float t = Mathf.Clamp01(elapsed / moveDuration);
+            rollTransform.localPosition = Vector3.Lerp(startPosition, targetPosition, t);
             yield return null;
         }
 
-        doorTransform.localRotation = targetRotation;
-        rotationCoroutine = null;
+        rollTransform.localPosition = targetPosition;
+        moveCoroutine = null;
     }
 
     private void InitializeLockedInteractionMessage()
