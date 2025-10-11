@@ -11,8 +11,10 @@ public class WatchedDialogueSequence : MonoBehaviour
     [SerializeField] private ArticyRef guardDialogue;
 
     [Header("Guard Dialogue")]
-    [SerializeField] private GameObject guardDialogueBackground;
     [SerializeField] private float guardDialogueDelay = 3f;
+
+    [Header("Screen Shading")]
+    [SerializeField] private ScreenShading screenShading;
 
     [Header("World References")]
     [SerializeField] private DoorInteractable doorToOpen;
@@ -27,6 +29,7 @@ public class WatchedDialogueSequence : MonoBehaviour
     private Vector3 originalCharacterPosition;
     private Quaternion originalCharacterRotation;
     private bool hasOriginalCharacterTransform;
+    private bool hasAppliedScreenShading;
 
     private void Reset()
     {
@@ -37,7 +40,7 @@ public class WatchedDialogueSequence : MonoBehaviour
     {
         CacheWatchedFlowObject();
         CacheOriginalCharacterTransform();
-        HideGuardDialogueBackground();
+        ReleaseScreenShading();
     }
 
     private void OnValidate()
@@ -51,14 +54,14 @@ public class WatchedDialogueSequence : MonoBehaviour
     {
         CacheWatchedFlowObject();
         EnsureOriginalCharacterTransformCached();
-        HideGuardDialogueBackground();
+        ReleaseScreenShading();
         Subscribe();
     }
 
     private void OnDisable()
     {
         CancelGuardDialogueRoutine();
-        HideGuardDialogueBackground();
+        ReleaseScreenShading();
         Unsubscribe();
     }
 
@@ -133,14 +136,6 @@ public class WatchedDialogueSequence : MonoBehaviour
         characterToMove.SetPositionAndRotation(originalCharacterPosition, originalCharacterRotation);
     }
 
-    private void HideGuardDialogueBackground()
-    {
-        if (guardDialogueBackground == null)
-            return;
-
-        guardDialogueBackground.SetActive(false);
-    }
-
     private void CancelGuardDialogueRoutine()
     {
         if (guardDialogueRoutine == null)
@@ -148,7 +143,7 @@ public class WatchedDialogueSequence : MonoBehaviour
 
         StopCoroutine(guardDialogueRoutine);
         guardDialogueRoutine = null;
-        HideGuardDialogueBackground();
+        ReleaseScreenShading();
     }
 
     private void OnDialogueStarted(DialogueUI ui)
@@ -201,15 +196,13 @@ public class WatchedDialogueSequence : MonoBehaviour
 
     private IEnumerator BeginGuardDialogueSequence()
     {
-        if (guardDialogueBackground != null)
-            guardDialogueBackground.SetActive(true);
+        ApplyScreenShading();
 
         float delay = Mathf.Max(guardDialogueDelay, 0f);
         if (delay > 0f)
             yield return new WaitForSeconds(delay);
 
-        if (guardDialogueBackground != null)
-            guardDialogueBackground.SetActive(false);
+        ReleaseScreenShading();
 
         if (dialogueUI != null && guardDialogue != null)
         {
@@ -219,5 +212,49 @@ public class WatchedDialogueSequence : MonoBehaviour
         }
 
         guardDialogueRoutine = null;
+    }
+
+    private ScreenShading ResolveScreenShading()
+    {
+        if (screenShading != null)
+            return screenShading;
+
+        screenShading = ScreenShading.Instance != null
+            ? ScreenShading.Instance
+            : FindObjectOfType<ScreenShading>(true);
+
+        if (screenShading == null)
+            Debug.LogWarning($"[{nameof(WatchedDialogueSequence)}] ScreenShading not found.");
+
+        return screenShading;
+    }
+
+    private void ApplyScreenShading()
+    {
+        if (hasAppliedScreenShading)
+            return;
+
+        var shading = ResolveScreenShading();
+        if (shading == null)
+            return;
+
+        shading.Shade();
+        hasAppliedScreenShading = true;
+    }
+
+    private void ReleaseScreenShading()
+    {
+        if (!hasAppliedScreenShading)
+            return;
+
+        var shading = ResolveScreenShading();
+        if (shading == null)
+        {
+            hasAppliedScreenShading = false;
+            return;
+        }
+
+        shading.Unshade();
+        hasAppliedScreenShading = false;
     }
 }
