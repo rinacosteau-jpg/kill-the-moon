@@ -22,11 +22,11 @@ namespace Articy.World_Of_Red_Moon
 {
     
     
-    public class DialogueFragment : ArticyObject, IDialogueFragment, IPropertyProvider, IInputPinsOwner, IOutputPinsOwner, IObjectWithColor, IObjectWithMenuText, IObjectWithSpeaker, IObjectWithStageDirections, IObjectWithLocalizableText, IObjectWithExternalId, IObjectWithShortId, IObjectWithPosition, IObjectWithZIndex, IObjectWithSize
+    public class DialogueFragment : ArticyObject, IDialogueFragment, IPropertyProvider, IInputPinsOwner, IOutputPinsOwner, IObjectWithColor, IObjectWithLocalizableMenuText, IObjectWithSpeaker, IObjectWithStageDirections, IObjectWithLocalizableText, IObjectWithExternalId, IObjectWithShortId, IObjectWithPosition, IObjectWithZIndex, IObjectWithSize
     {
         
         [SerializeField()]
-        private ArticyValueArticyString mMenuText = new ArticyValueArticyString();
+        private ArticyValueArticyMultiLanguageString mMenuText = new ArticyValueArticyMultiLanguageString();
         
         [SerializeField()]
         private ArticyValueArticyString mStageDirections = new ArticyValueArticyString();
@@ -64,7 +64,7 @@ namespace Articy.World_Of_Red_Moon
         [SerializeField()]
         private ArticyValueListOutputPin mOutputPins = new ArticyValueListOutputPin();
         
-        public ArticyString MenuText
+        public ArticyMultiLanguageString MenuText
         {
             get
             {
@@ -255,7 +255,7 @@ namespace Articy.World_Of_Red_Moon
             DialogueFragment newClone = ((DialogueFragment)(aClone));
             if ((mMenuText != null))
             {
-                newClone.mMenuText = ((ArticyValueArticyString)(mMenuText.CloneObject(newClone, aFirstClassParent)));
+                newClone.mMenuText = ((ArticyValueArticyMultiLanguageString)(mMenuText.CloneObject(newClone, aFirstClassParent)));
             }
             if ((mStageDirections != null))
             {

@@ -37,5 +37,11 @@ public sealed class GetGunQuestWrapper : QuestWrapper
 {
     public GetGunQuestWrapper() : base("getGun")
     {
+        SetStageDescription(1, "Я должна отвлечь Теодора, пока Ратко крадёт револьвер. Начать надо до 13:45, иначе не успеем.");
+        SetStageDescription(2, "Я должна отвлечь Теодора, пока Ратко крадёт револьвер. Начать надо до 13:45, иначе не успеем.");
+        SetStageDescription(3, "Вернуть револьвер не вышло. Можно попытаться снова после сброса, но какой в этом смысл?");
+        SetStageDescription(4, "Револьвер у меня! Надолго ли?");
+        SetStageDescription(5, "Револьвер у меня! А ещё я зачем-то вернула вещи Ратко.");
+        SetStageDescription(6, "Я могу снова попытаться вернуть револьвер.");
     }
 }
