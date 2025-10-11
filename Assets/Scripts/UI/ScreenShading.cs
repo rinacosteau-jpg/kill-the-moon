@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ using UnityEngine.UI;
 public class ScreenShading : MonoBehaviour
 {
     public static ScreenShading Instance { get; private set; }
+    public static event Action<ScreenShading> InstanceChanged;
 
     [SerializeField] private Image shadeImage;
     [SerializeField] private float fadeDuration = 0.4f;
@@ -26,6 +28,7 @@ public class ScreenShading : MonoBehaviour
         }
 
         Instance = this;
+        InstanceChanged?.Invoke(this);
 
         if (shadeImage == null)
             shadeImage = GetComponent<Image>();
@@ -42,7 +45,10 @@ public class ScreenShading : MonoBehaviour
     private void OnDestroy()
     {
         if (Instance == this)
+        {
             Instance = null;
+            InstanceChanged?.Invoke(null);
+        }
     }
 
     /// <summary>

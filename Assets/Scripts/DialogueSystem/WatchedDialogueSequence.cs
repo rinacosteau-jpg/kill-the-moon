@@ -30,6 +30,8 @@ public class WatchedDialogueSequence : MonoBehaviour
     private Quaternion originalCharacterRotation;
     private bool hasOriginalCharacterTransform;
     private bool hasAppliedScreenShading;
+    private bool wantsScreenShade;
+    private bool waitingForScreenShadingInstance;
 
     private void Reset()
     {
@@ -63,6 +65,7 @@ public class WatchedDialogueSequence : MonoBehaviour
         CancelGuardDialogueRoutine();
         ReleaseScreenShading();
         Unsubscribe();
+        StopWaitingForScreenShading();
     }
 
     private void Subscribe()
@@ -162,7 +165,7 @@ public class WatchedDialogueSequence : MonoBehaviour
             CacheWatchedFlowObject();
 
         var currentStart = ui.CurrentStartObject;
-        watchedDialogueActive = currentStart != null && watchedFlowObject != null && currentStart == watchedFlowObject;
+        watchedDialogueActive = FlowObjectsMatch(currentStart, watchedFlowObject);
     }
 
     private void OnDialogueClosed(DialogueUI ui)
@@ -231,30 +234,93 @@ public class WatchedDialogueSequence : MonoBehaviour
 
     private void ApplyScreenShading()
     {
+        wantsScreenShade = true;
+
         if (hasAppliedScreenShading)
             return;
 
         var shading = ResolveScreenShading();
         if (shading == null)
+        {
+            BeginWaitingForScreenShading();
             return;
+        }
 
         shading.Shade();
         hasAppliedScreenShading = true;
+        StopWaitingForScreenShading();
     }
 
     private void ReleaseScreenShading()
     {
-        if (!hasAppliedScreenShading)
-            return;
+        wantsScreenShade = false;
 
         var shading = ResolveScreenShading();
         if (shading == null)
         {
             hasAppliedScreenShading = false;
+            StopWaitingForScreenShading();
             return;
         }
 
-        shading.Unshade();
+        if (hasAppliedScreenShading)
+        {
+            shading.Unshade();
+            hasAppliedScreenShading = false;
+        }
+
+        StopWaitingForScreenShading();
+    }
+
+    private void HandleScreenShadingInstanceChanged(ScreenShading instance)
+    {
+        screenShading = instance;
+
+        if (instance == null)
+        {
+            hasAppliedScreenShading = false;
+            return;
+        }
+
+        if (!wantsScreenShade)
+        {
+            StopWaitingForScreenShading();
+            return;
+        }
+
         hasAppliedScreenShading = false;
+        ApplyScreenShading();
+    }
+
+    private void BeginWaitingForScreenShading()
+    {
+        if (waitingForScreenShadingInstance)
+            return;
+
+        ScreenShading.InstanceChanged += HandleScreenShadingInstanceChanged;
+        waitingForScreenShadingInstance = true;
+    }
+
+    private void StopWaitingForScreenShading()
+    {
+        if (!waitingForScreenShadingInstance)
+            return;
+
+        ScreenShading.InstanceChanged -= HandleScreenShadingInstanceChanged;
+        waitingForScreenShadingInstance = false;
+    }
+
+    private static bool FlowObjectsMatch(IFlowObject currentStart, IFlowObject watchedObject)
+    {
+        if (ReferenceEquals(currentStart, watchedObject))
+            return currentStart != null;
+
+        if (currentStart == null || watchedObject == null)
+            return false;
+
+        if (currentStart is ArticyObject articyCurrent && watchedObject is ArticyObject articyWatched)
+            return articyCurrent.Id.Equals(articyWatched.Id);
+
+        return currentStart.Equals(watchedObject);
     }
 }

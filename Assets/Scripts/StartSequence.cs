@@ -52,6 +52,8 @@ public class StartSequence : MonoBehaviour
     private Coroutine interactionBlockedRoutine;
     private bool hasShownInventoryHint;
     private bool hasAppliedScreenShading;
+    private bool wantsScreenShade;
+    private bool waitingForScreenShadingInstance;
 
     public static float TotalDistanceTraveled { get; private set; }
 
@@ -125,6 +127,8 @@ public class StartSequence : MonoBehaviour
             skillSelectionUI.Confirmed -= HandleSkillsConfirmed;
         if (playerInteract != null)
             playerInteract.InteractionWhileBlocked -= HandleInteractionWhileBlocked;
+
+        StopWaitingForScreenShading();
     }
 
     private void Start()
@@ -364,31 +368,80 @@ public class StartSequence : MonoBehaviour
 
     private void ShadeScreen()
     {
+        wantsScreenShade = true;
+
         if (hasAppliedScreenShading)
             return;
 
         var shading = ResolveScreenShading();
         if (shading == null)
+        {
+            BeginWaitingForScreenShading();
             return;
+        }
 
         shading.Shade();
         hasAppliedScreenShading = true;
+        StopWaitingForScreenShading();
     }
 
     private void UnshadeScreen()
     {
-        if (!hasAppliedScreenShading)
-            return;
+        wantsScreenShade = false;
 
         var shading = ResolveScreenShading();
         if (shading == null)
         {
             hasAppliedScreenShading = false;
+            StopWaitingForScreenShading();
             return;
         }
 
-        shading.Unshade();
+        if (hasAppliedScreenShading)
+        {
+            shading.Unshade();
+            hasAppliedScreenShading = false;
+        }
+
+        StopWaitingForScreenShading();
+    }
+
+    private void HandleScreenShadingInstanceChanged(ScreenShading instance)
+    {
+        screenShading = instance;
+
+        if (instance == null)
+        {
+            hasAppliedScreenShading = false;
+            return;
+        }
+
+        if (!wantsScreenShade)
+        {
+            StopWaitingForScreenShading();
+            return;
+        }
+
         hasAppliedScreenShading = false;
+        ShadeScreen();
+    }
+
+    private void BeginWaitingForScreenShading()
+    {
+        if (waitingForScreenShadingInstance)
+            return;
+
+        ScreenShading.InstanceChanged += HandleScreenShadingInstanceChanged;
+        waitingForScreenShadingInstance = true;
+    }
+
+    private void StopWaitingForScreenShading()
+    {
+        if (!waitingForScreenShadingInstance)
+            return;
+
+        ScreenShading.InstanceChanged -= HandleScreenShadingInstanceChanged;
+        waitingForScreenShadingInstance = false;
     }
 
     private void UpdateTotalDistance()
