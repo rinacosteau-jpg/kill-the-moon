@@ -9,14 +9,13 @@ public class PlayerInteractScript : MonoBehaviour {
     private InputAction interactAction;
     private DialogueUI dialogueUI;
     private bool interactionsBlocked;
-    private Predicate<IInteractable> blockBypassPredicate;
 
     private readonly List<IInteractable> interactablesInRange = new List<IInteractable>();
     private readonly HashSet<MonoBehaviour> interactableBehavioursInRange = new HashSet<MonoBehaviour>();
     private readonly Dictionary<MonoBehaviour, InteractableOutline> highlightedInteractables = new Dictionary<MonoBehaviour, InteractableOutline>();
     private readonly List<MonoBehaviour> highlightRemovalBuffer = new List<MonoBehaviour>();
 
-    public event Action<IReadOnlyList<IInteractable>> InteractionWhileBlocked;
+    public event Action InteractionWhileBlocked;
 
     private void Start() {
         interactAction = InputSystem.actions.FindAction("Interact");
@@ -37,21 +36,8 @@ public class PlayerInteractScript : MonoBehaviour {
 
         if (interactAction != null && interactAction.triggered) {
             if (interactionsBlocked) {
-                bool hasInteractables = interactablesInRange.Count > 0;
-                bool bypassedBlock = false;
-
-                if (hasInteractables && blockBypassPredicate != null) {
-                    foreach (IInteractable interactable in interactablesInRange) {
-                        if (interactable == null || !blockBypassPredicate(interactable))
-                            continue;
-
-                        bypassedBlock = true;
-                        interactable.Interact();
-                    }
-                }
-
-                if (hasInteractables && !bypassedBlock)
-                    InteractionWhileBlocked?.Invoke(interactablesInRange);
+                if (interactablesInRange.Count > 0)
+                    InteractionWhileBlocked?.Invoke();
                 return;
             }
 
@@ -117,9 +103,8 @@ public class PlayerInteractScript : MonoBehaviour {
             highlightedInteractables.Remove(behaviour);
     }
 
-    public void SetInteractionsBlocked(bool blocked, Predicate<IInteractable> bypassPredicate = null)
+    public void SetInteractionsBlocked(bool blocked)
     {
         interactionsBlocked = blocked;
-        blockBypassPredicate = blocked ? bypassPredicate : null;
     }
 }
