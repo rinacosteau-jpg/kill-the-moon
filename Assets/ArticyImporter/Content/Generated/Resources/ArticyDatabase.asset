@@ -1137,7 +1137,7 @@ MonoBehaviour:
     parent: 216172783251375095
     technicalName: Dlg_A405AA63
     articyType: Dialogue
-    childCount: 30
+    childCount: 29
   - id: 72057594037937464
     parent: 72057594037930163
     technicalName: DFr_AA79CC6C
@@ -1231,11 +1231,6 @@ MonoBehaviour:
   - id: 72057594037937591
     parent: 72057594037930163
     technicalName: DFr_863DC8F5
-    articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037937612
-    parent: 72057594037930163
-    technicalName: DFr_D22ADE27
     articyType: DialogueFragment
     childCount: 0
   - id: 72057594037938835
