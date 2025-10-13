@@ -27,6 +27,8 @@ public class CallGuardSequence : MonoBehaviour
     [Header("Behaviour")]
     [SerializeField] private bool resetCallGuardFlag = true;
 
+    [SerializeField] private ScreenShading screenShading;
+
     private bool isSequenceRunning;
     private bool lastCallGuardValue;
     private Vector3 originalCharacterPosition;
@@ -98,12 +100,17 @@ public class CallGuardSequence : MonoBehaviour
         CacheCharacterTransform();
         SetPlayerControlBlocked(true);
 
+        screenShading.Shade();
+        
+
         float delay = Mathf.Max(playerControlBlockDuration, 0f);
         if (delay > 0f)
             yield return new WaitForSeconds(delay);
 
         UnlockDoors();
         MoveCharacterToDestination();
+
+        screenShading.Unshade();
 
         yield return StartGuardDialogue();
 

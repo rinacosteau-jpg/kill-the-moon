@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using Articy.Unity;
+using Articy.World_Of_Red_Moon.GlobalVariables;
 using TMPro;
 using UnityEngine;
+using static Articy.World_Of_Red_Moon.GlobalVariables.ArticyGlobalVariables;
 using static Unity.Cinemachine.CinemachineOrbitalTransposer;
 
 /// <summary>
@@ -421,8 +423,7 @@ public class StartSequence : MonoBehaviour
         return ReferenceEquals(interactable, doorInteractable);
     }
 
-    private bool IsDoorChecked()
-    {
+    private bool IsDoorChecked(){
         return ArticyGlobalVariables.Default?.RFLG?.checkedDoor ?? false;
     }
 
