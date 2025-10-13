@@ -118,6 +118,7 @@ namespace Articy.World_Of_Red_Moon.GlobalVariables
             variableNames.Add("RFLG.callLoopReset");
             variableNames.Add("RFLG.callGuard");
             variableNames.Add("RFLG.checkedDoor");
+            variableNames.Add("RFLG.endOfDemo");
             variableNames.Add("ITM.item_kotsukiNote_delta");
             variableNames.Add("ITM.item_kotsukiNote_count");
             variableNames.Add("ITM.item_InventoryArtefact_count");
@@ -156,6 +157,7 @@ namespace Articy.World_Of_Red_Moon.GlobalVariables
             variableNames.Add("PS.magicCap_Lux");
             variableNames.Add("PS.magicCap_Tempus");
             variableNames.Add("PS.magicCap_Sonus");
+            variableNames.Add("PS.endOfDemo_result");
             variableNames.Add("NQUE.testic");
             variableNames.Add("SCH.Perseption");
             variableNames.Add("SCH.Persuasion");

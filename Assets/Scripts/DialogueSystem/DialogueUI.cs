@@ -329,7 +329,7 @@ public class DialogueUI : MonoBehaviour, IArticyFlowPlayerCallbacks, ILoopResett
                 otherBranches.Add(b);
         }
 
-        if (!shouldPauseCurrentObject) {
+        /*if (!shouldPauseCurrentObject) {
             if (playerBranches.Count > 0) {
                 Debug.LogWarning("[DialogueUI] Получены варианты игрока без PauseOn — откладываем автопродолжение.");
             } else {
@@ -337,7 +337,7 @@ public class DialogueUI : MonoBehaviour, IArticyFlowPlayerCallbacks, ILoopResett
                 dialogueFinished = false;
                 return;
             }
-        }
+        }*/
 
         if (playerBranches.Count > 0) {
             // Показываем варианты игрока — ждём подтверждения

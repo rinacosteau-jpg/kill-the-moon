@@ -9,6 +9,7 @@ public class GetGunEvent : MonoBehaviour
     [SerializeField] private DialogueUI dialogueUI;
     [SerializeField] private PlayerMovementScript playerMovement;
     [SerializeField] private PlayerInteractScript playerInteract;
+    [SerializeField] private ScreenShading screenShading;
 
     [Header("Dialogue Fragments")]
     [SerializeField] private ArticyRef dialogueFragmentStageA;
@@ -67,11 +68,15 @@ public class GetGunEvent : MonoBehaviour
         {
             yield return WaitForAllDialoguesToClose();
 
+            screenShading.Shade();
+
             yield return BlockPlayerControl(controlBlockDuration);
 
             yield return StartStageDialogue();
 
             yield return BlockPlayerControl(controlBlockDuration);
+
+            screenShading.Unshade();
 
             yield return StartDialogue(dialogueFragmentStageC);
 
