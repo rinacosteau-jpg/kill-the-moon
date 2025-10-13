@@ -429,6 +429,15 @@ aGlobalVariablesState.PS.moralVal>=111;
         }
         
         /// <summary>
+        /// ObjectID: 0x100000000003CE1
+        /// Articy Object ref: articy://localhost/view/6b45a52e-5605-4c95-a051-48da04bae055/72057594037943521?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_720575940379282080x100000000003CE1Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.RFLG.talkedTasha = true;
+        }
+        
+        /// <summary>
         /// ObjectID: 0x100000000000A2D
         /// Articy Object ref: articy://localhost/view/6b45a52e-5605-4c95-a051-48da04bae055/72057594037930541?pane=selected&amp;tab=current
         /// </summary>
@@ -549,6 +558,15 @@ aGlobalVariablesState.RCNT.stealGunMistakes++;
         }
         
         /// <summary>
+        /// ObjectID: 0x1000000000036B2
+        /// Articy Object ref: articy://localhost/view/6b45a52e-5605-4c95-a051-48da04bae055/72057594037941938?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_720575940379282080x1000000000036B2Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.RCNT.stealGunMistakes++;
+        }
+        
+        /// <summary>
         /// ObjectID: 0x10000000000399C
         /// Articy Object ref: articy://localhost/view/6b45a52e-5605-4c95-a051-48da04bae055/72057594037942684?pane=selected&amp;tab=current
         /// </summary>
@@ -622,12 +640,12 @@ aGlobalVariablesState.ITM.item_Gun_delta++;
         }
         
         /// <summary>
-        /// ObjectID: 0x10000000000286F
-        /// Articy Object ref: articy://localhost/view/6b45a52e-5605-4c95-a051-48da04bae055/72057594037938287?pane=selected&amp;tab=current
+        /// ObjectID: 0x100000000002870
+        /// Articy Object ref: articy://localhost/view/6b45a52e-5605-4c95-a051-48da04bae055/72057594037938288?pane=selected&amp;tab=current
         /// </summary>
-        public bool Script_720575940379282080x10000000000286FText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        public void Script_720575940379282080x100000000002870Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
         {
-            return aGlobalVariablesState.PS.loopCounter==1;
+            aGlobalVariablesState.RFLG.loop1unlock = true;
         }
         
         /// <summary>
@@ -1398,15 +1416,6 @@ aGlobalVariablesState.QUEST.getGun_State = 3;;
         }
         
         /// <summary>
-        /// ObjectID: 0x1000000000036B2
-        /// Articy Object ref: articy://localhost/view/6b45a52e-5605-4c95-a051-48da04bae055/72057594037941938?pane=selected&amp;tab=current
-        /// </summary>
-        public void Script_720575940379282080x1000000000036B2Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
-        {
-            aGlobalVariablesState.RCNT.stealGunMistakes++;
-        }
-        
-        /// <summary>
         /// ObjectID: 0x1000000000037BD
         /// Articy Object ref: articy://localhost/view/6b45a52e-5605-4c95-a051-48da04bae055/72057594037942205?pane=selected&amp;tab=current
         /// </summary>
@@ -2071,6 +2080,7 @@ aGlobalVariablesState.QUEST.getGun_Obj_getRuleBook = 2;
             Conditions.Add(3828878898u, this.Script_720575940379282080x100000000002F78Text);
             Conditions.Add(373632905u, this.Script_720575940379282080x100000000003036Text);
             Conditions.Add(2892553825u, this.Script_720575940379282080x100000000003C59Text);
+            Instructions.Add(4279402243u, this.Script_720575940379282080x100000000003CE1Text);
             Conditions.Add(1310603657u, this.Script_720575940379282080x100000000000A2DText);
             Conditions.Add(1289530056u, this.Script_720575940379282080x100000000001221Text);
             Conditions.Add(2852746263u, this.Script_720575940379282080x1000000000012A0Text);
@@ -2084,6 +2094,7 @@ aGlobalVariablesState.QUEST.getGun_Obj_getRuleBook = 2;
             Instructions.Add(2069248380u, this.Script_720575940379282080x100000000001AC4Text);
             Conditions.Add(3947440477u, this.Script_720575940379282080x100000000001B13Text);
             Instructions.Add(2855180313u, this.Script_720575940379282080x100000000001C66Text);
+            Instructions.Add(2881662489u, this.Script_720575940379282080x1000000000036B2Text);
             Instructions.Add(611080241u, this.Script_720575940379282080x10000000000399CText);
             Instructions.Add(810973786u, this.Script_720575940379282080x1000000000039B4Text);
             Instructions.Add(3696548469u, this.Script_720575940379282080x100000000003A90Text);
@@ -2092,7 +2103,7 @@ aGlobalVariablesState.QUEST.getGun_Obj_getRuleBook = 2;
             Instructions.Add(1002608097u, this.Script_720575940379282080x1000000000028F0Text);
             Conditions.Add(2743778636u, this.Script_720575940379282080x100000000002904Text);
             Conditions.Add(2582556215u, this.Script_720575940379282080x100000000002932Text);
-            Conditions.Add(402356112u, this.Script_720575940379282080x10000000000286FText);
+            Instructions.Add(2463437476u, this.Script_720575940379282080x100000000002870Text);
             Conditions.Add(137194530u, this.Script_720575940379282080x100000000003A5DText);
             Conditions.Add(3623304183u, this.Script_720575940379282080x100000000000981Text);
             Instructions.Add(828694116u, this.Script_720575940379282080x100000000000AEDText);
@@ -2175,7 +2186,6 @@ aGlobalVariablesState.QUEST.getGun_Obj_getRuleBook = 2;
             Conditions.Add(440162647u, this.Script_720575940379282080x100000000001C07Text);
             Instructions.Add(1417751049u, this.Script_720575940379282080x100000000001C10Text);
             Instructions.Add(2345457471u, this.Script_720575940379282080x100000000002277Text);
-            Instructions.Add(2881662489u, this.Script_720575940379282080x1000000000036B2Text);
             Instructions.Add(2412941567u, this.Script_720575940379282080x1000000000037BDText);
             Instructions.Add(3495385349u, this.Script_720575940379282080x100000000001B64Text);
             Instructions.Add(3795891073u, this.Script_720575940379282080x100000000001B80Text);
