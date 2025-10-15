@@ -1,4 +1,5 @@
 using System;
+using System.Reflection;
 using TMPro;
 using UnityEngine;
 using Articy.World_Of_Red_Moon.GlobalVariables;
@@ -16,6 +17,9 @@ public class GameTime : MonoBehaviour, ILoopResettable {
     private const int LoopResetTotalMinutes = 13 * 60;
     private bool loopResetPending;
     private bool hasTriggeredLoopReset;
+
+    private static PropertyInfo articyGameTimeNamespaceAccessor;
+    private static PropertyInfo articyGameTimeValueProperty;
 
     public int Hours { get; set; } = 12;
     public int Minutes { get; set; } = 0;
@@ -53,10 +57,97 @@ public class GameTime : MonoBehaviour, ILoopResettable {
     public override string ToString() => $"{Hours:D2}:{Minutes:D2}";
 
     public void Update() {
-        clockText.text = GameTime.Instance.ToString();
+        SyncArticyGameTime();
+
+        if (clockText != null)
+            clockText.text = GameTime.Instance.ToString();
 
         if (loopResetPending && !IsAnyDialogueOpen())
             PerformLoopReset();
+    }
+
+    private void SyncArticyGameTime()
+    {
+        var globals = ArticyGlobalVariables.Default;
+        if (globals == null)
+            return;
+
+        if (!TryResolveArticyGameTime(globals))
+            return;
+
+        object namespaceInstance;
+        try
+        {
+            namespaceInstance = articyGameTimeNamespaceAccessor.GetValue(globals);
+        }
+        catch (Exception e)
+        {
+            Debug.LogWarning($"[GameTime] Failed to access Articy namespace for gameTime: {e.Message}");
+            articyGameTimeNamespaceAccessor = null;
+            articyGameTimeValueProperty = null;
+            return;
+        }
+
+        if (namespaceInstance == null)
+        {
+            articyGameTimeNamespaceAccessor = null;
+            articyGameTimeValueProperty = null;
+            return;
+        }
+
+        int minutesSinceNoon = Mathf.Max(0, (Hours * 60 + Minutes) - (12 * 60));
+
+        try
+        {
+            if (articyGameTimeValueProperty.PropertyType == typeof(int))
+                articyGameTimeValueProperty.SetValue(namespaceInstance, minutesSinceNoon);
+            else if (articyGameTimeValueProperty.PropertyType == typeof(float))
+                articyGameTimeValueProperty.SetValue(namespaceInstance, (float)minutesSinceNoon);
+            else if (articyGameTimeValueProperty.PropertyType == typeof(double))
+                articyGameTimeValueProperty.SetValue(namespaceInstance, (double)minutesSinceNoon);
+        }
+        catch (Exception e)
+        {
+            Debug.LogWarning($"[GameTime] Failed to push gameTime to Articy: {e.Message}");
+            articyGameTimeNamespaceAccessor = null;
+            articyGameTimeValueProperty = null;
+        }
+    }
+
+    private static bool TryResolveArticyGameTime(ArticyGlobalVariables globals)
+    {
+        if (articyGameTimeNamespaceAccessor != null && articyGameTimeValueProperty != null)
+            return true;
+
+        if (globals == null)
+            return false;
+
+        const BindingFlags namespaceFlags = BindingFlags.Instance | BindingFlags.Public;
+        const BindingFlags variableFlags = BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase;
+
+        foreach (var nsProp in globals.GetType().GetProperties(namespaceFlags))
+        {
+            if (!nsProp.CanRead)
+                continue;
+
+            var nsType = nsProp.PropertyType;
+            if (nsType == null)
+                continue;
+
+            var gameTimeProp = nsType.GetProperty("gameTime", variableFlags);
+            if (gameTimeProp == null || !gameTimeProp.CanWrite)
+                continue;
+
+            var propertyType = gameTimeProp.PropertyType;
+            if (propertyType != typeof(int) && propertyType != typeof(float) && propertyType != typeof(double))
+                continue;
+
+            articyGameTimeNamespaceAccessor = nsProp;
+            articyGameTimeValueProperty = gameTimeProp;
+            return true;
+        }
+
+        return false;
     }
 
     // Increment RCNT.waitForAoRead alongside time when active; normalize -1 -> 1; stop after reaching threshold.
