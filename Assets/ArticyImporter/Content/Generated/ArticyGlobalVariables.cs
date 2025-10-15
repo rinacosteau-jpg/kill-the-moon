@@ -161,6 +161,7 @@ namespace Articy.World_Of_Red_Moon.GlobalVariables
             variableNames.Add("PS.magicCap_Tempus");
             variableNames.Add("PS.magicCap_Sonus");
             variableNames.Add("PS.endOfDemo_result");
+            variableNames.Add("PS.gameTime");
             variableNames.Add("NQUE.testic");
             variableNames.Add("SCH.Perseption");
             variableNames.Add("SCH.Persuasion");

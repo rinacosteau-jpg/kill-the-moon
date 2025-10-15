@@ -2015,6 +2015,15 @@ aGlobalVariablesState.QUEST.getGun_Obj_getRuleBook = 2;
         }
         
         /// <summary>
+        /// ObjectID: 0x100000000003E81
+        /// Articy Object ref: articy://localhost/view/6b45a52e-5605-4c95-a051-48da04bae055/72057594037943937?pane=selected&amp;tab=current
+        /// </summary>
+        public bool Script_720575940379282080x100000000003E81Expression(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            return aGlobalVariablesState.PS.gameTime <=45;
+        }
+        
+        /// <summary>
         /// ObjectID: 0x100000000001C87
         /// Articy Object ref: articy://localhost/view/6b45a52e-5605-4c95-a051-48da04bae055/72057594037935239?pane=selected&amp;tab=current
         /// </summary>
@@ -2252,6 +2261,7 @@ aGlobalVariablesState.QUEST.getGun_Obj_getRuleBook = 2;
             Conditions.Add(222903987u, this.Script_720575940379282080x100000000003BE8Expression);
             Conditions.Add(3730260966u, this.Script_720575940379282080x100000000003BF5Expression);
             Conditions.Add(1105971629u, this.Script_720575940379282080x100000000003E0DExpression);
+            Conditions.Add(2743284685u, this.Script_720575940379282080x100000000003E81Expression);
             Instructions.Add(2133286834u, this.Script_720575940379282080x100000000001C87Expression);
             Instructions.Add(1980341054u, this.Script_720575940379282080x100000000000B23Expression);
         }

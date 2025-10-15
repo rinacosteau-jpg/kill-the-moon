@@ -701,6 +701,8 @@ MonoBehaviour:
   - DFr_D4E499A5.Text
   - DFr_65F07497.PreviewText
   - DFr_3AA86C4C.Text
+  - DFr_0A1DB4DE.Text
+  - DFr_DE65D29F.Text
   - DFr_42355259.Text
   - DFr_46078695.Text
   - DFr_A084ACD1.PreviewText
@@ -2048,6 +2050,9 @@ MonoBehaviour:
   - Nothing of interest here.
   - Leave
   - It is closed. Still.
+  - "\u201CNope. Fifteen minutes left till the end of lunch \u2014 we won\u2019t
+    make it in time. The chance is gone, good luck and all that.\u201D"
+  - Time, time... where are you running to?
   - /off, reset/
   - /why the hell?/
   - Better to start early than be late.
