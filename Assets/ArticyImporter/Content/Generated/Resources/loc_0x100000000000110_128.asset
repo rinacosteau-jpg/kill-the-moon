@@ -1996,7 +1996,12 @@ MonoBehaviour:
   - Leave.
   - You have nothing to say for now. You leave.
   - '"Do you know anything about my revolver?"'
-  - '"Do you know anything about my revolver?"'
+  - '"Do you know anything about my revolver?"
+
+    
+
+    Add also that you clearly
+    remember having it.'
   - '"Uh, no, nothing."'
   - '"Uh, no, nothing."'
   - "You approach the door. Your path to freedom \u2014 or to a larger cage. Either
@@ -2017,32 +2022,52 @@ MonoBehaviour:
   - "You don\u2019t even have time to react \u2014 they knock you out instantly."
   - "I\u2019ll find something else to do."
   - "As you wish. But when you get bored \u2014 you know where to go."
-  - Touching.
-  - He points to the storage window.
-  - "They won\u2019t just hand you the revolver. Maybe Ratko can help? But I wouldn\u2019t
-    count on it."
-  - Uh-huh. Except the timer never expires.
+  - '"You can at least remove the bullets! But I need it."
+
+    
+
+    Better without
+    bullets than not at all.'
+  - "\"Alright, and where is it? Can I at least make sure nothing\u2019s been done
+    to it? It\u2019s really important to me.\""
+  - "\"Alright, and where is it? Can I at least make sure nothing\u2019s been done
+    to it? It\u2019s really important to me.\""
   - '"But I need it. For emotional support."'
-  - '"But I need it. For emotional support."'
-  - '"You can at least remove the bullets! But I need it."'
-  - Add also that you clearly remember having it.
-  - '"Your confiscated belongings will be returned after the timer expires."'
+  - '"But I need it. For emotional support."
+
+    
+
+    "Touching.'
   - '"A weapon for emotional support."'
-  - "And you just helped him with that artifact... Still, I wouldn\u2019t count on
-    it."
-  - "But first you need to do something for him in this loop. Otherwise there\u2019s
-    no point in asking."
+  - '"That window over there."
+
+    
+
+    He points to the storage window.'
+  - '"Your confiscated belongings will be returned after the timer expires."'
+  - Uh-huh. Except the timer never expires.
+  - '"For confiscated belongings, contact Theodor Kavish."
+
+    
+
+    He wants
+    you to bother anyone but himself.'
+  - "\"I\u2019d still like to know what\u2019s going on here.\"\r\n"
+  - "\"I\u2019d still like to know what\u2019s going on here.\""
   - '"..."'
   - Better leave.
   - '"..."'
   - Well, it was worth a try. Or not.
+  - '"No."'
+  - '"I''m sure you can talk to someone who is currently NOT on duty."'
+  - "And you just helped him with that artifact... Still, I wouldn\u2019t count on
+    it."
+  - "But first you need to do something for him in this loop. Otherwise there\u2019s
+    no point in asking."
+  - "They won\u2019t just hand you the revolver. Maybe Ratko can help? But I wouldn\u2019t
+    count on it."
   - "They won\u2019t just hand you the revolver. Maybe someone here can help? Not
     many talkative people around\u2026"
-  - '"I''m sure you can talk to someone who is currently NOT on duty."'
-  - '"For confiscated belongings, contact Theodor Kavish."'
-  - He wants you to bother anyone but himself.
-  - Better without bullets than not at all.
-  - '"That window over there."'
   - "You approach Kotsuki. She is focused on a blank canvas. Do you have something
     to say? If not\u2014better go. I'm serious. Don\u2019t."
   - Leave
