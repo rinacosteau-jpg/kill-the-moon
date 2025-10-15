@@ -41,6 +41,7 @@ public class DialogueUI : MonoBehaviour, IArticyFlowPlayerCallbacks, ILoopResett
     private bool suppressOnFlowPause = false;
     private bool? originalRecalcSetting;
     private bool shouldPauseCurrentObject = false;
+    private readonly HashSet<IFlowObject> processedDurationFragments = new HashSet<IFlowObject>();
 
     private void SetContinuousRecalculation(bool enable) {
         if (flowPlayer == null) return;
@@ -236,6 +237,7 @@ public class DialogueUI : MonoBehaviour, IArticyFlowPlayerCallbacks, ILoopResett
 
     public void OnLoopReset() {
         CloseDialogue();
+        processedDurationFragments.Clear();
     }
 
 
@@ -248,16 +250,21 @@ public class DialogueUI : MonoBehaviour, IArticyFlowPlayerCallbacks, ILoopResett
             return;
         }*/
         // Добавим время из свойства Duration
-        if (aObject is IObjectWithFeatureDuration)
+        if (aObject is IObjectWithFeatureDuration && !processedDurationFragments.Contains(aObject))
         {
             kek = (IObjectWithFeatureDuration)aObject;
-            int duration = ((int)kek.GetFeatureDuration().Minutes);
-
-            Debug.Log(duration);
-            if (duration > 0)
+            var durationFeature = kek.GetFeatureDuration();
+            if (durationFeature != null)
             {
-                GameTime.Instance?.AddMinutes(duration);
-                Debug.Log("Added minutes");
+                int duration = (int)durationFeature.Minutes;
+
+                Debug.Log(duration);
+                if (duration > 0)
+                {
+                    processedDurationFragments.Add(aObject);
+                    GameTime.Instance?.AddMinutes(duration);
+                    Debug.Log("Added minutes");
+                }
             }
         }
 
