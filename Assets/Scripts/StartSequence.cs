@@ -122,7 +122,7 @@ public class StartSequence : MonoBehaviour
         foreach (ArticyLanguage language in ArticyDatabase.Localization.Languages) {
             Debug.Log($"{language.ArticyLanguageId}, {language.CultureName}, {language.LanguageName}");
         }
-        ArticyDatabase.Localization.SetLanguage("ru");
+        ArticyDatabase.Localization.SetLanguage("en");
         //Debug.Log((kk.Language).ToString());
         //kk.
         InventoryStorage.OnFirstItemAdded += HandleFirstItemAdded;

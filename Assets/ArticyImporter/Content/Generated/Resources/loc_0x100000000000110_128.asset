@@ -13,6 +13,19 @@ MonoBehaviour:
   m_Name: loc_0x100000000000110_128
   m_EditorClassIdentifier: ArticyRuntime.dll::Articy.Unity.ArticyLocalizationPackage
   mLocalizedStringsKeys:
+  - Dlg_A405AA63.DisplayName
+  - Dlg_A405AA63.Text
+  - Dlg_1FB33FDD.DisplayName
+  - Dlg_DA82C497.DisplayName
+  - Dlg_181923DD.DisplayName
+  - Dlg_693D5183.DisplayName
+  - Dlg_57DB9624.DisplayName
+  - Dlg_FC603B2B.DisplayName
+  - Dlg_558E3C14.DisplayName
+  - Dlg_F3DB042F.DisplayName
+  - Dlg_85083316.DisplayName
+  - Dlg_B3B93E83.DisplayName
+  - Dlg_13C2E3BD.DisplayName
   - DFr_8E1F1547.Text
   - DFr_CC3E0B6A.Text
   - DFr_AA79CC6C.Text
@@ -43,31 +56,828 @@ MonoBehaviour:
   - DFr_56A9E026.PreviewText
   - DFr_56A9E026.Text
   - DFr_51E5E710.Text
+  - DFr_2DD444E4.PreviewText
   - DFr_2DD444E4.Text
+  - DFr_87344F87.Text
   - DFr_95CF5186.Text
+  - DFr_FA0CB569.PreviewText
   - DFr_FA0CB569.Text
+  - DFr_7250088A.PreviewText
   - DFr_7250088A.Text
+  - DFr_965C5C50.PreviewText
   - DFr_965C5C50.Text
+  - DFr_6BB269CA.PreviewText
   - DFr_6BB269CA.Text
+  - DFr_07E59B81.PreviewText
   - DFr_07E59B81.Text
+  - DFr_3E34F04C.PreviewText
   - DFr_3E34F04C.Text
   - DFr_842784FC.Text
+  - DFr_96BF5BF8.PreviewText
   - DFr_96BF5BF8.Text
   - DFr_C17F7BA2.Text
+  - DFr_2E14DAA6.PreviewText
   - DFr_2E14DAA6.Text
+  - DFr_2E793996.PreviewText
   - DFr_2E793996.Text
   - DFr_68DF7DF0.Text
   - DFr_7114DE8E.Text
+  - DFr_563266A7.PreviewText
   - DFr_563266A7.Text
   - DFr_1D3EE5CF.Text
+  - DFr_DDBA0274.PreviewText
   - DFr_DDBA0274.Text
+  - DFr_9587D380.PreviewText
   - DFr_9587D380.Text
+  - DFr_0BD2B607.Text
+  - DFr_7E36F914.PreviewText
+  - DFr_7E36F914.Text
+  - DFr_387C7373.Text
+  - DFr_D5E2F724.Text
+  - DFr_3E07EB5B.PreviewText
+  - DFr_3E07EB5B.Text
+  - DFr_8C9B7E35.PreviewText
+  - DFr_8C9B7E35.Text
+  - DFr_13D87CC1.Text
+  - DFr_98E1E547.Text
+  - DFr_62854950.Text
+  - DFr_48CAD427.PreviewText
+  - DFr_48CAD427.Text
+  - DFr_DEED51FB.PreviewText
+  - DFr_DEED51FB.Text
+  - DFr_0B2D36EE.Text
+  - DFr_84B26E73.Text
+  - DFr_7BEEAE60.Text
+  - DFr_6E3CBE45.PreviewText
+  - DFr_6E3CBE45.Text
+  - DFr_BC89C5D8.Text
+  - DFr_87312638.PreviewText
+  - DFr_87312638.Text
+  - DFr_B6974AD3.Text
+  - DFr_098BC5F3.Text
+  - DFr_F0A39FE5.Text
+  - DFr_B90DEC9A.PreviewText
+  - DFr_B90DEC9A.Text
+  - DFr_22DAC56B.PreviewText
+  - DFr_22DAC56B.Text
+  - DFr_4D10F8C1.Text
+  - DFr_B7EF5658.PreviewText
+  - DFr_B7EF5658.Text
+  - DFr_0553689E.PreviewText
+  - DFr_0553689E.Text
+  - DFr_A6094E72.Text
+  - DFr_5E07A2FC.Text
+  - DFr_DAEA475B.Text
+  - DFr_B9FDC906.Text
+  - DFr_D5F19977.PreviewText
+  - DFr_D5F19977.Text
+  - DFr_F1DB6CB1.Text
+  - DFr_080B3275.Text
+  - DFr_C966CDAA.PreviewText
+  - DFr_C966CDAA.Text
+  - DFr_3B9652B9.Text
+  - DFr_BB97EAA1.Text
+  - DFr_806B7B20.PreviewText
+  - DFr_806B7B20.Text
+  - DFr_7E3D8EBB.PreviewText
+  - DFr_7E3D8EBB.Text
+  - DFr_85777870.Text
+  - DFr_343D1574.Text
+  - DFr_65614FB7.Text
+  - DFr_91C77963.PreviewText
+  - DFr_91C77963.Text
+  - DFr_696AE899.Text
+  - DFr_03C79829.Text
+  - DFr_BEBE3534.PreviewText
+  - DFr_BEBE3534.Text
+  - DFr_EA54B40C.Text
+  - DFr_BD428460.Text
+  - DFr_742CF9F7.Text
+  - DFr_2CBC2A34.Text
+  - DFr_303F6DD8.Text
+  - DFr_A0E2FE9F.Text
+  - DFr_FE10C451.Text
+  - DFr_12FFD628.Text
+  - DFr_799CD57A.Text
+  - DFr_F7D09AC5.Text
+  - DFr_A9F4E2F4.PreviewText
+  - DFr_A9F4E2F4.Text
+  - DFr_323E7C01.Text
+  - DFr_67A83361.Text
+  - DFr_F1FCC9C3.Text
+  - DFr_A5C3A6D9.PreviewText
+  - DFr_A5C3A6D9.Text
+  - DFr_2E3C0171.PreviewText
+  - DFr_2E3C0171.Text
+  - DFr_EE93B243.Text
+  - DFr_DA141CBD.PreviewText
+  - DFr_DA141CBD.Text
+  - DFr_E7B23AC4.PreviewText
+  - DFr_E7B23AC4.Text
+  - DFr_6BA2BBD9.Text
+  - DFr_2B6D3F5F.Text
+  - DFr_2BC389A2.PreviewText
+  - DFr_2BC389A2.Text
+  - DFr_EDE7521E.PreviewText
+  - DFr_EDE7521E.Text
+  - DFr_BEFEDC92.Text
+  - DFr_627B0C7C.Text
+  - DFr_C1F1582C.Text
+  - DFr_AFA52C05.Text
+  - DFr_284BC6EB.Text
+  - DFr_CF78D3E9.Text
+  - DFr_7156B023.PreviewText
+  - DFr_7156B023.Text
+  - DFr_32125A83.PreviewText
+  - DFr_32125A83.Text
+  - DFr_063C9A0C.Text
+  - DFr_D9B03C7B.Text
+  - DFr_8A756122.Text
+  - DFr_48AFAC99.Text
+  - DFr_043E5A8C.Text
+  - DFr_D2434992.Text
+  - DFr_87A46A38.Text
+  - DFr_02D5C051.Text
+  - DFr_24E00F8D.Text
+  - DFr_517E9D06.Text
+  - DFr_2D6D5EC6.Text
+  - DFr_3B47A5B6.Text
+  - DFr_F1D4D957.Text
+  - DFr_972F315F.PreviewText
+  - DFr_972F315F.Text
+  - DFr_07C3E7A3.Text
+  - DFr_98E7B92F.Text
+  - DFr_8EBC5451.Text
+  - DFr_F1B00BF5.Text
+  - DFr_6E527C39.Text
+  - DFr_F77CD136.Text
+  - DFr_B5857751.Text
+  - DFr_66F7D02F.Text
+  - DFr_55DBE0D0.Text
+  - DFr_9077BEFB.Text
+  - DFr_C4D7F870.Text
+  - DFr_6C876FEB.Text
+  - DFr_B8B0CD3C.Text
+  - DFr_0F594391.PreviewText
+  - DFr_0F594391.Text
+  - DFr_B4DB40E1.PreviewText
+  - DFr_B4DB40E1.Text
+  - DFr_52EEA59F.PreviewText
+  - DFr_52EEA59F.Text
+  - DFr_1DAE639F.PreviewText
+  - DFr_1DAE639F.Text
+  - DFr_9B2CD158.PreviewText
+  - DFr_9B2CD158.Text
+  - DFr_87247E0F.Text
+  - DFr_8D992FB2.PreviewText
+  - DFr_3EA6C167.Text
+  - DFr_F96195AD.Text
+  - DFr_65D86D67.Text
+  - DFr_9E95D750.PreviewText
+  - DFr_9E95D750.Text
+  - DFr_1024E83F.Text
+  - DFr_3D0C1E58.Text
+  - DFr_37D2E9B8.Text
+  - DFr_D8D25A72.Text
+  - DFr_1F6ED414.Text
+  - DFr_AB1ABD2C.Text
+  - DFr_005591A7.Text
+  - DFr_5EAAD39B.Text
+  - DFr_4BCCC156.Text
+  - DFr_3D65F33D.Text
+  - DFr_5AE78B6D.Text
+  - DFr_52D04560.Text
+  - DFr_C4EC359C.Text
+  - DFr_0E3DA00B.Text
+  - DFr_A092F0CA.Text
+  - DFr_590E33C0.Text
+  - DFr_92AF876B.Text
+  - DFr_22303296.PreviewText
+  - DFr_22303296.Text
+  - DFr_8AC956C1.Text
+  - DFr_C7BD9109.PreviewText
+  - DFr_C7BD9109.Text
+  - DFr_177CFB88.Text
+  - DFr_7F7FE27B.Text
+  - DFr_CC70FF69.PreviewText
+  - DFr_CC70FF69.Text
+  - DFr_D4104639.PreviewText
+  - DFr_D4104639.Text
+  - DFr_3CDA8420.Text
+  - DFr_EFDF9194.Text
+  - DFr_03C694A5.Text
+  - DFr_D1573319.Text
+  - DFr_A6A1FEA1.PreviewText
+  - DFr_A6A1FEA1.Text
+  - DFr_8CBF02A2.PreviewText
+  - DFr_8CBF02A2.Text
+  - DFr_551CA310.PreviewText
+  - DFr_551CA310.Text
+  - DFr_FB1F2AF2.Text
+  - DFr_6B6BFCEF.Text
+  - DFr_2E7CB6A5.Text
+  - DFr_04B6DC73.PreviewText
+  - DFr_04B6DC73.Text
+  - DFr_F941CD60.PreviewText
+  - DFr_F941CD60.Text
+  - DFr_E8B5E1FD.PreviewText
+  - DFr_E8B5E1FD.Text
+  - DFr_56DA4475.PreviewText
+  - DFr_56DA4475.Text
+  - DFr_E84A5DD7.PreviewText
+  - DFr_E84A5DD7.Text
+  - DFr_E3D263F5.PreviewText
+  - DFr_E3D263F5.Text
+  - DFr_0A2B7A38.PreviewText
+  - DFr_0A2B7A38.Text
+  - DFr_292E171C.Text
+  - DFr_893043D6.Text
+  - DFr_5FEA8D2B.Text
+  - DFr_CAFA8C6F.Text
+  - DFr_E4F35CDF.Text
+  - DFr_9392285B.Text
+  - DFr_0F0FDA17.Text
+  - DFr_656F421D.Text
+  - DFr_0FD5D4E0.Text
+  - DFr_70E21212.Text
+  - DFr_33B8CF07.Text
+  - DFr_B56F6465.Text
+  - DFr_E5A18EBC.Text
+  - DFr_122DE0F0.PreviewText
+  - DFr_122DE0F0.Text
+  - DFr_DC17B7BA.Text
+  - DFr_A7E41B92.PreviewText
+  - DFr_A7E41B92.Text
+  - DFr_25AC3763.Text
+  - DFr_B094D3A4.PreviewText
+  - DFr_B094D3A4.Text
+  - DFr_B728EB46.Text
+  - DFr_F1942FB5.Text
+  - DFr_36CAC38C.PreviewText
+  - DFr_36CAC38C.Text
+  - DFr_EDFFA849.PreviewText
+  - DFr_EDFFA849.Text
+  - DFr_920191F9.Text
+  - DFr_1E5B4467.Text
+  - DFr_B4BAB565.PreviewText
+  - DFr_B4BAB565.Text
+  - DFr_94F02C4D.PreviewText
+  - DFr_94F02C4D.Text
+  - DFr_09D2622A.Text
+  - DFr_4973FBC7.PreviewText
+  - DFr_4973FBC7.Text
+  - DFr_1BAC43B1.PreviewText
+  - DFr_1BAC43B1.Text
+  - DFr_11FCCF0E.Text
+  - DFr_3EA0FBE9.Text
+  - DFr_F723D760.Text
+  - DFr_94C1D350.Text
+  - DFr_FEB06810.PreviewText
+  - DFr_FEB06810.Text
+  - DFr_E22272DC.PreviewText
+  - DFr_E22272DC.Text
+  - DFr_7B8A9731.PreviewText
+  - DFr_7B8A9731.Text
+  - DFr_6B833877.PreviewText
+  - DFr_6B833877.Text
+  - DFr_B03EE541.Text
+  - DFr_83938254.Text
+  - DFr_930FDDD5.Text
+  - DFr_2D1D42CC.Text
+  - DFr_469B3177.Text
+  - DFr_383DA3A5.Text
+  - DFr_9AA7C282.PreviewText
+  - DFr_9AA7C282.Text
+  - DFr_74EF000A.PreviewText
+  - DFr_10A935F7.Text
+  - DFr_0A085FBE.Text
+  - DFr_C3728BB5.Text
+  - DFr_FD7DA795.PreviewText
+  - DFr_FD7DA795.Text
+  - DFr_E634B771.PreviewText
+  - DFr_E634B771.Text
+  - DFr_0F83478E.Text
+  - DFr_D61A8E33.Text
+  - DFr_49147ED3.Text
+  - DFr_8B77B193.PreviewText
+  - DFr_8B77B193.Text
+  - DFr_754DDDCF.PreviewText
+  - DFr_754DDDCF.Text
+  - DFr_45C2491F.Text
+  - DFr_AC6EE51B.Text
+  - DFr_F03CB7BD.Text
+  - DFr_A285EE0C.Text
+  - DFr_33D5DAAA.Text
+  - DFr_75B501F8.Text
+  - DFr_19F6E422.Text
+  - DFr_400C5E4C.Text
+  - DFr_57F0CB94.PreviewText
+  - DFr_57F0CB94.Text
+  - DFr_1008B169.PreviewText
+  - DFr_1008B169.Text
+  - DFr_1F884017.Text
+  - DFr_E752FFA9.Text
+  - DFr_3E13DFF9.Text
+  - DFr_F5E592CE.Text
+  - DFr_401F1F5B.Text
+  - DFr_321FFDE6.Text
+  - DFr_BC16995F.PreviewText
+  - DFr_BC16995F.Text
+  - DFr_6AC8A5E3.PreviewText
+  - DFr_6AC8A5E3.Text
+  - DFr_F25658DF.Text
+  - DFr_9153B33E.Text
+  - DFr_F4B6B1D6.PreviewText
+  - DFr_F4B6B1D6.Text
+  - DFr_943B683C.Text
+  - DFr_38EAD95A.Text
+  - DFr_8ADA54C4.Text
+  - DFr_45144B10.PreviewText
+  - DFr_45144B10.Text
+  - DFr_6ED7AB81.Text
+  - DFr_14EABC40.Text
+  - DFr_A92E65B9.Text
+  - DFr_6EFF66EC.Text
+  - DFr_AC52636E.PreviewText
+  - DFr_AC52636E.Text
+  - DFr_C88428B6.PreviewText
+  - DFr_C88428B6.Text
+  - DFr_C4BC093C.Text
+  - DFr_CB531E46.Text
+  - DFr_D7F8DE24.PreviewText
+  - DFr_D7F8DE24.Text
+  - DFr_5C611984.Text
+  - DFr_52B53B6D.Text
+  - DFr_B7D57202.Text
+  - DFr_BCA20295.Text
+  - DFr_19DB5F58.Text
+  - DFr_53EF80BC.Text
+  - DFr_56F3491F.PreviewText
+  - DFr_56F3491F.Text
+  - DFr_277B5DB6.Text
+  - DFr_261066AE.PreviewText
+  - DFr_261066AE.Text
+  - DFr_E7F29957.Text
+  - DFr_0DF96B05.PreviewText
+  - DFr_0DF96B05.Text
+  - DFr_3F9CF69A.Text
+  - DFr_881C2F42.PreviewText
+  - DFr_881C2F42.Text
+  - DFr_8B661463.Text
+  - DFr_66CF8B55.PreviewText
+  - DFr_66CF8B55.Text
+  - DFr_8CCB974F.PreviewText
+  - DFr_8CCB974F.Text
+  - DFr_D88C7B4D.Text
+  - DFr_78ED1F26.Text
+  - DFr_FEABCB83.Text
+  - DFr_94CEBFE4.PreviewText
+  - DFr_94CEBFE4.Text
+  - DFr_D461AD10.Text
+  - DFr_E5A23A84.Text
+  - DFr_A9EF7867.PreviewText
+  - DFr_A9EF7867.Text
+  - DFr_F695219B.PreviewText
+  - DFr_F695219B.Text
+  - DFr_FC50E343.Text
+  - DFr_0AB0C3A4.Text
+  - DFr_8A7F5F77.PreviewText
+  - DFr_8A7F5F77.Text
+  - DFr_3A29E346.PreviewText
+  - DFr_3A29E346.Text
+  - DFr_89AE3561.PreviewText
+  - DFr_89AE3561.Text
+  - DFr_3F7AE5A2.Text
+  - DFr_8682FAD8.Text
+  - DFr_4A7A45DC.Text
+  - DFr_86BA0358.Text
+  - DFr_3C67BA3F.Text
+  - DFr_D8CFAACB.PreviewText
+  - DFr_D8CFAACB.Text
+  - DFr_F3A8FF7E.PreviewText
+  - DFr_F3A8FF7E.Text
+  - DFr_5C7BB0EC.Text
+  - DFr_5E3DADBD.Text
+  - DFr_F16EF4B1.PreviewText
+  - DFr_F16EF4B1.Text
+  - DFr_97B21A6F.PreviewText
+  - DFr_97B21A6F.Text
+  - DFr_7732370A.Text
+  - DFr_2CBF265A.PreviewText
+  - DFr_2CBF265A.Text
+  - DFr_2A6AA547.PreviewText
+  - DFr_2A6AA547.Text
+  - DFr_0DEC286D.Text
+  - DFr_56FC68F0.Text
+  - DFr_AD27409F.Text
+  - DFr_DB9EF98B.Text
+  - DFr_72A0E524.Text
+  - DFr_5426D933.PreviewText
+  - DFr_5426D933.Text
+  - DFr_43D43535.Text
+  - DFr_F895B90D.Text
+  - DFr_29FE85D3.Text
+  - DFr_94838E2A.Text
+  - DFr_660E30F9.Text
+  - DFr_84289C74.PreviewText
+  - DFr_84289C74.Text
+  - DFr_392C8C1F.PreviewText
+  - DFr_392C8C1F.Text
+  - DFr_74DE36C0.Text
+  - DFr_0B3715CB.Text
+  - DFr_4ABFDEC1.Text
+  - DFr_6611D9EF.PreviewText
+  - DFr_6611D9EF.Text
+  - DFr_A5C2D917.PreviewText
+  - DFr_A5C2D917.Text
+  - DFr_C5B49D95.Text
+  - DFr_D325D7AC.Text
+  - DFr_ECE895EC.Text
+  - DFr_8EF028FB.Text
+  - DFr_0A56F113.Text
+  - DFr_33E033C0.PreviewText
+  - DFr_33E033C0.Text
+  - DFr_CA411654.PreviewText
+  - DFr_CA411654.Text
+  - DFr_07E19126.Text
+  - DFr_B14A8495.PreviewText
+  - DFr_68C40B3A.PreviewText
+  - DFr_68C40B3A.Text
+  - DFr_77790B3D.PreviewText
+  - DFr_77790B3D.Text
+  - DFr_DB8D811A.Text
+  - DFr_D536A0AE.Text
+  - DFr_EE4EF827.Text
+  - DFr_0708A4E4.Text
+  - DFr_F25F0152.Text
+  - DFr_84EBFD50.PreviewText
+  - DFr_84EBFD50.Text
+  - DFr_A914916F.PreviewText
+  - DFr_A914916F.Text
+  - DFr_191DCA25.Text
+  - DFr_D06D6C28.Text
+  - DFr_E6CA8353.Text
+  - DFr_10561560.Text
+  - DFr_7D74421B.PreviewText
+  - DFr_7D74421B.Text
+  - DFr_10A85C46.PreviewText
+  - DFr_10A85C46.Text
+  - DFr_11269FCB.PreviewText
+  - DFr_11269FCB.Text
+  - DFr_49299159.PreviewText
+  - DFr_49299159.Text
+  - DFr_4B529F03.PreviewText
+  - DFr_4B529F03.Text
+  - DFr_309DA80B.Text
+  - DFr_4C33CF7A.PreviewText
+  - DFr_4C33CF7A.Text
+  - DFr_FBCBD4A4.PreviewText
+  - DFr_FBCBD4A4.Text
+  - DFr_3428B650.Text
+  - DFr_7E2FA1EB.Text
+  - DFr_4FC15C9D.Text
+  - DFr_0E93E5D5.Text
+  - DFr_FD4A884A.Text
+  - DFr_9B13BD05.Text
+  - DFr_6178FABC.Text
+  - DFr_E68C27ED.PreviewText
+  - DFr_E68C27ED.Text
+  - DFr_C08D15E7.PreviewText
+  - DFr_C08D15E7.Text
+  - DFr_76EE8AC1.Text
+  - DFr_55F9F8A1.Text
+  - DFr_1CF6AAD8.Text
+  - DFr_9A5B6B77.PreviewText
+  - DFr_9A5B6B77.Text
+  - DFr_20669C27.Text
+  - DFr_F40E5013.PreviewText
+  - DFr_F40E5013.Text
+  - DFr_B203804D.Text
+  - DFr_E922D98C.Text
+  - DFr_A0BD7C61.PreviewText
+  - DFr_A0BD7C61.Text
+  - DFr_2C0FBFF8.PreviewText
+  - DFr_2C0FBFF8.Text
+  - DFr_4162F13D.Text
+  - DFr_7F9CE232.Text
+  - DFr_2AA4F8B8.PreviewText
+  - DFr_2AA4F8B8.Text
+  - DFr_C59B86CE.PreviewText
+  - DFr_C59B86CE.Text
+  - DFr_777E861C.Text
+  - DFr_383E6FC9.Text
+  - DFr_85D1DC62.Text
+  - DFr_44902FEB.Text
+  - DFr_B735678A.Text
+  - DFr_6EAA36BD.Text
+  - DFr_6F44E1E4.PreviewText
+  - DFr_6F44E1E4.Text
+  - DFr_D3100FED.Text
+  - DFr_2ABE6EDE.Text
+  - DFr_BA771575.PreviewText
+  - DFr_BA771575.Text
+  - DFr_8087D4D3.PreviewText
+  - DFr_8087D4D3.Text
+  - DFr_9E6BE464.PreviewText
+  - DFr_9E6BE464.Text
+  - DFr_34BE68FA.PreviewText
+  - DFr_34BE68FA.Text
+  - DFr_034F473F.Text
+  - DFr_70C6F944.Text
+  - DFr_4A6853E9.Text
+  - DFr_022304C5.Text
+  - DFr_5DD17C4B.Text
+  - DFr_4AA4C73B.Text
+  - DFr_BD3F2A43.Text
+  - DFr_613D3F55.PreviewText
+  - DFr_613D3F55.Text
+  - DFr_CCF7C4F8.Text
+  - DFr_A5BA10E3.Text
+  - DFr_423016D2.Text
+  - DFr_0AAC91D9.Text
+  - DFr_70D83A53.PreviewText
+  - DFr_70D83A53.Text
+  - DFr_B6212330.PreviewText
+  - DFr_B6212330.Text
+  - DFr_0D4BE42B.Text
+  - DFr_DC7E30AA.PreviewText
+  - DFr_DC7E30AA.Text
+  - DFr_CD618525.PreviewText
+  - DFr_CD618525.Text
+  - DFr_4576152E.Text
+  - DFr_D34E1F62.Text
+  - DFr_111ADE71.PreviewText
+  - DFr_111ADE71.Text
+  - DFr_10359DFB.PreviewText
+  - DFr_10359DFB.Text
+  - DFr_78AA6741.Text
+  - DFr_E1C4D58C.Text
+  - DFr_F5572319.PreviewText
+  - DFr_F5572319.Text
+  - DFr_079A021A.Text
+  - DFr_F8780F1F.PreviewText
+  - DFr_F8780F1F.Text
+  - DFr_E50445E2.PreviewText
+  - DFr_E50445E2.Text
+  - DFr_1B5D8856.PreviewText
+  - DFr_1B5D8856.Text
+  - DFr_75D1E88B.Text
+  - DFr_7037763E.Text
+  - DFr_E9FD8349.Text
+  - DFr_206501AC.PreviewText
+  - DFr_206501AC.Text
+  - DFr_97C78263.PreviewText
+  - DFr_97C78263.Text
+  - DFr_639E5167.Text
+  - DFr_74283B52.Text
+  - DFr_F526C762.Text
+  - DFr_AEEA4313.PreviewText
+  - DFr_AEEA4313.Text
+  - DFr_17D1404C.PreviewText
+  - DFr_17D1404C.Text
+  - DFr_A04E31AE.PreviewText
+  - DFr_D8FD6DAC.PreviewText
+  - DFr_D8FD6DAC.Text
+  - DFr_15C1D5CA.Text
+  - DFr_184F6061.PreviewText
+  - DFr_184F6061.Text
+  - DFr_DF64E7E8.PreviewText
+  - DFr_DF64E7E8.Text
+  - DFr_1233FD18.Text
+  - DFr_2597C3D3.Text
+  - DFr_5E4A7A21.Text
+  - DFr_2DD2E2FF.Text
+  - DFr_3A7940B5.Text
+  - DFr_77858099.PreviewText
+  - DFr_77858099.Text
+  - DFr_3BC3801D.Text
+  - DFr_AE586D5F.Text
+  - DFr_1DAB92FF.PreviewText
+  - DFr_1DAB92FF.Text
+  - DFr_217A1E23.PreviewText
+  - DFr_217A1E23.Text
+  - DFr_3FB9AB92.PreviewText
+  - DFr_3FB9AB92.Text
+  - DFr_3A5BDC06.Text
+  - DFr_06738120.PreviewText
+  - DFr_06738120.Text
+  - DFr_8B505A27.Text
+  - DFr_3DBDCDD3.PreviewText
+  - DFr_3DBDCDD3.Text
+  - DFr_4EE0543E.PreviewText
+  - DFr_4EE0543E.Text
+  - DFr_1EDB1F6B.Text
+  - DFr_66DCF3D0.Text
+  - DFr_8B09EBBD.Text
+  - DFr_8F1331FF.PreviewText
+  - DFr_8F1331FF.Text
+  - DFr_4FE6A4CE.PreviewText
+  - DFr_4FE6A4CE.Text
+  - DFr_3FCBC0D2.Text
+  - DFr_604C57F2.PreviewText
+  - DFr_604C57F2.Text
+  - DFr_D848CFAB.PreviewText
+  - DFr_D848CFAB.Text
+  - DFr_8FE94D18.Text
+  - DFr_802A2BD4.Text
+  - DFr_C37127F3.Text
+  - DFr_C7820EE9.Text
+  - DFr_C324EE15.Text
+  - DFr_82A8E21F.PreviewText
+  - DFr_82A8E21F.Text
+  - DFr_8B18A06E.Text
+  - DFr_5EED8998.Text
+  - DFr_236326AC.Text
+  - DFr_3E4286DE.Text
+  - DFr_5CE8CA82.Text
+  - DFr_94B62DEE.Text
+  - DFr_480A0D62.Text
+  - DFr_883F3BBC.Text
+  - DFr_05E6070E.Text
+  - DFr_137131F1.Text
+  - DFr_796FADC0.Text
+  - DFr_66692978.PreviewText
+  - DFr_66692978.Text
+  - DFr_42355259.Text
+  - DFr_46078695.Text
+  - DFr_A084ACD1.PreviewText
+  - DFr_A084ACD1.Text
+  - DFr_DDFF9D1F.PreviewText
+  - DFr_DDFF9D1F.Text
+  - DFr_8A99296A.Text
+  - DFr_C05791E8.Text
+  - DFr_83C7DA79.PreviewText
+  - DFr_83C7DA79.Text
+  - DFr_ECBC8319.PreviewText
+  - DFr_ECBC8319.Text
+  - DFr_38B9A29C.PreviewText
+  - DFr_38B9A29C.Text
+  - DFr_0060E97B.Text
+  - DFr_731D7D8A.PreviewText
+  - DFr_731D7D8A.Text
+  - DFr_B7622185.Text
+  - DFr_420935EA.PreviewText
+  - DFr_420935EA.Text
+  - DFr_065DD696.PreviewText
+  - DFr_065DD696.Text
+  - DFr_B12B223D.PreviewText
+  - DFr_B12B223D.Text
+  - DFr_DB2FC08C.PreviewText
+  - DFr_DB2FC08C.Text
+  - DFr_86A14E53.Text
+  - DFr_6539D6E3.PreviewText
+  - DFr_6539D6E3.Text
+  - DFr_57F68208.Text
+  - DFr_6137E783.PreviewText
+  - DFr_6137E783.Text
+  - DFr_45C6FC99.Text
+  - DFr_A8F2C59D.Text
+  - DFr_3E979160.Text
+  - DFr_4E097F90.Text
+  - DFr_521CC8C3.Text
+  - DFr_25FB88B4.Text
+  - DFr_0AD8D3FF.Text
+  - DFr_C8AFCF2A.Text
+  - DFr_2A8C8639.PreviewText
+  - DFr_2A8C8639.Text
+  - DFr_EE272C6F.PreviewText
+  - DFr_EE272C6F.Text
+  - DFr_051F02EC.Text
+  - DFr_C55FF382.PreviewText
+  - DFr_C55FF382.Text
+  - DFr_227E0236.PreviewText
+  - DFr_227E0236.Text
+  - DFr_BA7C6F88.Text
+  - DFr_9F337513.PreviewText
+  - DFr_9F337513.Text
+  - DFr_2DD44394.Text
+  - DFr_8D892525.Text
+  - DFr_F80A07D9.Text
+  - DFr_88CEF106.Text
+  - DFr_4B20CB79.Text
+  - DFr_0CAAC794.Text
+  - DFr_822884B6.Text
+  - DFr_D4663E81.PreviewText
+  - DFr_D4663E81.Text
+  - DFr_301DA5A2.PreviewText
+  - DFr_301DA5A2.Text
+  - DFr_B016AE74.Text
+  - DFr_F6453F07.Text
+  - DFr_43303E32.Text
+  - DFr_5D32F881.Text
+  - DFr_628F3124.PreviewText
+  - DFr_628F3124.Text
+  - DFr_9ECAE49A.PreviewText
+  - DFr_9ECAE49A.Text
+  - DFr_5646FBF6.PreviewText
+  - DFr_5646FBF6.Text
+  - DFr_11F266DA.Text
+  - DFr_5858A6F5.Text
+  - DFr_B661AD96.Text
+  - DFr_F0C35BF5.Text
+  - DFr_F4FB6120.PreviewText
+  - DFr_F4FB6120.Text
+  - DFr_4A96CCB6.Text
+  - DFr_5606ADAF.Text
+  - DFr_4DC6B317.PreviewText
+  - DFr_4DC6B317.Text
+  - DFr_62E150F1.PreviewText
+  - DFr_62E150F1.Text
+  - DFr_65BFEEF3.PreviewText
+  - DFr_65BFEEF3.Text
+  - DFr_B31A9372.Text
+  - DFr_E38DDDAC.Text
+  - DFr_A6E840B1.PreviewText
+  - DFr_A6E840B1.Text
+  - DFr_C2EA80A4.PreviewText
+  - DFr_C2EA80A4.Text
+  - DFr_A9C2A182.Text
+  - DFr_4C099054.Text
+  - DFr_6581D44E.PreviewText
+  - DFr_6581D44E.Text
+  - DFr_B9C4A0AB.Text
+  - DFr_18F5CD66.Text
+  - DFr_5DE08061.Text
+  - DFr_89AF7546.Text
+  - DFr_D2E749BC.PreviewText
+  - DFr_D2E749BC.Text
+  - DFr_EE754C0C.PreviewText
+  - DFr_EE754C0C.Text
+  - DFr_3133C328.Text
+  - DFr_692F463A.Text
+  - DFr_B28EC5BF.Text
+  - DFr_9E660C5B.Text
+  - Ntt_6418934C.DisplayName
   - Ntt_6418934C.CharacterCard.Name
   - Ntt_6418934C.CharacterCard.Fraction
   - Ntt_6418934C.CharacterCard.Title
+  - Ntt_90F83D21.DisplayName
+  - Ntt_90F83D21.CharacterCard.Name
+  - Ntt_90F83D21.CharacterCard.Fraction
+  - Ntt_90F83D21.CharacterCard.Title
+  - Ntt_6760898D.DisplayName
+  - Ntt_6760898D.CharacterCard.Name
+  - Ntt_6760898D.CharacterCard.Fraction
+  - Ntt_6760898D.CharacterCard.Title
+  - Ntt_F6777F3C.DisplayName
+  - Ntt_F6777F3C.CharacterCard.Name
+  - Ntt_F6777F3C.CharacterCard.Fraction
+  - Ntt_F6777F3C.CharacterCard.Title
+  - Ntt_52E9A0BB.DisplayName
+  - Ntt_52E9A0BB.CharacterCard.Name
+  - Ntt_52E9A0BB.CharacterCard.Fraction
+  - Ntt_52E9A0BB.CharacterCard.Title
+  - Ntt_22723ED6.DisplayName
+  - Ntt_22723ED6.CharacterCard.Name
+  - Ntt_22723ED6.CharacterCard.Fraction
+  - Ntt_22723ED6.CharacterCard.Title
+  - Ntt_FBBC1797.DisplayName
+  - Ntt_FBBC1797.CharacterCard.Name
+  - Ntt_FBBC1797.CharacterCard.Fraction
+  - Ntt_FBBC1797.CharacterCard.Title
+  - Ntt_C47E9A28.DisplayName
+  - Ntt_C47E9A28.CharacterCard.Name
+  - Ntt_C47E9A28.CharacterCard.Fraction
+  - Ntt_C47E9A28.CharacterCard.Title
+  - Ntt_A3F59FEE.DisplayName
+  - Ntt_A3F59FEE.CharacterCard.Name
+  - Ntt_A3F59FEE.CharacterCard.Fraction
+  - Ntt_A3F59FEE.CharacterCard.Title
+  - Ntt_096D7DE7.DisplayName
+  - Ntt_096D7DE7.CharacterCard.Name
+  - Ntt_096D7DE7.CharacterCard.Fraction
+  - Ntt_096D7DE7.CharacterCard.Title
+  - Ntt_36F19B79.DisplayName
+  - Ntt_36F19B79.CharacterCard.Name
+  - Ntt_36F19B79.CharacterCard.Fraction
+  - Ntt_36F19B79.CharacterCard.Title
+  - Ntt_37327A72.DisplayName
+  - Ntt_37327A72.CharacterCard.Name
+  - Ntt_37327A72.CharacterCard.Fraction
+  - Ntt_37327A72.CharacterCard.Title
+  - Ntt_91E8FF49.DisplayName
+  - Ntt_91E8FF49.CharacterCard.Name
+  - Ntt_91E8FF49.CharacterCard.Fraction
+  - Ntt_91E8FF49.CharacterCard.Title
+  - Ntt_C97C6662.DisplayName
+  - Ntt_D2492D0A.DisplayName
+  - Ntt_5839EB53.DisplayName
   mLocalizedStringsValues:
-  - "\u201CExcellent. You can hear me.\u201D"
-  - "\u201CFirst, you\u2019ll find the revolver. Otherwise the link\u2026\u201D"
+  - PROLOGUE_START
+  - prologue
+  - PROLOGUE_RATKO
+  - PROLOGUE_RUNAKO
+  - PROLOGUE_TASHA
+  - PROLOGUE_CLERK
+  - PROLOGUE_MED_CARD
+  - PROLOGUE_MED_DOOR
+  - PROLOGUE_QUEST_REVOLVER_RATKO
+  - PROLOGUE_QUEST_THEFT
+  - PROLOGUE_MED_WINDOW
+  - FIRST RESET
+  - PROLOGUE_REVOLVER_OBTAINED
+  - '"Excellent. You can hear me."'
+  - "\"First, you\u2019ll find the revolver. Otherwise the link\u2026\""
   - Nothing happens.
   - Nothing ever happened.
   - And nothing ever will.
@@ -90,16 +900,16 @@ MonoBehaviour:
   - Something unintelligible echoes in your head. Assuming you even have one.
   - "Before you appears the image of a woman whose name is branded into your mind.
     Your own name \u2014 still nothing."
-  - "\u201C\u2026this anomaly stands out among the previous ones. And I don\u2019t
-    like what that might mean.\u201D"
+  - "\"\u2026this anomaly stands out among the previous ones. And I don\u2019t like
+    what that might mean.\""
   - "Why don\u2019t I remember anything?"
   - "\u201CWhy don\u2019t I remember anything?\u201D you mouth soundlessly. The only
     question that matters now. After all, you *should* remember."
-  - "\u201CAnd that shouldn\u2019t have\u2026 Never mind. Find the revolver, then
-    I\u2019ll be able to explain more.\u201D"
-  - "\u201CIf the oddities are involved\u2026 No, that\u2019s too much, but if\u2026\u201D
+  - "\"And that shouldn\u2019t have\u2026 Never mind. Find the revolver, then I\u2019ll
+    be able to explain more.\""
+  - "\"If the oddities are involved\u2026 No, that\u2019s too much, but if\u2026\u201D
     A sharp sound pierces your eardrums. No pain. None? \u201CTrust no one, they\u2019re
-    changing\u2026\u201D"
+    changing\u2026\""
   - "You can\u2019t make out anything else. Undoubtedly, it was very important. Now
     you can either succumb to paranoia, or let the misunderstood words slip past
     and die a horrible death, bring about the end of the world, and cruelly betray
@@ -113,33 +923,1353 @@ MonoBehaviour:
     a good question."
   - "You approach a suspicious-looking man. It\u2019s unclear whether he noticed
     you. Rummaging through the produce seems to occupy him more."
+  - Shoot Ratko with the revolver
   - "You\u2019re going to kill Ratko. Granted, he\u2019s annoying... but what\u2019s
     the point, really? Out of curiosity? For the sake of satisfaction?"
+  - /we were getting along just fine/
   - You black out.
-  - "\u201CWill you help me get a revolver out of impound?\u201D"
-  - "\u201CI\u2019m ready. What do we do?\u201D"
+  - '"Will you help me get a revolver out of impound?"'
+  - '"Will you help me get a revolver out of impound?"'
+  - "\"I\u2019m ready. What do we do?\""
+  - "\"I\u2019m ready. What do we do?\""
+  - Leave.
   - "Still... you don\u2019t want to waste time on him."
+  - Take a deep breath
   - "You can\u2019t be the one to start the conversation. Too pushy. Making random
     noises, now that\u2019s a champion\u2019s strategy."
-  - "\u201CLose something?\u201D"
-  - "\u201CI\u2019m willing to help you in exchange for information.\u201D"
-  - "\u201CWell, I knew you\u2019d be back.\u201D"
-  - "\u201CI\u2019ve changed my mind. I\u2019ll help you \u2018borrow\u2019 that
-    thing.\u201D"
-  - "\u201CYour refusal hurt me a lot. I don\u2019t know how my pride will recover
-    from a blow like that.\u201D"
-  - "\u201CExcuse me?\u201D"
-  - "\u201CI\u2019m sure you\u2019ll manage.\u201D"
-  - "\u201CMy kind heart will be the death of me... Fine, here\u2019s the artifact
-    description, now off you go to greatness.\u201D"
+  - '"Lose something?"'
+  - '"Lose something?"'
+  - "\"I\u2019m willing to help you in exchange for information.\""
+  - "\"I\u2019m willing to help you in exchange for information.\""
+  - "\"Well, I knew you\u2019d be back.\""
+  - "\"I\u2019ve changed my mind. I\u2019ll help you \u2018borrow\u2019 that thing.\""
+  - "\"I\u2019ve changed my mind. I\u2019ll help you \u2018borrow\u2019 that thing.\""
+  - "\"Your refusal hurt me a lot. I don\u2019t know how my pride will recover from
+    a blow like that.\""
+  - '"Excuse me?"'
+  - '"Excuse me?"'
+  - "\"I\u2019m sure you\u2019ll manage.\""
+  - "\"I\u2019m sure you\u2019ll manage.\""
+  - "\"My kind heart will be the death of me... Fine, here\u2019s the artifact description,
+    now off you go to greatness.\""
   - He shoves a note into your hand without even looking.
-  - "\u201CI have a question for you.\u201D"
-  - "\u201CGo ahead, ask.\u201D"
-  - "\u201CHow did I end up here?\u201D"
-  - "\u201CBy any chance, do you know how I could get a revolver out of storage?\u201D"
-  - AARADCHIA
+  - '"I have a question for you."'
+  - '"I have a question for you."'
+  - '"Go ahead, ask."'
+  - '"How did I end up here?"'
+  - '"How did I end up here?"'
+  - '"By any chance, do you know how I could get a revolver out of storage?"'
+  - '"By any chance, do you know how I could get a revolver out of storage?"'
+  - '"They say you had some sort of nervous breakdown? Or something like that..."'
+  - '"I see. So you know nothing."'
+  - '"I see. So you know nothing."'
+  - '"More than nothing! Something."'
+  - '"Anyway, come to me if something interesting comes up. No point flapping your
+    tongue for nothing."'
+  - '"Care to elaborate?"'
+  - '"Care to elaborate?"'
+  - '"Apparently a serious nervous breakdown, since I had to be isolated."'
+  - '"Apparently a serious nervous breakdown, since I had to be isolated."
+
+    
+
+    No
+    kidding! You don''t say.'
+  - '"But look at it from another angle! I didn''t start making up an epic story
+    and convincing you it''s true. But I could have."'
+  - He thoughtfully rubs his forehead.
+  - '"It seems the local atmosphere of immeasurable boredom has gotten to me as well."'
+  - '"...Thanks, and that''s it."'
+  - '"...Thanks, and that''s it."'
+  - '"You''re no help at all."'
+  - '"You''re no help at all."'
+  - '"Yeah, that''s how it is... That''s where the details I know end."'
+  - '"All right, to your places!"'
+  - '"We have nothing to talk about," the woman says sharply as soon as you''re two
+    steps from her.
+
+    
+
+    Then she takes a sip of tea, silently puts the cup
+    back on the table and returns to stirring.'
+  - Leave
+  - There's something... unsettling about this woman. You decide not to bother her
+    without reason and leave.
+  - "You approach a woman in red whose eyes are covered with a band for some reason.
+    She slowly stirs the liquid in her cup with a spoon. It seems she's been at it
+    for a long time\u2014there's no steam visible above the cup."
+  - '"I''d like to ask you a question."'
+  - 'You swallow nervously before asking. What is so frightening about this woman?
+
+    
+
+    "I
+    would like to ask you a question..."
+
+    
+
+    You barely hear your own words.
+    You''re not even sure they were spoken.'
+  - 'It seems Runako didn''t hear you. She hasn''t torn herself away from her tea
+    for a second.
+
+    
+
+    Either you need to say something weightier to get
+    her attention.'
+  - You approach Tasia.
+  - '"Hmm? Do you need something?"'
+  - '"Thanks for helping me get out. Could you answer a couple of questions?"'
+  - '"Thanks for helping me get out. Could you answer a couple of questions?"'
+  - '"No, I''d better go."'
+  - '"No, I''d better go."
+
+    
+
+    The conversation didn''t take off. And Tasia,
+    it seems, has already lost interest in you.'
+  - '"I don''t know anything. The Monetarians know everything. Usually. That''s what
+    they say. Try to find one of them."'
+  - '"Monetarians?"'
+  - '"Monetarians?"'
+  - '"...All right. I''ll try."'
+  - '"...All right. I''ll try."'
+  - '"Good luck!"'
+  - '"Uh-huh. The Monetarians."'
+  - You're unlikely to get anything out of her.
+  - '"You''re welcome."
+
+    
+
+    She blinks several times and looks at the chips,
+    then at you.'
+  - '"How much time has passed since I ended up in the med bay?"'
+  - '"How much time has passed since I ended up in the med bay?"'
+  - 'She looks at her guest card.
+
+    
+
+    "Half an hour?"'
+  - '"An hour? About that. Probably."'
+  - '"But... why does the clock say 12?"'
+  - '"But... why does the clock say 12?"
+
+    
+
+    You''re asking the wrong questions.'
+  - '"Because... lunch?"'
+  - Can't argue with that.
+  - '"So I haven''t been here a day?"'
+  - '"So I haven''t been here a day?"
+
+    
+
+    You can say that again!'
+  - '"Right, thanks. I''ll just... go."'
+  - '"Right, thanks. I''ll just... go."'
+  - 'Tasia raises a finger to the ceiling and says meaningfully: "I think the main
+    question is not how long you''ve been here, but why."'
+  - Philosophy has started. Time to bail.
+  - You nervously tap your foot on the floor, waiting for the right moment. Can you
+    go now?
+  - Remove the grate and finally get out. And do it quietly.
+  - So many obstacles in one ventilation shaft... What's it going to be like when
+    you actually reach the vault...
+  - You silently take off the grate and crawl out. Wow! There's even slightly less
+    dust in the air.
+  - You'd think it wouldn't be that hard to lift a grate. But you manage to blow
+    it even here. The grate scrapes across the floor with the same sound as a corpse
+    moving a tombstone. Probably.
+  - Try your luck with lockpicks.
+  - Let's test your safecracking skills gained in ten minutes!
+  - You realize it's not going to work. Shame. There's still a chance to change your
+    mind.
+  - '"Okay, I think I''m starting to understand."'
+  - '"GUARDS!"'
+  - '"Miss, don''t waste my time. If someone had checked in a dog, I''d remember.
+    You''ll be released soon and you can look for Sonya, Glasha and Alphyra."'
+  - '"Okay, you know what, I think I''m starting to get it..."
+
+    
+
+    He glances
+    around, but Ratko has already vanished without a trace. Just in time.'
+  - '"You''re wasting my break time for nothing! Get out."'
+  - "\"There's a library behind you. Try turning to the books. The authors of some
+    of them might be even less biased than me\u2014a hungry man who's being kept
+    from eating.\""
+  - '"Start with that, then. Learn to read. In our time you can''t go anywhere without
+    literacy."'
+  - '"Are you going to create a union of professional... neutral ball guests?"'
+  - '"What does your union say about lunch breaks? Because that''s exactly what this
+    is. And I have a legal right to it, which my ancestors fought for. And you''re
+    trying to take it away, so you''re more of an enemy to the common man."'
+  - Don't make noise.
+  - Now you're using the great wisdom Ratko imparted to you. Strain every brain cell,
+    all three of them. Concentrate.
+  - Well. Let's hope Theodore doesn't notice the racket you're making. Maybe it's
+    not all lost yet?
+  - You move almost silently, except for the rustle of fabric against metal.
+  - What's the chance it's a mouse? And what would you prefer instead?
+  - A cat?
+  - A giant winged one? Yeah, that would be nice. Though it wouldn't fit here.
+  - Cheese?
+  - If you find any here, it'll definitely be moldy.
+  - You'd better not touch the brightness of the card-flashlight if you don't want
+    to go blind.
+  - If they bite out my eyes, the chance of going blind is even greater.
+  - All right then. Turn the light up full.
+  - I'll be careful.
+  - 'Uh-huh, uh-huh, sure.
+
+    
+
+    All right then. Turn the light up all the
+    way.'
+  - You make a random gesture with your fingers. And now you can make out THIS...
+  - Needless to say, THIS is not a rat...
+  - IT HAS THREE ROWS OF TEETH
+  - BURN IT BURN IT CRUSH IT KILL
+  - Maybe... I just don't remember what rats look like... maybe...
+  - No. No, that is absolutely NOT a rat.
+  - 'And it''s coming closer. A dark blue-black six-legged, shaggy something slowly
+    scrabbles its clawed limbs over the metal. It opens its toothy maw wide.
+
+    
+
+    And
+    it seems to be wheezing.'
+  - You'll start wheezing too if you spend even another five minutes in this dust.
+  - In any case, you interest the creature no more than the emptiness that surrounds
+    it.
+  - The non-rat moves forward and nothing will save you now. But you freeze in place.
+    Don't forget to breathe. Oh. There's nothing to breathe.
+  - There's not enough air! You're about to die.
+  - It's getting closer.
+  - Don't move.
+  - Everything will resolve itself. Right? And if you die, after the loop resets
+    you'll be fine. Or you'll end up as bloody shreds of flesh on the bed. Think
+    positive.
+  - Take a deep breath and run away.
+  - You fill your lungs with dust and are about to double over in a coughing fit,
+    but there's nowhere for you to bend.
+  - The creature is a couple of dozen centimeters from your face. You don't move,
+    you don't breathe, there's a lump in your throat.
+  - '"Run away" is a strong word, since you simply shut your eyes (definitely safer
+    that way) and back up.'
+  - "It. Right. In front of your face. You're in its way. It brushes you with its
+    disgusting fetid fur. At least you think it must be fetid\u2014you're not breathing."
+  - It seems only a moment passed, but here you are again on the familiar floor of
+    the med bay.
+  - You fling your eyes open (yes, they'd been closed this whole time), shove the
+    grate back into place as if you want to hammer it into the wall, and lightning-fast
+    screw the bolts back in.
+  - Think that'll stop it from getting to you? Optimistic.
+  - You failed the mission. Congratulations. At least you stayed in one piece.
+  - You clench your teeth and wait for the toothy creature to squeeze past you, trying
+    not to think about the billion diseases you've contracted just by touching it.
+  - This is too much. This is already too much. Sorry, but...
+  - Breathe. Endure.
+  - It seems like an eternity passes before you make yourself believe that the non-rat
+    has already left.
+  - You scream at the top of your lungs (which, when you think about it, aren't that
+    powerful, so it comes out as a strangled wheeze).
+  - "You survived that. Now\u2014the final push."
+  - Return.
+  - Are you for real right now?
+  - As you wish. You return to the med bay. Mission failed.
+  - '"What the devil is making such a racket here?"'
+  - Leave the grate alone and get back before it's too late.
+  - Mission failed!
+  - Right now you need to be three times as careful as you were before. And no jokes
+    about multiplying by zero...
+  - This will be fun.
+  - You've made too many mistakes. Time to return in defeat.
+  - But you probably won't have time for another box, given how long you fiddled
+    with this one. Time to return in triumph. Not for Ratko, of course, but what's
+    the difference? His stuff would have disappeared after the reset anyway... Oh
+    wait, are you planning to break the loop with a revolver? We'll see.
+  - The lock isn't that complicated, but you're no pro either.
+  - Yes, that's an opened box. Yes, there's a revolver in it. Ugh, a revolver. But
+    you picked the lock! Try to contain your excitement, okay? You've still got to
+    crawl back.
+  - You try every possible angle, twist the pick this way and that, but the lock
+    refuses to budge. Seconds pass, minutes pass. And finally...
+  - '"Click!"'
+  - "Oh. Oh. Oh. I know. You could try something... \r\n\r\nNo, that's a bad idea."
+  - Try what?
+  - Muffle the sound of the keys. Muffle the sound of your steps. You probably won't
+    manage it, but...
+  - Steal the keys from Theodore.
+  - Well, at least they're not around his neck.
+  - How?
+  - Magic. Sonus. Sound magic. You remember something, right?
+  - NO WAY. I'll just steal the keys. None of that other stuff.
+  - Yes, that'll be better.
+  - And that's why I'm sure nothing will work.
+  - Most likely. But what if...
+  - At least try it with the keys?
+  - Fine, whatever. Why not?
+  - If you fail you'll wake up in the med bay again. Maybe without your memory again.
+    Incredibly low stakes.
+  - You slowly move your feet across the cracked, indeterminate-colored tile.
+  - So far everything is going fine. You end up next to Theodore.
+  - Forget bad ideas, you just need to take the keys off his belt.
+  - And do it quietly. And by the book.
+  - You are determined not to make a sound and finally get those keys. This has gone
+    on far too long...
+  - What a pity that intentions so often don't match results! Does that surprise
+    you?
+  - You silently take the keys and return to the boxes.
+  - Congratulations, you did it. Time to go back.
+  - There's not much left. Why not wait? There's nothing else to do anyway.
+  - There's nothing to do here for now.
+  - By the way, you hate waiting. Just for the record.
+  - But now you can think about all your failures.
+  - Considering how quickly you accumulate them, memory loss is the best thing that
+    could have happened to you.
+  - Soon you'll start dreaming for it to happen again...
+  - Look, it's already 13:00 on the clock! And that means lunch is... what?
+  - There is always another attempt.
+  - You're not listening to him anymore, because now you have something more important.
+  - You notice a strange light coming from your pocket.
+  - This is you.
+  - Most likely it's you.
+  - Well, that's settled. By the way...
+  - Figure out how to adjust the card's brightness.
+  - You make various gestures trying to determine what the card responds to.
+  - 'It''s got all of this depicted on it. A familiar scene, right? No?
+
+    
+
+    That''s
+    okay, they''ll clue you in in a moment.'
+  - Play around with the card.
+  - You keep turning the card in your hands and poking everywhere you can. You're
+    not in a potentially deadly situation, after all. In a locked room. In the *DARK*.
+    Knowing nothing about yourself except what's described in your little toy.
+  - You stick your hand into your pocket (how rash) and pull out a kind of translucent
+    rectangle. And on it...
+  - 'Yep. It''s you. See your own hair? Pink, right. Do you think many people walk
+    around with that? Ah, you don''t remember anything.
+
+    
+
+    In short, no,
+    not many. And there''s a 99 out of 100 chance it''s you. Just take it as a fact
+    and move on.'
+  - Can I not be this?
+  - Too late. See, you're already associating that creature with yourself.
+  - All right
+  - Wonderful.
+  - "Left-right-up\u2014remember that gesture, because it just made the card flash
+    across the whole room. Congratulations, now you see the door! And, it seems,
+    curtained windows. Or are those minimalist paintings on the walls."
+  - Use your new knowledge wisely...
+  - The card emits a faint light and seems to respond to your movements. Perhaps
+    you can use it to find a way out of the darkness.
+  - Now you can make it out. Congratulations.
+  - Try to open the door
+  - So, how are we going to open it?
+  - Toward yourself
+  - You press the handle and pull the door toward you.
+  - Away from yourself
+  - You press the handle and push the door away from you.
+  - Nothing happens. Well, try the opposite.
+  - You try to open the door again, and... It's locked! Shocking, I know.
+  - What now?
+  - Step away from the door
+  - Yes, there's nothing to catch here.
+  - Ask the door to open
+  - Yeah, very funny. You're not serious, are you?
+  - Kick the door
+  - As always, a brilliant solution! How are you kicking?
+  - Gently
+  - The door doesn't care.
+  - Harder
+  - "You draw your leg back and get ready to slam this door as hard as you can...
+    But something\u2014maybe your last brain cell\u2014stops you at the last moment.
+    The door seems to be made of iron or something tougher. Do you really want to
+    do this? Think carefully."
+  - Yes, I do
+  - Well then, go ahead and kick. Common sense can't break you!
+  - Actually, I'm not going to do that
+  - You step away from the door. Either way, it doesn't care.
+  - You draw your leg back and prepare to slam the door as hard as you can... Your
+    boot thuds against the metal.
+  - "At that moment pain seems to explode in your foot\u2014a sharp, slicing stab
+    that travels up your leg to the thigh.\r\n\r\nFuneral bells ring in your ears.
+    The barely discernible walls seem to drift away somewhere.\r\n\r\nThe door ripples;
+    apparently it took quite a hit.\r\n\r\nYour knees buckle and the whole room collapses
+    to a single black dot, with no one left to see it."
+  - The card plays the color sequence so quickly that you feel like you're going
+    to throw up.
+  - Something clicked. You can try opening the door again.
+  - There's nothing to be done here for now.
+  - I have no idea what happened or why you're back here again. Try asking someone...
+    For example, Tasia. Yes, definitely her.
+  - At least now you know how the door opens, and you won't have to shout through
+    the window.
+  - This is definitely a door.
+  - By the way, the clock reads 12:00 again.
+  - Have you been here a whole day already?
+  - Wait, but you saw Tasia through the grate. She's been here a whole day too? Isn't
+    the timer supposed to have... Okay. You'll find out soon.
+  - '"Why is everyone so sure that I..."
+
+    
+
+    Under your gaze Ratko sighs
+    and rolls his eyes.
+
+    
+
+    "Fine, I did promise information after all..."'
+  - '"This building has been rebuilt a thousand times. It went from yours to ours
+    and back, all that. And the new owners really wanted, I don''t know, to remodel
+    everything to suit themselves to show that they were on top? Something like that,
+    yeah."'
+  - '"And what if I tell the guard about your plan?"'
+  - '"And what if I tell the guard about your plan?"'
+  - '"Are you kidding? You just suggested that yourself.
+
+    
+
+    So you''ll
+    be left without your favorite weapon, whatever you needed it for. I won''t end
+    up in isolation again, so what''s the difference?"'
+  - '"But I''m going to tell anyway."'
+  - '"But I''m going to tell anyway."'
+  - '"Go ahead."
+
+    
+
+    It seems he doesn''t particularly care about your words.'
+  - '"Okay, I was joking. So, what''s the theft plan?"'
+  - '"Okay, I was joking. So, what''s the theft plan?"'
+  - Ratko irritably twirls his cigarette, weighing whether it's worth dealing with
+    you after such antics, but still makes a positive decision. Maybe in vain.
+  - '"Distract the old man with chatter while I swipe my stuff. Er, our stuff."'
+  - '"What am I supposed to say?"'
+  - '"What am I supposed to say?"'
+  - Let's do the opposite.
+  - '"Let''s do the opposite."
+
+    
+
+    And are you sure you''ll make a silent,
+    sneaky ninja?'
+  - '"Do you have no imagination at all? It doesn''t matter what you say, as long
+    as the old codger isn''t looking my way! Like, ask how his grandchildren are
+    doing, or complain that the Aspectarians will squeeze us all down to Earth."'
+  - 'At your words Ratko grimaces.
+
+    
+
+    "If we go through... the count now,
+    there''s no way he''ll fall for another performance like that. And I''m not exactly
+    sure they''ll return to me... what they''re supposed to return when the timer
+    ends."
+
+    
+
+    He doesn''t believe in you either. How about that.'
+  - '"Fine, let''s do it your way. But what should I say to him?"'
+  - '"Fine, let''s do it your way. But what should I tell him?"'
+  - '"Actually, I stole the artifact."'
+  - '"Actually, I stole the artifact."'
+  - '"Borrowed," he says automatically.'
+  - '"Just don''t forget about my revolver, that''s the main thing. Otherwise you
+    won''t like the consequences."'
+  - '"Just don''t forget about my revolver. Otherwise you won''t like the consequences."'
+  - '"And right now it''s not theft either, but reappropriation."'
+  - '"And right now this isn''t theft either, it''s repeated appropriation."'
+  - '"Any time. Come back to me when you''re ready. But no later than 12:45, because
+    then we probably won''t finish before the end of lunch. And once lunch is over,
+    the old man will start fussing."'
+  - Ratko frowns irritably. "Yeah, yeah, can't do without it. I've already realized
+    you can bore people to death."
+  - Ratko sighs tiredly. "All right. Just don't go thinking you're now a pro at reappropriation.
+    We don't have much time for lessons, so I'll tell you what I can."
+  - For ten minutes Ratko tries to hammer into your head how not to make noise in
+    the ventilation, not to make noise when getting out of it, and how to quickly
+    find what you need once you're there.
+  - '"All right. When do we start?"'
+  - '"All right. When do we start?"'
+  - '"Yes. I''ll come back when I''m ready."'
+  - '"Yes. I''ll come back when I''m ready."'
+  - '*Describe your revolver.*'
+  - You describe your revolver. For some reason reluctantly.
+  - Uh... I don't remember.
+  - '"Uh... I don''t remember."
+
+    
+
+    Why did you say that, why?! Do you get
+    off on making yourself look like an idiot?'
+  - '"Got it. On the spot I''ll try to make sure it''s the very revolver you don''t
+    remember. No problem. Is that all now?"'
+  - '"I''ll remember. Now is that all?"'
+  - 'Ratko looked away and smirked. "Ah, right. Well, I could bring you everything
+    I see; there probably isn''t an entire arsenal. Not many people here have permission
+    for weapons, although sometimes it seems like every other person does."
+
+    
+
+    "So
+    what does it look like?"'
+  - Wait a minute. He didn't even ask what your revolver looks like. What if there
+    are several of them?
+  - '"But today you''re incredibly lucky, and the stars have aligned so that something
+    was unjustly taken from me as well. And justice must be restored."'
+  - '"Can you imagine how many walled-off rooms and blocked-off vents there are here...
+    It''s like paradise, right?"'
+  - As I understand it, one of the passages leads to the vault.
+  - '"As I understand it, one of the passages leads to the vault."
+
+    
+
+    No,
+    he just decided to talk to you about architecture.'
+  - Listen silently.
+  - '"Nope, I just decided to discuss history."'
+  - "\"In short, a good friend of mine, whose brother\u2019s acquaintance took part
+    in an inspection of the premises before this super-important event, told me about
+    a couple of pretty good passages.\""
+  - '"And, believe it or not, one of them leads from the med bay to the vault."'
+  - '"So I can just go along it and take what I need?"'
+  - '"So I can just go along it and take what I need?"
+
+    
+
+    You already know
+    what the answer will be.'
+  - '"But there is a problem..."'
+  - '"But there is a problem..."'
+  - '"Dreaming is harmless."'
+  - '"Ancient and terrible. Theodor Kavish in person."'
+  - '"Someone has to distract the old man. There are no other options here."'
+  - '"Is this somehow related to what you''re trying to find in the tomatoes?"'
+  - '"Is this somehow related to what you''re trying to find in the tomatoes?"'
+  - '"And what is your plan?"'
+  - '"And what is your plan?"
+
+    
+
+    Are you serious right now?'
+  - Through the lenses of his colored glasses Ratko looks at you with a certain pity.
+  - '"One of us distracts Theodor, the other grabs the stuff from the lockers."'
+  - '"What''s that got to do with it?.. No."'
+  - You'll never learn the secret of the tomatoes.
+  - '"In short, the plan is as cheap in execution as the honor of Primoriya."'
+  - '"And then there''s lockpicking..." He takes out his guest card to check the
+    time.
+
+    
+
+    "No, I won''t have time. You''ll look for the keys there,
+    and pray he doesn''t wear them around his neck."'
+  - '"Nope. I won''t have time. Pray he doesn''t wear the keys around his neck."'
+  - '"Nothing good will come of it, but at least I''ll have some fun."'
+  - '"Explain how to pick locks."'
+  - '"Explain how to pick locks."'
+  - '"I already know a thing or two. So it''s better not to waste time."'
+  - '"I already know a thing or two. So it''s better not to waste time."'
+  - He looks at you doubtfully.
+  - '"All right. It''s dead boring here anyway."'
+  - '"If you want it that much... Fine, listen and remember."'
+  - "And you see it. A transparent casket containing exactly what you're looking
+    for: three small cubes with edges as thick as a little finger\u2014one black,
+    one red, and one gold. Through the veins of their viscous, cloudy faces there
+    seems to be a glow seeping out. The shape is perfect; you can't take your eyes
+    off it. You don't want to. You realize: this is the very artifact Ratko was talking
+    about.\r\n\r\nNow the main thing is to figure out how to get it. And, perhaps,
+    keep it for yourself."
+  - '"I''m so tired of these games. She wants the yokan so badly? Fine, let her take
+    it. Let her take whatever pops into her head. But even then she won''t stop blaming
+    me for her own choice. What am I even..."'
+  - The woman doesn't let herself finish the phrase and her voice becomes emotionless
+    again. "I'm sorry, it's none of your business. Take what you came for and leave
+    me alone." The emotional outburst ended before it began. Pity. What about the
+    show?
+  - '"Uh, thanks."'
+  - '"Uh, thanks."'
+  - That's stupid. Surrender and walk away.
+  - It's not worth it. It's unlikely someone like you could steal a powerful artifact.
+    Better not even try.
+  - '"Artifact?" There seemed to be a hint of interest in the woman''s voice. You
+    could swear she raised an eyebrow under the bandage.'
+  - '"So you''re talking about..." The woman runs her hand deliberately through her
+    own hair. "Of course. That artifact. All clear."'
+  - '"Yes, such a powerful artifact... It can slow down and speed up time. Do you
+    have one?"'
+  - '"Yes, such a powerful artifact... It can slow down and speed up time. Do you
+    have one?"'
+  - '"What is this, some new order from...?"'
+  - You have no idea what she's talking about.
+  - It seems she took your words as some kind of cipher. And it might also mean that
+    you're the kind of person who could very well have passed coded messages in the
+    past. You just don't remember it. And they won't tell you about it here.
+  - These are perfect hexahedrons, in a divine quantity.
+  - '"These are perfect hexahedrons, in a divine quantity." You say it less confidently.
+    Something here is wrong after all.'
+  - They were sweets for tea. You were asked to steal sweets.
+  - You have the artifact. It's time to return to Ratko and demand a reward. Wait,
+    did he promise a reward?
+  - The interlocutor is silent.
+  - Only silence sees you off.
+  - '"Parting with him is hard, but inevitable."'
+  - '"Parting with him is hard, but inevitable."'
+  - '"The highest level of sensations for those who are worthy."'
+  - '"The highest level of sensations for those who are worthy."'
+  - The interlocutor is silent again. The silence grows more tense. Maybe it's better
+    to turn off this path before it's too late?
+  - Silence. Finally, the woman's lips curl into something like a smirk.
+  - Steal the artifact.
+  - You consider how you could more neatly 'borrow' the cubes.
+  - 'Yes, you couldn''t rob the blind woman. But look at it another way: you''re
+    still alive!
+
+    
+
+    Wait, what are the positives here...'
+  - Your extraordinary intellect tells you that when you're robbing the blind, the
+    main thing is not to make any noise. Will you manage it?
+  - "You pick up the casket with the artifact inconspicuously, as if it hadn\u2019t
+    even been on the table."
+  - Delight! You managed to rob a blind woman. Add it to your short list of achievements.
+  - '"What. Are. You. Doing."'
+  - You were about to snatch the casket with the artifact when suddenly...
+  - '"Me? I''m already leaving."'
+  - '"Me? I''m already leaving."'
+  - But all that comes to mind is to grab it and run.
+  - '"I don''t want to steal from anyone."'
+  - '"I don''t want to steal from anyone."'
+  - "\"Why steal straight away! I'm telling you: bor-row. And how soon the client
+    returns the borrowed item to the owner\u2014that's their business.\""
+  - '"The client?"'
+  - '"The client?"'
+  - '"And that''s none of your business." He frowns, then checks himself and forces
+    a polite smile. "I mean, that information won''t help you. The main thing is
+    to bo... borrow the thing; forget the rest."'
+  - '"Why don''t you do it yourself?"'
+  - '"Why don''t you do it yourself?"'
+  - '"It''s beneath my status to deal with that! There''s no one here from my...
+    subordinates, and I myself have more important matters."'
+  - I can handle this.
+  - '"I can handle this."
+
+    
+
+    At handling forgetting everything? Ha-ha.'
+  - '"Uh-huh. So, a petty little job not worthy of your attention."'
+  - '"Uh-huh. So, a petty little job not worthy of your attention."'
+  - '"Well, don''t get too relaxed. For me this job might be too easy, but you''re
+    not a pro."'
+  - '"In short, from a reliable source I know that the thing to be borrowed is a
+    really cool magical artifact of the Reds... Maugfell people. So you won''t get
+    out of the Rift, it will latch onto you... In short, this gizmo looks like semi-transparent
+    cubes that give off a magical glow. You know. Precious."'
+  - "\"Anyway, if you want to help\u2014it's all written here.\""
+  - '"Let''s see what I can do."'
+  - '"Let''s see what I can do."'
+  - Ratko flinches as if he were caught doing something indecent and turns around.
+  - He takes a drag on his cigarette and gives you a thoughtful look. "Maybe you
+    can manage something... although..."
+  - '"What exactly did I do? You see, after being detained by the Guards I have some...
+    gaps in my memory."'
+  - '"What exactly did I do? You see, after being detained by the Guards I have some...
+    gaps in my memory."'
+  - Be able to what?
+  - '"Be able to what?"
+
+    
+
+    You can do something? Don''t make me laugh.'
+  - Seeing you, he visibly relaxes. Your appearance can evoke only pity.
+  - '"Ah, awake now, local celebrity?"'
+  - Local celebrity?
+  - '"Local celebrity?"
+
+    
+
+    No, that phrase definitely doesn''t bode well.
+    You don''t really want to know the whole story, do you? You don''t, right?'
+  - '"Do you know me?"'
+  - '"Do you know me?"'
+  - Remain silent out of embarrassment.
+  - Oh, nothing good awaits you on that path, I assure you.
+  - '"What, you''ll say it isn''t so? Your arrival in the Isolator today made quite
+    a splash. And that''s even though we have two Players and two Sixes here. It
+    would seem you''re a complete nobody. But such a talent!"'
+  - '"Well, after such a performance it''s easier to ask who *doesn''t* know you.
+    Your arrival in the Isolator today made quite a splash. And that''s with two
+    Players and two Sixes here. It would seem you''re a complete nobody. But such
+    talent!"'
+  - '"Come on, don''t be modest. Your arrival in the Isolator today made quite a
+    splash. And that''s even though we have two Players and two Sixes here. It would
+    seem you''re a complete nobody. But such talent!"'
+  - '"Ah, funny. I heard about that kind of side effect; they use time magic or something
+    like that in their guns?
+
+    
+
+    Well, tough luck."'
+  - He didn't answer your question. Maybe you don't need to know?
+  - '"You didn''t answer my question."'
+  - '"You didn''t answer my question."'
+  - '"Unlucky."'
+  - '"Unlucky."'
+  - '"Hm? Well, information isn''t free, you know."'
+  - '"I need a little help with a certain matter... And you seem to be the perfect
+    person for it."'
+  - '"I''ll ask someone else."'
+  - '"I''ll ask someone else."'
+  - I see. And what will the payment be?
+  - '"I see. And what will the payment be?"
+
+    
+
+    Only the cheese in the mousetrap
+    is free. And now a paid cheese in a mousetrap awaits you. Progress?'
+  - '"But if you screw up, we can gracefully shift the blame onto your... reputation.
+    You know. Your head isn''t quite clear yet. Besides, you''re also one of the
+    Reds..."'
+  - '"What will I get for helping?"'
+  - '"What will I get for helping?"'
+  - '"What''s the job?"'
+  - '"What''s the job?"'
+  - '"There''s something we need to borrow from that creepy woman. Maybe you know
+    her. After all, she''s also from the Reds. I mean, from Maugfell."'
+  - '"Runako, yeah. The one in a dress. Sits in the library."'
+  - From the information you already have, this Runako is someone very, very dangerous
+    and powerful. And just imagine what she'll do to you when you try to 'borrow'
+    something from her.
+  - Why not give it a try? You probably won't manage anything, of course. Maybe it's
+    not worth it.
+  - He pulls a crumpled piece of paper from his pocket and unfolds it, trying in
+    haste to smooth it out.
+  - And yet I'm not going to steal.
+  - '"And yet I''m not going to steal."
+
+    
+
+    What a moral compass! Such strong
+    convictions! Everyone is impressed and applauds.'
+  - '"Excellent! Just don''t take too long."
+
+    
+
+    He hands you the piece
+    of paper and goes back to searching... whatever it is among the vegetables.'
+  - '"Don''t hope too much; falling hurts. No one here knows more than I do... Or
+    they won''t want to tell. We''ll talk again when you''re convinced of that."'
+  - That's the only reason he's offering this to you. The chance to wriggle out by
+    blaming your insanity if things go wrong.
+  - '"I''m not really well-versed in those things, after all I''m normal... I mean,
+    not a mage."'
+  - 'He grimaces as if he expected you to sign up for any adventure for free, then
+    sighs and flicks ash onto the floor.
+
+    
+
+    "Let''s put it this way...
+    I''m a very useful person to have in your debt. I know many interesting... stories.
+    Not such old stories. Interesting places. And all sorts of little things like
+    that."'
+  - Not interested.
+  - '"Not interested."
+
+    
+
+    I''ll walk around and look some more.'
+  - '"Alright, I''m listening"'
+  - '"Alright, I''m listening"'
+  - "\"Luck is a fickle thing. Unlucky today\u2014lucky tomorrow! By the way...\""
+  - '"As you wish. But my gut tells me you''ll be back."'
+  - '"Not steal. Borrow. Well, your cause is righteous, good luck and all that."
+
+    
+
+    He
+    goes back to searching... whatever in the vegetables.'
+  - Look around for the artifact.
+  - You look around searching for the artifact.
+  - I did your job for you.
+  - '"I did your job for you." You show the artifact when Ratko turns around.'
+  - 'He turns the casket in his hands and frowns.
+
+    
+
+    "Seems like it''s
+    the right thing."'
+  - '"Wait, this is..."
+
+    
+
+    He frowns.
+
+    
+
+    "So she entrusted this
+    to you? Going around me?"'
+  - He's actually impressed that you managed it.
+  - '"Next time let Liberia sort out her own idiotic tasks. I was already close to
+    making a plan. You could say I spent all my strength on it. And this is what
+    happens?"'
+  - '"In any case..."
+
+    
+
+    He puts the artifact in his belt pouch.'
+  - '"I heard you have a powerful magical artifact..."'
+  - '"I heard you have a powerful magical artifact..."'
+  - It will be easier the second time. I hope.
+  - Now you know that your failure isn't final. At the same time, failures are still
+    failures.
+  - So, how do we do this?
+  - Steal the artifact
+  - Ask about the artifact.
+  - '"I heard you have a powerful magical artifact..."'
+  - Leave.
+  - Maybe next time... You probably won't endure another failure.
+  - She didn't hear you. Or she heard you and ignored you. Then stealing something
+    will be more difficult. Which means it's not even worth trying.
+  - "Come on, force yourself to try. Nope, you can't. Faith is gone, the path is
+    closed. Definitely not temporarily cut off in the demo\u2014wait, what?"
+  - In short, you step away from Runako. Don't think about it.
+  - '"It stings! But why are you reporting to me?"'
+  - "\"If questions come up\u2014come by.\""
+  - '"I was told that you know a lot of interesting things about this place and its
+    guests. So in exchange for the artifact I want to get answers."'
+  - '"I was told that you know a lot of interesting things about this place and its
+    guests. So in exchange for the artifact I want to get answers."'
+  - '"We''re in a time loop, and you''ve already given me this assignment; you just
+    don''t remember. And you promised to answer a couple of my questions for it."'
+  - '"You promised to answer a couple of my questions if I bring the artifact. But
+    you don''t remember that, because we''re in a time loop."'
+  - '"So instead of a reward for the artifact itself, you chose to get information
+    from me. Strange, but all right."'
+  - '"Uh-huh, very funny. She sent you to me with questions. Well, fine."'
+  - '"Hmm? Do you need something?"'
+  - Loud music is coming from outside.
+  - She's not that far. Maybe you could poke her with something?
+  - You look around and notice a mop. Convenient.
+  - Shout over the music
+  - You draw a deep breath and yell "Tasia" at the top of your lungs!
+  - Focus on the sound wave.
+  - 'You focus on individual notes, on sounds, on the entire flow of the music. In
+    the sound you begin to sense something... kindred to yourself? Something that
+    might respond to a call if you call correctly.
+
+    
+
+    Maybe you could...
+    No, that''s silly. You won''t be able to. Try something else.'
+  - Throw a chunk of paint that has peeled off the wall at her.
+  - The flight of the first is stopped by the grate. The second falls to the floor.
+    The third hits her shoulder but so weakly that the girl doesn't notice.
+  - Wait until she looks your way on her own, then act
+  - You brace your hands on the wall and start waiting, watching the play of light
+    in the half-empty hall.
+  - You look ridiculous. But it seems you've managed to get her attention.
+  - Try to muffle the music.
+  - You mentally "smooth" the wave. For a moment it seems like the sounds become
+    quieter...
+  - This is a terrible, TERRIBLE idea. Try something else.
+  - It wouldn't have worked anyway. You know that perfectly well, so why try?
+  - Seconds, minutes, months, years drift by lazily. You're seriously just WAITING
+    in some unknown dark room with bars on the windows, instead of trying to do ANYTHING?
+  - Time is passing, the clock is ticking, we're all going to die, you need to hurry.
+    Think about that. Think about anything. At least move your brain instead of just
+    standing there slowly dying.
+  - Ha. Ha. Ha. Seriously? She's less than two meters from you.
+  - Finally, you get lucky and another piece of paint hits her right in the forehead!
+  - After an eternity of time wasted by you, Tasia suddenly glances around and then
+    fixes her gaze on you. Or on your silhouette behind the bars. It doesn't surprise
+    her at all; it's as if she found exactly what she was looking for. And that,
+    in turn, surprises you.
+  - No, did you really think that would work? Think again. You'll NEVER have the
+    strength for that.
+  - You carefully (don't poke her eye) move the mop handle toward Tasia. However,
+    she notices your efforts before the wooden handle even touches her clothes.
+  - The door is locked and I want to go out
+  - '"The door is locked and I want to go out."'
+  - '"Why have I been locked in here?"'
+  - '"Why have I been locked in here?"'
+  - '"Were they supposed to lock it?" Tasia looks somewhere past you for a few seconds,
+    as if forgetting you exist.'
+  - 'Finally, just as you''re about to use your superpower of attracting attention
+    for a second time, she turns her gaze to you and says:
+
+    
+
+    "Wait here,
+    I''ll go get the Guard."'
+  - Continue waiting in the dark, for example. Quietly die without attracting attention.
+    That would be simpler.
+  - Try to get her attention
+  - You tap on the grate and call her name several times, but she doesn't hear you.
+  - '"Woke up? So you''re alive.
+
+    
+
+    Did you really have to tear me away
+    from my work? That door opens with a guest card."'
+  - Prod Tasia with the mop
+  - The main thing is not to jab her full force. Don't poke out her eye. Don't drop
+    the mop. Why are your hands shaking? Have they always shaken? Doesn't matter.
+    Try it.
+  - Go to her already!
+  - It's not like you can leave from here. The main thing is that meeting the Guard
+    doesn't make everything worse. On the other hand, what options did you have?
+  - '"I don''t remember ANYTHING. Why don''t I remember anything?"'
+  - '"Why don''t I remember anything?"
+
+    
+
+    Still waiting for someone to
+    give you a hint? Do you think answers to your questions even exist?'
+  - Sorry to bother you, I'll go.
+  - '"Sorry to bother you, I''ll go."
+
+    
+
+    The door opens with the card,
+    of course. You could have tried that before bothering other people. Just a tip
+    for the future.'
+  - "\"You won't get far. At least for now. The card shows how long you have left
+    in the Isolator until the timer runs out\u2014you can't get out the main door.\""
+  - '"Hmm. Tough luck."'
+  - Give the Guard a meaningful look.
+  - Looking at your beaten-dog expression, the Guard rolls her eyes.
+  - I'm sorry?
+  - '"I''m sorry?" you squeeze out.'
+  - '"The magic used to neutralize particularly rowdy guests has a number of side
+    effects. And partial memory loss is one of the rarest. Tough luck."'
+  - Tough luck! But now you know you're a particularly rowdy guest who had to be
+    neutralized. Super!
+  - '"Sometimes people pay big money to forget things. Enjoy the ignorance while
+    you can."'
+  - '"You haven''t forgotten how to talk or walk. You''ll manage."'
+  - "\"The memory-loss effect is temporary. Most likely, when it's time to leave
+    the Isolator\u2014you'll remember everything.\""
+  - '"But I have no time to chat and I''m no expert on magical anomalies. You''ll
+    figure it out yourself from here."'
+  - The Isolator..?
+  - '"The Isolator..?"
+
+    
+
+    Yes, yes, quickly, ask at least something. Who
+    knows, maybe the other inhabitants of this place (oh ho-ho, you''re in for ''rowdy
+    guests'') are even less friendly than this nice lady.'
+  - '"The Isolator is a room for temporary detainees. ''Detainees,'' however, isn''t
+    quite the right word. There are no additional restrictions on you, except a temporary
+    ban on leaving the Isolator."'
+  - "\"The guest card indicates how long you have left to stay here until the timer
+    runs out\u2014you can't get out through the main door.\""
+  - What did I do to end up here?
+  - '"For what..."'
+  - '"So what am I supposed to do now?"'
+  - '"So what am I supposed to do now?"'
+  - '"But it''s not partial. I don''t remember anything at all. I even learned my
+    own name from the card."'
+  - '"But it''s not partial. I don''t remember anything at all. I even learned my
+    own name from the card."'
+  - And what's outside the Isolator?
+  - '"And what..."'
+  - '"I''m not obliged to answer those questions and I need to get back to my post."'
+  - She's had enough of you. Go bother someone else.
+  - The card in your hand changes its image.
+  - Yes, it's that girl right in front of you. You have no idea what all the other
+    words mean, but Tasia is definitely her name.
+  - And only she can help you.
+  - You walk up to the window.
+  - Beyond the window grate you see a large brightly lit room filled with gaming
+    tables. But you don't see any people in the room except for a single girl. She's
+    very close, but she's not looking at you, she's carefully studying her chips.
+  - WHAT IS EVEN GOING ON HERE???
+  - '"What..."'
+  - ...but after a split second everything snaps back and a sharp pain pierces your
+    head.
+  - Behind the curtain there's a grate wide enough for you to fit your hand through.
+    You note that the grate is rusty, the paint on the walls is peeling and lying
+    in chunks on the floor and windowsill, and cobwebs shimmer in the corners. In
+    general, this place has seen better days, but that's not what should concern
+    you now.
+  - Better check the door first.
+  - So, it seems it's worth discussing what's happening.
+  - The voices in my head, for example.
+  - The voices in my head, for example.
+  - Everything is happening again.
+  - "The clock shows 12 again. Everything is happening again, or your clock is broken
+    and you have an overly long d\xE9j\xE0 vu. Or everyone else suddenly lost their
+    memory, just like you. Or they want you to think that, and they're just pretending."
+  - That's called "thoughts," if you can imagine. Or are you talking about Akaimun?
+    She wasn't here this time, by the way. She's not part of the loop. As for the
+    rest...
+  - They want to drive me insane.
+  - '"Drive you insane? How could it get any worse?
+
+    
+
+    Well, suppose this
+    theory is true. Then you''ll still have to pretend you''re following their script."'
+  - Time loops.
+  - You understand time loops as a concept, yeah. Considering an hour ago you couldn't
+    remember your own name.
+  - And observe whether anything has changed in behavior or words. It's easy to start
+    getting paranoid, so don't overdo it.
+  - Remember the time when everything disappeared? 13:00.
+  - If when it comes everything repeats again...
+  - If when it comes everything repeats again, then it's officially a time loop.
+    Or an attempt to drive you crazy.
+  - The only option is to carry out Akaimun's order.
+  - Find the revolver, yes. Well, make that your priority. There's nothing interesting
+    about repeating events. Maybe the world is supposed to work like that and you
+    just don't remember.
+  - Although... now this is interesting. Maybe there's a reason for it.
+  - 'By the way... Why doesn''t this surprise you? Do you care about anything at
+    all?
+
+    
+
+    Interesting, but let''s save that question for later. And now...'
+  - I must find the revolver.
+  - Find the revolver, yes. Well, make that your priority. There's nothing interesting
+    about repeating events. Maybe the world is supposed to work like that and you
+    just don't remember.
+  - No, are you kidding? You *don't need* a revolver. Do something worthwhile.
+  - Like what?
+  - Searching for answers, for example.
+  - I have to find it.
+  - '"*Have* to find it? Did you borrow it from someone? I don''t remember that."'
+  - I... What do I need it for?
+  - Exactly. It was better without it. I mean, it will be better.
+  - But, to be completely honest...
+  - You have no other leads.
+  - So... yes. Look for the revolver. Talk to the guards.
+  - And what was the point of this argument?
+  - How should I know? Get to work.
+  - That's what I'll do.
+  - Yep. Completely normal conversation.
+  - Now it's with you again. But in a few minutes it will be gone.
+  - 'While you''re in a time loop, what''s the point of obtaining it? Or of your
+    achievements?
+
+    
+
+    Even sandcastles have a longer lifespan.'
+  - I need to get out of here.
+  - How?
+  - '"Exactly. How? She promised to explain everything when you got the revolver.
+    And where are the explanations?"'
+  - Maybe I don't want to.
+  - And what are you going to do? Wait? Are you sure the next reset won't make you
+    forget everything again?
+  - Something's wrong.
+  - I'll wait.
+  - How long will you wait? Are you sure the next reset won't make you forget everything
+    again?
+  - Act on your own. Find out what's going on.
+  - There's nothing else to do here anyway.
+  - And you also have endless attempts at doing nothing! Isn't that fascinating?
+  - I can't. And I don't see the point.
+  - Not the answer expected. Well. That works too.
+  - That's where your story ends. Whether you remember or forget doesn't matter.
+    You are not. You never were. You never will be.
+  - End of the demo.
+  - Well then, now... Now it's only just beginning.
+  - Enjoy? Or not. Honestly, I couldn't care less.
+  - You approach Liberia. She glances at you briefly, then looks away, returning
+    to contemplating the void beyond the glass.
+  - '"Can you answer a few questions?"'
+  - '"Can you answer a few questions?"'
+  - '"Only for this one. No."'
+  - I'm not even going to dive into the weeds of these logical paradoxes.
+  - Leave.
+  - You have nothing to say for now. You leave.
+  - '"Do you know anything about my revolver?"'
+  - '"Do you know anything about my revolver?"'
+  - '"Uh, no, nothing."'
+  - '"Uh, no, nothing."'
+  - "You approach the door. Your path to freedom \u2014 or to a larger cage. Either
+    way, two guards block the way."
+  - '"I have an important question."'
+  - '"I have an important question."'
+  - "\"Timer\u2019s already up? I don\u2019t think so. Don\u2019t come closer unless
+    you want to spend the rest of your time unconscious.\""
+  - Leave.
+  - You have nothing to do here yet.
+  - What if...
+  - 'By the way, not a bad way to pass the time. Side effects: total memory loss.'
+  - "Funny if that\u2019s why you remember nothing. You used that brilliant shortcut
+    to oblivion too often."
+  - Probably not, though. Something else is going on here...
+  - "It probably can\u2019t get any worse. So?"
+  - Approach
+  - "You don\u2019t even have time to react \u2014 they knock you out instantly."
+  - "I\u2019ll find something else to do."
+  - "As you wish. But when you get bored \u2014 you know where to go."
+  - Touching.
+  - He points to the storage window.
+  - "They won\u2019t just hand you the revolver. Maybe Ratko can help? But I wouldn\u2019t
+    count on it."
+  - Uh-huh. Except the timer never expires.
+  - '"But I need it. For emotional support."'
+  - '"But I need it. For emotional support."'
+  - '"You can at least remove the bullets! But I need it."'
+  - Add also that you clearly remember having it.
+  - '"Your confiscated belongings will be returned after the timer expires."'
+  - '"A weapon for emotional support."'
+  - "And you just helped him with that artifact... Still, I wouldn\u2019t count on
+    it."
+  - "But first you need to do something for him in this loop. Otherwise there\u2019s
+    no point in asking."
+  - '"..."'
+  - Better leave.
+  - '"..."'
+  - Well, it was worth a try. Or not.
+  - "They won\u2019t just hand you the revolver. Maybe someone here can help? Not
+    many talkative people around\u2026"
+  - '"I''m sure you can talk to someone who is currently NOT on duty."'
+  - '"For confiscated belongings, contact Theodor Kavish."'
+  - He wants you to bother anyone but himself.
+  - Better without bullets than not at all.
+  - '"That window over there."'
+  - "You approach Kotsuki. She is focused on a blank canvas. Do you have something
+    to say? If not\u2014better go. I'm serious. Don\u2019t."
+  - Leave
+  - You leave. Not the time yet.
+  - /off, reset/
+  - /why the hell?/
+  - Better to start early than be late.
+  - Better to start early than be late.
+  - '"I''ll wait a little."'
+  - '"I''ll wait a little."'
+  - You rap briefly on the window.
+  - '"Lunch. Come back later."'
+  - '"What''s for lunch? I''m hungry too."'
+  - '"What''s for lunch? I''m hungry too."'
+  - My little dog Sonya is missing!
+  - '"My little dog Sonya is missing!" you blurt out without thinking. Maybe you
+    should have thought first.'
+  - '"I won''t be able to come later. We''re all in a time loop and the time resets
+    right when lunch ends."'
+  - '"I won''t be able to come later. We''re all in a time loop and the time resets
+    right when lunch ends."'
+  - '"Have you tried coming up with something original? I''ve heard that excuse twelve
+    times just this month."'
+  - '"But it''s true!"'
+  - '"But it''s true!"'
+  - '"Even if that''s true, it doesn''t change the fact that I''m on my legal break,
+    miss. And now, if you''ll excuse me..."'
+  - '"Do you have a complaints book? I want to complain."'
+  - '"Do you have a complaints book? I want to complain."'
+  - '"You can''t do this to me during such a political crisis! Ordinary people should
+    unite, help each other, not shut themselves off... with glass walls!"'
+  - '"You can''t do this to me during such a political crisis! Ordinary people should
+    unite, help each other, not shut themselves off... with glass walls!"'
+  - '"I''ve lost my memory. Tell me something about the world. Anything. Nobody wants
+    to tell me anything!"'
+  - '"I''ve lost my memory. Tell me something about the world. Anything. Nobody wants
+    to tell me anything!"'
+  - /placeholder/
+  - /placeholder/
+  - '"Maybe there is. But it''s LUNCH now. During lunch the complaint book isn''t
+    issued."'
+  - '"Who came up with this idiotic rule?!"'
+  - '"Who came up with this idiotic rule?!"'
+  - '"Me. And now step away from the window and wait until lunch is over, or I''ll
+    have to call the guard."'
+  - '"Maybe we can come to some agreement?"'
+  - '"Maybe we can come to some agreement?"'
+  - '"Of course we can. How about this: you let me rest until the end of lunch."'
+  - You move the cot aside, behind which, if Ratko is to be believed, there should
+    be a vent.
+  - '"You got him talking pretty well. Anyway, I managed to grab the things."'
+  - '"There was only one revolver there, so that''s the one I took."'
+  - '"But only mine." Ratko looks you straight in the eye, not a trace of regret
+    on his face.'
+  - '"There was no time."'
+  - '"Well, anyway, we probably won''t be able to pull off the same thing a second
+    time. The old man is already rustling around with his things..."'
+  - Well, let's wait for the reset.
+  - '"You''re worthless and I hate you."'
+  - '"You''re worthless and I hate you."
+
+    
+
+    Say whatever you want, after
+    all there are no consequences!'
+  - Leave silently.
+  - You leave without even bothering to listen to Ratko. And you won't even grace
+    him with a contemptuous glance, will you? Fine.
+  - Behind it you find a hastily screwed-on grate. It's clear that this passage has
+    been used recently.
+  - Remove the grate.
+  - You unscrew the screws with your fingers and remove the grate.
+  - Surrender and leave.
+  - You won't succeed. You return in defeat.
+  - In front of you is a narrow, cramped, dark passage. Good thing you have a flashlight.
+    In case you're afraid of the dark.
+  - Lie on the floor and crawl inside.
+  - You squeeze into the passage.
+  - The dust makes your nose itch and you barely restrain yourself from sneezing.
+  - 'The passage seems to be trying to crush you. Squeeze you.
+
+    
+
+    The light
+    from your guest card doesn''t help much; it rather makes the setting surreal
+    and sinister.
+
+    
+
+    Move carefully, because the clatter of the vent will
+    echo throughout the entire building.'
+  - You already see the light ahead. (No, that's not your death yet. By the way,
+    don't forget to start breathing.)
+  - "Now you need to remove the second grate, only this time you won't have to unscrew
+    it\u2014it's just leaning against the opening."
+  - Fortunately, Theodore is too wrapped up in conversation with your buddy to notice.
+  - The boxes have name tags of guests and keyholes. You know what to do. Probably.
+  - With great difficulty you take off the grate and crawl out.
+  - Look for the keys.
+  - "If they were hanging somewhere on the wall\u2014it would be too easy."
+  - Give up and go back.
+  - You were so close... Okay, what am I saying. Mission failed!
+  - Which is exactly why they're hanging on Theodore's belt!
+  - You weigh your options.
+  - '"So, how did it go?"'
+  - You return to the agreed meeting place to discuss the results.
+  - '"There was even time for your junk."'
+  - '"There was even time for your junk."
+
+    
+
+    You hand him back his things.'
+  - '"I only had time to grab my own things."'
+  - '"I only had time to grab my own things."'
+  - '"No way. I couldn''t steal anything."'
+  - '"No way. I couldn''t steal anything."'
+  - '"If I say I''m surprised, I''d be lying, and lying harms the truth, as the Founders
+    used to say."'
+  - '"If I say I''m surprised, I''d be lying, and lying harms the Truth, as the Founders
+    said. Maybe not, who knows."'
+  - First, of course, you'll deal with your own box. That revolver is vital to you.
+    Even though you hate it. Hate? That's too strong a word. You don't really like
+    thinking about it, but not having it nearby somehow feels... wrong.
+  - '"What dog? There are no animals here. Unless you count that creepy giant winged
+    cat." He says the last sentence so quietly you barely hear it. And you probably
+    heard it wrong. Let''s assume you heard it wrong, otherwise you''ll completely
+    lose your mind.'
+  - '"That''s why she''s gone. My favorite dog Sonya..."'
+  - '"That''s why she''s gone. My favorite dog Sonya..."'
+  - '"I''d decide you''re trying to distract me, and not very skillfully at that.
+    But I believe in the good in people."'
+  - The clerk glances around and spots Ratko, who has almost disappeared into the
+    vent. To be precise, he spots half of him. The better half...
+  - Leave.
+  - You head back to the meeting place with Ratko.
+  - '"I... forgot how to read."'
+  - '"I... forgot how to read."'
+  - '"Yes, exactly. Want to join my union?"'
+  - '"Yes, exactly. Want to join my union?"'
+  - Guess three times what happens next.
+  - Nope, you don't hate him. Do you even feel anything at all?
+  - Fatigue.
+  - Oh right. Fatigue and irritation. Nothing new. Boredom. And boredom, do you feel
+    that too?
+  - Irritation.
+  - Oh right. Fatigue and irritation. Nothing new. Boredom. And boredom, do you feel
+    that too?
+  - He says something in response, surely something very witty. Or something totally
+    indifferent.
+  - No wonder this happened. Well, there's another option.
+  - Or maybe forget it...
+  - 'Seriously? Fine.
+
+    
+
+    I give up.'
+  - It seems you're not the only source of sound here, because you hear rustling
+    ahead.
+  - So, the boxes are in front of you. And you have very little time, so first you
+    open your own. You'll deal with the rest later.
+  - The box could contain something to help clarify your memories. But there's nothing
+    here except a revolver. For some reason, the sight of it irritates you.
+  - It looks like you have time to take Ratko's things.
+  - Ratko
+  - 'In the box you find a sack sewn from colorful scraps, tied in a tight knot.
+
+    
+
+    You
+    take that too. What''s the point, if after the reset his things will be back
+    there again?'
+  - Better not take risks and just go back.
+  - Also true.
+  - Doesn't matter. Time to go back.
+  - 'And you see a sign: "Lunch until 13:00"'
+  - You approach the storage window.
+  - '"Well, now I owe you and all that..."'
+  - AARADHYA
+  - AARADHYA
   - MAUGFELL
-  - DOES NOT SPECIFIED
+  - Not specified
+  - LIBERIA
+  - LIBERIA
+  - DUZU,  Monetarii, Gamblers
+  - Gambler
+  - KOTSUKI
+  - KOTSUKI
+  - MAUGFELL, The Hexarchate
+  - The Fifth Hexarch
+  - RUNAKO
+  - RUNAKO
+  - MAUGFELL, The Hexarchate
+  - The First Hexarch
+  - AKAYMUN
+  - UNKNOWN
+  - UNKNOWN
+  - UNKNOWN
+  - RATKO
+  - RATKO
+  - DUZU, Monetarii
+  - Entrepreneur
+  - GUARD
+  - GUARD
+  - DUZU, Lexarii, Aspectorii
+  - Security
+  - GUARD
+  - GUARD
+  - MAUGFELL, Blood of Red Moon
+  - Security
+  - TASIA
+  - TASIA SERENO
+  - DUZU, Primorii
+  - Not specified
+  - THEODOR
+  - THEODOR KAVISH
+  - DUZU, Lexarii
+  - Security
+  - NARROW PASSAGE
+  - UNKNOWN
+  - UNKNOWN
+  - UNKNOWN
+  - LOCKERS
+  - UNKNOWN
+  - UNKNOWN
+  - UNKNOWN
+  - NOBODY
+  - UNKNOWN
+  - UNKNOWN
+  - UNKNOWN
+  - NOTHING
+  - GLOWING THING
+  - THE DOOR
   mLocalizedAudioAssetsKeys:
   - DFr_51E5E710.Text
   - DFr_2DD444E4.Text

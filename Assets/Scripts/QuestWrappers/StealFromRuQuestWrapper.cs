@@ -4,14 +4,14 @@ public sealed class StealFromRuQuestWrapper : QuestWrapper
 {
     public StealFromRuQuestWrapper() : base("stealFromRu")
     {
-        SetStageDescription(1, "Ратко попросил украсть некий магический артефакт и я согласилась. Я не знаю, почему я согласилась.");
-        SetStageDescription(2, "Ратко попросил украсть некий магический артефакт и я согласилась. Я не знаю, почему я согласилась, а теперь никто и не помнит, что я соглашалась. Что ж, я всё ещё могу попытаться его украсть. Зачем-то.");
-        SetStageDescription(3, "У меня не вышло \"присвоить\" артефакт. Ожидаемо. Если я не хочу, чтобы она разорвала меня на куски, лучше оставить попытки. А я не хочу.");
-        SetStageDescription(4, "У меня не вышло \"присвоить\" артефакт, но... Я ведь могу попытаться снова в следующем витке петли. (Я всё ещё не понимаю, зачем я это делаю).");
-        SetStageDescription(5, "У меня есть кубы! Чем бы они ни были. Пора вернуться к Ратко и обсудить награду. Надеюсь, он расскажет что-то полезное.");
-        SetStageDescription(6, "У меня есть кубы! Чем бы они ни были. Я бы могла вернуться к Ратко и обсудить награду... Только вот он ничего не вспомнит. Ладно, что-нибудь придумаю. Зря я что ли этим занималась?");
-        SetStageDescription(7, "Теперь Ратко отвечает на мои вопросы. Точнее, отвечает на те вопросы, на которые хочет отвечать. Это лучше, чем ничего.");
-        SetStageDescription(8, "Если я хочу, чтобы Ратко снова мне помогал, я должна снова принести ему эти кубы. Что ж, я уже знаю, как их получить.");
+        SetStageDescription(1, "Ratko asked me to steal some kind of magical artifact, and I agreed. I don’t know why I agreed.");
+        SetStageDescription(2, "Ratko asked me to steal some kind of magical artifact, and I agreed. I don’t know why I agreed — and now no one even remembers that I did. Well, I can still try to steal it. For some reason.");
+        SetStageDescription(3, "I failed to ‘claim’ the artifact. As expected. If I don’t want her to tear me apart, I’d better stop trying. And I don’t want to.");
+        SetStageDescription(4, "I failed to ‘claim’ the artifact, but... I can always try again in the next loop. (I still don’t understand why I’m doing this.)");
+        SetStageDescription(5, "I’ve got the cubes! Whatever they are. Time to return to Ratko and discuss the reward. Hopefully, he’ll tell me something useful.");
+        SetStageDescription(6, "I’ve got the cubes! Whatever they are. I could go back to Ratko and discuss the reward... Except he won’t remember anything. Fine, I’ll think of something. No way I did all this for nothing.");
+        SetStageDescription(7, "Now Ratko answers my questions. Well, the ones he wants to answer, anyway. It’s better than nothing.");
+        SetStageDescription(8, "If I want Ratko to help me again, I’ll have to bring him those cubes again. Well, at least I know how to get them now.");
         AddStagesToAdvanceOnLoopReset(1, 7);
         MarkStageAsFailed(3, 4);
         MarkStageAsCompleted(7);
