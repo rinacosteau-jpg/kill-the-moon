@@ -409,9 +409,23 @@ public class DialogueUI : MonoBehaviour, IArticyFlowPlayerCallbacks, ILoopResett
         if (speaker is IObjectWithFeatureCharacterCard withCard) {
             var card = withCard.GetFeatureCharacterCard();
             if (card != null) {
-                dialogueSpeaker.text = card.Name != null ? card.Name.ToString() : "";
-                if (title != null) title.text = card.Title != null ? card.Title.ToString() : "";
-                if (fraction != null) fraction.text = card.Fraction != null ? card.Fraction.ToString() : "";
+                var nameText = card.Name != null ? card.Name.ToString() : "";
+                if (IsUnknownValue(nameText)) {
+                    var displayName = GetSpeakerDisplayName(obj);
+                    dialogueSpeaker.text = string.IsNullOrEmpty(displayName) ? nameText : displayName;
+                } else {
+                    dialogueSpeaker.text = nameText;
+                }
+
+                if (title != null) {
+                    var titleText = card.Title != null ? card.Title.ToString() : "";
+                    title.text = IsUnknownValue(titleText) ? string.Empty : titleText;
+                }
+
+                if (fraction != null) {
+                    var fractionText = card.Fraction != null ? card.Fraction.ToString() : "";
+                    fraction.text = IsUnknownValue(fractionText) ? string.Empty : fractionText;
+                }
                 return;
             }
         }
@@ -614,6 +628,10 @@ public class DialogueUI : MonoBehaviour, IArticyFlowPlayerCallbacks, ILoopResett
         s = Regex.Replace(s, @"\s+", " ").Trim();
         s = Regex.Replace(s.ToLower(), @"\b[a-z]", m => m.Value.ToUpper());
         return s;
+    }
+
+    private static bool IsUnknownValue(string value) {
+        return !string.IsNullOrEmpty(value) && value.Equals("UNKNOWN", StringComparison.OrdinalIgnoreCase);
     }
 
     private string TruncateForLog(string s, int max = 60) {
