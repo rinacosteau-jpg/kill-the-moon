@@ -45,7 +45,7 @@ namespace Articy.World_Of_Red_Moon.Features
                 return;
             }
             mLoadedConstraints = true;
-            mMinutes = new Articy.Unity.Constraints.NumberConstraint(-3.4028234663852886E+38D, 3.4028234663852886E+38D, 0, 0, 0, null);
+            mMinutes = new Articy.Unity.Constraints.NumberConstraint(-3D, 3.4028234663852886E+38D, 0, 0, 0, null);
         }
     }
 }

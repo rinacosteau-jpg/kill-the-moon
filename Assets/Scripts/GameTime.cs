@@ -14,7 +14,7 @@ public class GameTime : MonoBehaviour {
     public static GameTime Instance { get; private set; }
 
     public int Hours { get; set; } = 12;
-    public int Minutes { get; set; } = 12;
+    public int Minutes { get; set; } = 0;
 
     public event Action<int, int> OnTimeChanged;
 

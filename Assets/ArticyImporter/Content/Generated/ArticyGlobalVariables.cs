@@ -107,6 +107,7 @@ namespace Articy.World_Of_Red_Moon.GlobalVariables
             variableNames.Add("NKNW.testD");
             variableNames.Add("NKNW.testE");
             variableNames.Add("NKNW.lockpick");
+            variableNames.Add("NKNW.checkedWindow");
             variableNames.Add("RQUE.testic");
             variableNames.Add("RFLG.neutralizedByGuard");
             variableNames.Add("RFLG.murderAttempt");

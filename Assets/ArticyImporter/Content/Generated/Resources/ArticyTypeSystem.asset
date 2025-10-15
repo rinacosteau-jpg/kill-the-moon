@@ -526,66 +526,16 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       mConstraintNames: 
       mConstraintValues: []
-  - mTechnicalName: DialogueFragment_Extended
-    mDisplayName: DialogueFragment_Extended
-    mCSharpType: Articy.World_Of_Red_Moon.DialogueFragment_Extended, Assembly-CSharp,
+  - mTechnicalName: DialogueFragment_Extended_02
+    mDisplayName: SkillCheck
+    mCSharpType: Articy.World_Of_Red_Moon.DialogueFragment_Extended_02, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     mIsEnum: 0
     mHasTemplate: 1
     mFeatures:
-    - RiskCheck
     - PauseOn
     - Duration
     mProperties:
-    - mTechnicalName: RiskCheck.RiskCheckInit
-      mDisplayName: RiskCheckInit
-      mIsTemplateProperty: 1
-      mPropertyType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
-      mConstraintValues:
-      - 
-      - 
-      - 
-      - False
-      - 
-      - False
-      - False
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 
-      - 0
-      - 
-      - 
-      - 
-    - mTechnicalName: RiskCheck.IsSuccess
-      mDisplayName: IsSuccess
-      mIsTemplateProperty: 1
-      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
-      mConstraintValues:
-      - 
-      - 
-      - 
-      - False
-      - 
-      - False
-      - False
-      - 0
-      - 0
-      - 0
-      - 2
-      - 0
-      - 0
-      - 
-      - 0
-      - 
-      - 
-      - 
     - mTechnicalName: PauseOn.PauseOn
       mDisplayName: PauseOn
       mIsTemplateProperty: 1
@@ -762,16 +712,66 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       mConstraintNames: 
       mConstraintValues: []
-  - mTechnicalName: DialogueFragment_Extended_02
-    mDisplayName: SkillCheck
-    mCSharpType: Articy.World_Of_Red_Moon.DialogueFragment_Extended_02, Assembly-CSharp,
+  - mTechnicalName: DialogueFragment_Extended
+    mDisplayName: DialogueFragment_Extended
+    mCSharpType: Articy.World_Of_Red_Moon.DialogueFragment_Extended, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     mIsEnum: 0
     mHasTemplate: 1
     mFeatures:
+    - RiskCheck
     - PauseOn
     - Duration
     mProperties:
+    - mTechnicalName: RiskCheck.RiskCheckInit
+      mDisplayName: RiskCheckInit
+      mIsTemplateProperty: 1
+      mPropertyType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - False
+      - 
+      - False
+      - False
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: RiskCheck.IsSuccess
+      mDisplayName: IsSuccess
+      mIsTemplateProperty: 1
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - False
+      - 
+      - False
+      - False
+      - 0
+      - 0
+      - 0
+      - 2
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - 
+      - 
     - mTechnicalName: PauseOn.PauseOn
       mDisplayName: PauseOn
       mIsTemplateProperty: 1
@@ -4445,54 +4445,6 @@ MonoBehaviour:
     mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     mConstraintNames: 
     mConstraintValues: []
-  - mTechnicalName: RiskCheck.RiskCheckInit
-    mDisplayName: RiskCheckInit
-    mIsTemplateProperty: 1
-    mPropertyType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
-    mConstraintValues:
-    - 
-    - 
-    - 
-    - False
-    - 
-    - False
-    - False
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 
-    - 0
-    - 
-    - 
-    - 
-  - mTechnicalName: RiskCheck.IsSuccess
-    mDisplayName: IsSuccess
-    mIsTemplateProperty: 1
-    mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
-    mConstraintValues:
-    - 
-    - 
-    - 
-    - False
-    - 
-    - False
-    - False
-    - 0
-    - 0
-    - 0
-    - 2
-    - 0
-    - 0
-    - 
-    - 0
-    - 
-    - 
-    - 
   - mTechnicalName: PauseOn.PauseOn
     mDisplayName: PauseOn
     mIsTemplateProperty: 1
@@ -4536,6 +4488,54 @@ MonoBehaviour:
     - 3,40282346638529E+38
     - 0
     - -3,40282346638529E+38
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: RiskCheck.RiskCheckInit
+    mDisplayName: RiskCheckInit
+    mIsTemplateProperty: 1
+    mPropertyType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - False
+    - 
+    - False
+    - False
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: RiskCheck.IsSuccess
+    mDisplayName: IsSuccess
+    mIsTemplateProperty: 1
+    mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - False
+    - 
+    - False
+    - False
+    - 0
+    - 0
+    - 0
+    - 2
+    - 0
+    - 0
     - 
     - 0
     - 
@@ -5205,8 +5205,8 @@ MonoBehaviour:
   - FlowFragment
   - Dialogue
   - DialogueFragment
-  - DialogueFragment_Extended
   - DialogueFragment_Extended_02
+  - DialogueFragment_Extended
   - Hub
   - Comment
   - Jump
@@ -5254,9 +5254,9 @@ MonoBehaviour:
     PublicKeyToken=null
   - Articy.World_Of_Red_Moon.DialogueFragment, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
-  - Articy.World_Of_Red_Moon.DialogueFragment_Extended, Assembly-CSharp, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
   - Articy.World_Of_Red_Moon.DialogueFragment_Extended_02, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  - Articy.World_Of_Red_Moon.DialogueFragment_Extended, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
   - Articy.World_Of_Red_Moon.Hub, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
@@ -5301,10 +5301,10 @@ MonoBehaviour:
   - Articy.World_Of_Red_Moon.UserFolder, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   mFeatureProps:
-  - RiskCheck.RiskCheckInit
-  - RiskCheck.IsSuccess
   - PauseOn.PauseOn
   - Duration.Minutes
+  - RiskCheck.RiskCheckInit
+  - RiskCheck.IsSuccess
   - ElevenlabsVoiceLibrary.Voice
   - CharacterCard.Name
   - CharacterCard.Fraction
@@ -5324,54 +5324,6 @@ MonoBehaviour:
   - DefaultBasicCharacterFeature.Personality
   - DefaultBasicCharacterFeature.Appearance
   mFeaturePropInfos:
-  - mTechnicalName: RiskCheck.RiskCheckInit
-    mDisplayName: RiskCheckInit
-    mIsTemplateProperty: 1
-    mPropertyType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
-    mConstraintValues:
-    - 
-    - 
-    - 
-    - False
-    - 
-    - False
-    - False
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 
-    - 0
-    - 
-    - 
-    - 
-  - mTechnicalName: RiskCheck.IsSuccess
-    mDisplayName: IsSuccess
-    mIsTemplateProperty: 1
-    mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
-    mConstraintValues:
-    - 
-    - 
-    - 
-    - False
-    - 
-    - False
-    - False
-    - 0
-    - 0
-    - 0
-    - 2
-    - 0
-    - 0
-    - 
-    - 0
-    - 
-    - 
-    - 
   - mTechnicalName: PauseOn.PauseOn
     mDisplayName: PauseOn
     mIsTemplateProperty: 1
@@ -5415,6 +5367,54 @@ MonoBehaviour:
     - 3,40282346638529E+38
     - 0
     - -3,40282346638529E+38
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: RiskCheck.RiskCheckInit
+    mDisplayName: RiskCheckInit
+    mIsTemplateProperty: 1
+    mPropertyType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - False
+    - 
+    - False
+    - False
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: RiskCheck.IsSuccess
+    mDisplayName: IsSuccess
+    mIsTemplateProperty: 1
+    mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - False
+    - 
+    - False
+    - False
+    - 0
+    - 0
+    - 0
+    - 2
+    - 0
+    - 0
     - 
     - 0
     - 
@@ -5871,17 +5871,17 @@ MonoBehaviour:
     - 
     - 
   mFeatureTechnicalNames:
-  - RiskCheck
   - PauseOn
   - Duration
+  - RiskCheck
   - ElevenlabsVoiceLibrary
   - CharacterCard
   - DefaultExtendedCharacterFeature
   - DefaultBasicCharacterFeature
   mFeatureDisplayNames:
-  - RiskCheck
   - PauseOn
   - Duration
+  - RiskCheck
   - "\u0411\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430 \u0433\u043E\u043B\u043E\u0441\u0430
     Elevenlabs"
   - CharacterCard
