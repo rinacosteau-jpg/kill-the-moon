@@ -37,8 +37,6 @@ public class StartSequence : MonoBehaviour
     [SerializeField] private float interactionBlockedFadeDuration = 1f;
     [SerializeField] private HintsPanelController hintsPanel;
     [SerializeField] private string inventoryHintMessage = "Use I to open Inventory, Esc to close";
-    [SerializeField] private DoorInteractable doorInteractable;
-    [SerializeField] private string doorCheckBlockedMessage = "I should check the door first.";
 
 
     private enum SequenceStep
@@ -61,7 +59,6 @@ public class StartSequence : MonoBehaviour
     private bool hasAppliedScreenShading;
     private bool wantsScreenShade;
     private bool waitingForScreenShadingInstance;
-    private bool doorCheckBlockActive;
 
     public static float TotalDistanceTraveled { get; private set; }
 
@@ -94,9 +91,6 @@ public class StartSequence : MonoBehaviour
 
     private void Update()
     {
-        if (!skipSequence && doorCheckBlockActive && IsDoorChecked())
-            ReleaseDoorCheckBlock();
-
         if (skipSequence)
             return;
 
@@ -151,8 +145,6 @@ public class StartSequence : MonoBehaviour
             skillSelectionUI.Confirmed -= HandleSkillsConfirmed;
         if (playerInteract != null)
             playerInteract.InteractionWhileBlocked -= HandleInteractionWhileBlocked;
-
-        ReleaseDoorCheckBlock();
 
         StopWaitingForScreenShading();
     }
@@ -307,8 +299,6 @@ public class StartSequence : MonoBehaviour
 
     private void UnblockInteractions()
     {
-        doorCheckBlockActive = false;
-
         if (playerInteract != null)
             playerInteract.SetInteractionsBlocked(false);
     }
@@ -318,9 +308,7 @@ public class StartSequence : MonoBehaviour
         if (interactionBlockedLabel == null || interactionBlockedCanvasGroup == null)
             return;
 
-        string message = doorCheckBlockActive
-            ? doorCheckBlockedMessage
-            : "It's too dark here.";
+        const string message = "It's too dark here.";
 
         if (string.IsNullOrEmpty(message))
             return;
@@ -371,60 +359,9 @@ public class StartSequence : MonoBehaviour
         if (playerInteract != null)
             playerInteract.InteractionWhileBlocked -= HandleInteractionWhileBlocked;
 
-        if (ShouldBlockUntilDoorChecked())
-            ApplyDoorCheckBlock();
-        else
-            UnblockInteractions();
+        UnblockInteractions();
 
         HideInteractionBlockedFeedback();
-    }
-
-    private bool ShouldBlockUntilDoorChecked()
-    {
-        if (skipSequence)
-            return false;
-
-        return !IsDoorChecked();
-    }
-
-    private void ApplyDoorCheckBlock()
-    {
-        if (doorInteractable == null)
-        {
-            Debug.LogError("[StartSequence] Door interactable reference is missing; cannot apply door check block.");
-            UnblockInteractions();
-            return;
-        }
-
-        doorCheckBlockActive = true;
-
-        if (playerInteract != null)
-            playerInteract.SetInteractionsBlocked(true, CanBypassDoorCheckBlock);
-    }
-
-    private void ReleaseDoorCheckBlock()
-    {
-        if (!doorCheckBlockActive)
-            return;
-
-        doorCheckBlockActive = false;
-
-        if (playerInteract != null)
-            playerInteract.SetInteractionsBlocked(false);
-
-        HideInteractionBlockedFeedback();
-    }
-
-    private bool CanBypassDoorCheckBlock(IInteractable interactable)
-    {
-        if (!doorCheckBlockActive || interactable == null)
-            return false;
-
-        return ReferenceEquals(interactable, doorInteractable);
-    }
-
-    private bool IsDoorChecked(){
-        return ArticyGlobalVariables.Default?.RFLG?.checkedDoor ?? false;
     }
 
     private void HideInteractionBlockedFeedback()
